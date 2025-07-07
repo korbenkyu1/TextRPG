@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01e2e519f10dda043a753213c8ae3cd2, type: 3}
+  m_Name: Ritual Severance(Legendary)
+  m_EditorClassIdentifier: 
+  type: 0
+  rarity: 0
+  skillName: 
+  image: {fileID: 0}
+  description: "\uACF5\uACA9\uB825\uC758 (X/150/170/190/210/230)%\uB9CC\uD07C \uC8FC\uACE0,
+    \uD2B9\uC218 \uD53C\uD574\uB97C \uACF5\uACA9\uB825\uC758 (X/30/35/40/45/50)%\uB9CC\uD07C
+    \uC785\uB294\uB2E4. \uC801\uC758 \uCE68\uC2DD\uC2A4\uD0DD\uC744 1\uC81C\uAC70\uD55C\uB2E4."
+  flavorText: 
+  maxUse: 0
+  remainingUse: 0
+  turnUsed: 0
+  dodgable: 0
+  scalar1: 190
+  scalar2: 40
