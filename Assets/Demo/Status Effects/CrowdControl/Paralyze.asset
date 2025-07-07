@@ -9,18 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e065c625ddb8e94d8430b42716c537b, type: 3}
-  m_Name: Tentacle Blow(Common)
+  m_Script: {fileID: 11500000, guid: f0642dab72ebf3e45a46c8ac0e9c7c1b, type: 3}
+  m_Name: Paralyze
   m_EditorClassIdentifier: 
-  type: 0
-  rarity: 0
-  skillName: 
-  image: {fileID: 0}
-  description: 
-  flavorText: 
-  maxUse: -1
-  remainingUse: -1
-  turnUsed: 1
-  dodgable: 1
-  scalar1: 100
-  scalar2: 80
+  statusEffectName: paralyze
+  stack: 0
+  isPlayer: 0
