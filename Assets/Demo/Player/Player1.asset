@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2ab5aa55cd5bd4fa1313fb7cddbeb9, type: 3}
+  m_Name: Player1
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  health: 180
+  attack: 20
+  defense: 21
+  critChance: 0
+  dodgeChance: 15
+  unitName: Player1
+  image: {fileID: 0}
+  description: this is you
+  skills:
+  - {fileID: 11400000, guid: 8b24a2409a474424b8f4a75a5eb170f8, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  abilities: []
