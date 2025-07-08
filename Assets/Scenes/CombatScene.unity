@@ -386,15 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusEffects:
   - {fileID: 11400000, guid: b9e72c35e1dac434abf67e8e3a737988, type: 2}
-  - {fileID: 11400000, guid: 7cacacc9fb4fab24c87a296d4b4a87fa, type: 2}
-  - {fileID: 11400000, guid: 4c38220d873954640bda8cbccf7078ac, type: 2}
-  - {fileID: 11400000, guid: 0183cf9f891cafb4ca762122933b16a0, type: 2}
-  - {fileID: 11400000, guid: bc7f5d89fbaa41c44b1c1d5d674b5ce5, type: 2}
-  - {fileID: 11400000, guid: 8c01c9d7429560d41b46b9a2828b37d1, type: 2}
-  - {fileID: 11400000, guid: 0fabd3859697aa140aecaab6481249f5, type: 2}
-  - {fileID: 11400000, guid: 033fa255a6b216446b7d43146cc7ca79, type: 2}
-  - {fileID: 11400000, guid: 7c29f8cf9f8acc34493e0859eaa926d4, type: 2}
-  - {fileID: 11400000, guid: 04b9286604c46fe438b66a471fb76658, type: 2}
+  - {fileID: 11400000, guid: 5bd00ea00dcda3044ba21fb2fd22a46f, type: 2}
   turn: 0
   state: 0
 --- !u!1 &2144501357

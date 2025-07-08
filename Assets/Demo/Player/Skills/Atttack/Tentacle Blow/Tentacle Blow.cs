@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/PlayerSkill/ParasiteLink")]
-public class ParasiteLink: PlayerSkillData
+[CreateAssetMenu(menuName = "Data/PlayerSkill/TentacleBlow")]
+public class TentacleBlow : PlayerSkillData
 {
     [SerializeField] int scalar1;
     [SerializeField] int scalar2;

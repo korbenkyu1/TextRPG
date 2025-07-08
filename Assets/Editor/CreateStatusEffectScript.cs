@@ -13,7 +13,7 @@ public class CreateEnemySkillScript
 
         string scriptTemplate = @"using UnityEngine;
 
-[CreateAssetMenu(menuName = ""Data/StatusEffect/{0}"")]
+[CreateAssetMenu(menuName = ""Data/StatusEffects/{0}"")]
 public class {0} : StatusEffectData
 {{
     // Add your custom behavior here

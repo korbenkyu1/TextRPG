@@ -7,7 +7,7 @@ public class Burn : StatusEffectData
     {
         if (stack > 0 && isPlayer)
         {
-            combatManager.player.stats.health = Mathf.Max(0, combatManager.player.stats.health - stack);
+            combatManager.player.stats.health -= stack;
             Debug.Log($"플레이어는 {stack}의 화상 데미지를 입었다");
         }
     }
@@ -15,7 +15,7 @@ public class Burn : StatusEffectData
     {
         if (stack > 0 && !isPlayer)
         {
-            combatManager.enemy.stats.health = Mathf.Max(0, combatManager.enemy.stats.health - stack);
+            combatManager.enemy.stats.health -= stack;
             Debug.Log($"상대는 {stack}의 화상 데미지를 입었다");
         }
     }
@@ -23,7 +23,7 @@ public class Burn : StatusEffectData
     {
         if(stack > 0 && !isPlayer)
         {
-            stack--;
+            stack = Mathf.Max(0, stack - 1);
             Debug.Log($"플레이어의 화상 스택 {stack + 1} >> {stack}");
         }
     }
@@ -31,7 +31,7 @@ public class Burn : StatusEffectData
     {
         if(stack > 0 && isPlayer)
         {
-            stack--;
+            stack = Mathf.Max(0, stack - 1);
             Debug.Log($"상대의 화상 스택 {stack + 1} >> {stack}");
         }
     }

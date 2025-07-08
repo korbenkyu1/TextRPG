@@ -8,7 +8,7 @@ public class Poison : StatusEffectData
         if (stack > 0 && isPlayer) 
         {
             combatManager.player.stats.health -= stack;
-            stack--;
+            stack = Mathf.Max(0, stack - 1);
             Debug.Log($"플레이어는 {stack}의 독 데미지를 입었다\n독 스택 {stack + 1} >> {stack}");
         }
     }
@@ -17,7 +17,7 @@ public class Poison : StatusEffectData
         if (stack > 0 && !isPlayer)
         {
             combatManager.enemy.stats.health -= stack;
-            stack--;
+            stack = Mathf.Max(0, stack - 1);
             Debug.Log($"상대는 {stack}의 독 데미지를 입었다\n독 스택 {stack + 1} >> {stack}");
         }
     }
