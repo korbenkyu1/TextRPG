@@ -12,4 +12,5 @@ public class StageData : ScriptableObject
 {
     public ActData[] fixedActs = new ActData[12];
     public RandomAct[] randomActs;
+    public int commonFoodWeight, uncommonFoodWeight, rareFoodWeight, epicFoodWeight, legendaryFoodWeight, mythicalFoodWeight;
 }

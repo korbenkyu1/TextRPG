@@ -12,6 +12,7 @@ public enum SkillType
 public enum Rarity
 {
     Common,
+    Uncommon,
     Rare,
     Epic,
     Legendary,
@@ -30,5 +31,7 @@ public abstract class PlayerSkillData : ScriptableObject
     public int remainingUse;
     public int turnUsed;
     public bool dodgable;
+    public int coolDown;
+    public int coolDownCounter;
     public abstract void OnActivate(CombatManager combatManager);
 }
