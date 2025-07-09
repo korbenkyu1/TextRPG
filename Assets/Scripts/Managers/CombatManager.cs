@@ -27,8 +27,8 @@ public enum CombatState
 public class Unit
 {
     public StatsData stats;
-    public Dictionary<string, StatusEffectData> statusEffects = new Dictionary<string, StatusEffectData>();
-    public List<int> damages = new List<int>();
+    public Dictionary<string, StatusEffectData> statusEffects;
+    public List<int> damages;
     public int remainingAction;
 }
 
@@ -141,6 +141,7 @@ public class CombatManager : MonoBehaviour
     IEnumerator BeforePlayerAttack(){
         state = CombatState.BeforePlayerAttack;
         yield return new WaitForSeconds(1f);
+        playerSkill.coolDownCounter = playerSkill.coolDown;
         playerSkill.OnActivate(this);
         foreach (var ability in playerData.abilities) ability.BeforePlayerAttack(this);
         foreach (var ability in enemyData.abilities) ability.BeforePlayerAttack(this);
@@ -179,6 +180,8 @@ public class CombatManager : MonoBehaviour
     IEnumerator OnPlayerTurnEnd(){
         state = CombatState.PlayerTurnEnd;
         yield return new WaitForSeconds(1f);
+        for (int i = 0; i < 5; i++) playerData.skills[i].coolDownCounter = Mathf.Max(0, playerData.skills[i].coolDownCounter - 1);
+
         foreach (var ability in playerData.abilities) ability.OnPlayerTurnEnd(this);
         foreach (var ability in enemyData.abilities) ability.OnPlayerTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnPlayerTurnEnd(this);
@@ -299,7 +302,7 @@ public class CombatManager : MonoBehaviour
             case CombatState.PlayerTurn:
                 for (int i = 1; i < 5; i++)
                 {
-                    if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)))
+                    if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)) && playerData.skills[i].coolDownCounter == 0)
                     {
                         playerSkill = playerData.skills[i-1];
                         player.remainingAction -= playerSkill.turnUsed;
