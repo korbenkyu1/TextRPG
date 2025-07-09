@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e065c625ddb8e94d8430b42716c537b, type: 3}
-  m_Name: ParasiteLink(Epic)
+  m_Name: ParasiteLink(Uncommon)
   m_EditorClassIdentifier: 
   type: 0
   rarity: 0
-  skillName: parasite_link
+  skillName: 
   image: {fileID: 0}
   description: 
   flavorText: 
   maxUse: -1
   remainingUse: -1
-  turnUsed: 1
-  dodgable: 1
-  scalar1: 120
-  scalar2: 100
+  turnUsed: 0
+  dodgable: 0
+  scalar1: 110
+  scalar2: 90

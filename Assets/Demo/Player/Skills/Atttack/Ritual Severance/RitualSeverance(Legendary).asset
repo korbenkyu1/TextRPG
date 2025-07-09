@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01e2e519f10dda043a753213c8ae3cd2, type: 3}
-  m_Name: Ritual Severance(Mythical)
+  m_Name: RitualSeverance(Legendary)
   m_EditorClassIdentifier: 
   type: 0
   rarity: 0
@@ -24,5 +24,5 @@ MonoBehaviour:
   remainingUse: 0
   turnUsed: 0
   dodgable: 0
-  scalar1: 150
-  scalar2: 30
+  scalar1: 190
+  scalar2: 40
