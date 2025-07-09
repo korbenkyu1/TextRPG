@@ -84,6 +84,8 @@ public class CombatManager : MonoBehaviour
         turn++;
         player.remainingAction = 1;
         enemy.remainingAction = 1;
+        int playerOldHealth = player.stats.health;
+        int enemyOldHealth = enemy.stats.health;
         player.stats = playerData;
         enemy.stats = enemyData;
         player.damages.Clear();
@@ -95,6 +97,9 @@ public class CombatManager : MonoBehaviour
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnTurnStart(this);
         if (IsCombatOver()) OnCombatEnd();
+
+        player.stats.health = Mathf.Min(player.stats.maxHealth, playerOldHealth);
+        enemy.stats.health = Mathf.Min(enemy.stats.maxHealth, enemyOldHealth);
 
         Print();
 
@@ -142,6 +147,11 @@ public class CombatManager : MonoBehaviour
         state = CombatState.BeforePlayerAttack;
         yield return new WaitForSeconds(1f);
         playerSkill.OnActivate(this);
+        for (int i = 0; i < enemy.damages.Count; i++)
+        {
+            if (player.stats.critChance >= Random.Range(1, 101))
+                enemy.damages[i] = (int)(enemy.damages[i] * 1.5f);
+        }
         foreach (var ability in playerData.abilities) ability.BeforePlayerAttack(this);
         foreach (var ability in enemyData.abilities) ability.BeforePlayerAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.BeforePlayerAttack(this);
@@ -303,7 +313,7 @@ public class CombatManager : MonoBehaviour
                     {
                         playerSkill = playerData.skills[i-1];
                         player.remainingAction -= playerSkill.turnUsed;
-                        if (playerSkill.dodgable && Random.Range(0, 100) <= enemy.stats.dodgeChance)
+                        if (playerSkill.dodgable && Random.Range(1, 101) <= enemy.stats.dodgeChance)
                         {
                             if (player.remainingAction > 0) OnPlayerTurn();
                             else StartCoroutine(OnPlayerTurnEnd()); 
