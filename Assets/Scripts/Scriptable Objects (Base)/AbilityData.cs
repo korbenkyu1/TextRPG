@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class AbilityData : ScriptableObject
 {
+    public int level;
     public virtual void OnCombatStart(CombatManager combatManager) {}
     public virtual void OnTurnStart(CombatManager combatManager) {}
     public virtual void OnPlayerTurnStart(CombatManager combatManager) {}
