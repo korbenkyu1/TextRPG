@@ -12,8 +12,9 @@ public enum SkillType
 public enum Rarity
 {
     Common,
-    Rare,
+    Uncommon,
     Epic,
+    Rare,
     Legendary,
     Mythical,
 }

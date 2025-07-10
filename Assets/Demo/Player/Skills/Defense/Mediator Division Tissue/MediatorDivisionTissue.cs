@@ -11,9 +11,10 @@ public class MediatorDivisionTissue : PlayerSkillData
         int heal = (int)(combatManager.player.stats.defense * scalar1 / 100f);
 
         combatManager.player.statusEffects["shield"].stack += stack;
-        combatManager.player.statusEffects["erode_stack"].stack--;
+        combatManager.player.statusEffects["erode_stack"].stack
+            = Mathf.Max(0, combatManager.player.statusEffects["erode_stack"].stack - 1);
         combatManager.player.stats.health += heal;
-        if(combatManager.player.stats.health > combatManager.player.stats.maxHealth)
-            combatManager.player.stats.health = combatManager.player.stats.maxHealth;
+        combatManager.player.stats.health
+            = Mathf.Min(combatManager.player.stats.maxHealth, combatManager.player.stats.health);
     }
 }

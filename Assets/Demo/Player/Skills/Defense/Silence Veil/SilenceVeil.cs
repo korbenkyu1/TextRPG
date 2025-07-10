@@ -1,4 +1,3 @@
-using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Data/PlayerSkill/SilenceVeil")]
@@ -8,7 +7,7 @@ public class SilenceVeil: PlayerSkillData
     int scalar1;
     public override void OnActivate(CombatManager combatManager)
     {
-        int damageReduction = (int)(combatManager.player.stats.defense * scalar1 / 100f);
-        
+        int stack = (int)(combatManager.player.stats.defense * scalar1 / 100f);
+        combatManager.player.statusEffects["damage_reduction"].stack += stack;
     }
 }
