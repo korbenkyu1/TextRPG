@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ParasiteLink(Epic)
   m_EditorClassIdentifier: 
   type: 0
-  rarity: 0
+  rarity: 2
   skillName: parasite_link
   image: {fileID: 0}
   description: 
@@ -22,5 +22,7 @@ MonoBehaviour:
   remainingUse: -1
   turnUsed: 1
   dodgable: 1
+  coolDown: 1
+  coolDownCounter: 0
   scalar1: 120
   scalar2: 100

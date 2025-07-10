@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Surge(Legendary)
   m_EditorClassIdentifier: 
   type: 0
-  rarity: 0
+  rarity: 4
   skillName: 
   image: {fileID: 0}
   description: 
@@ -22,4 +22,6 @@ MonoBehaviour:
   remainingUse: 6
   turnUsed: 0
   dodgable: 0
+  coolDown: 1
+  coolDownCounter: 0
   scalar1: 50

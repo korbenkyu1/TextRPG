@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TactileOverrun(Epic)
   m_EditorClassIdentifier: 
   type: 0
-  rarity: 0
+  rarity: 2
   skillName: 
   image: {fileID: 0}
   description: 
@@ -22,3 +22,5 @@ MonoBehaviour:
   remainingUse: 3
   turnUsed: 0
   dodgable: 0
+  coolDown: 1
+  coolDownCounter: 0
