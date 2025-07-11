@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c9bf15d3f8a52418052143787dc3a9, type: 3}
   m_Name: SilenceVeil(Epic)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   rarity: 2
   skillName: 
   image: {fileID: 0}
@@ -22,6 +22,6 @@ MonoBehaviour:
   remainingUse: 35
   turnUsed: 0
   dodgable: 0
-  coolDown: 1
+  coolDown: 0
   coolDownCounter: 0
   scalar1: 210

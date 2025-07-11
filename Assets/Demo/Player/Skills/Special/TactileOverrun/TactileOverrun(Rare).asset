@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ebcefaca5f6e4f44aeabe0991e4d8d0, type: 3}
   m_Name: TactileOverrun(Rare)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 3
   rarity: 3
   skillName: 
   image: {fileID: 0}

@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Data/StatusEffect/Etc/Initiative")]
 public class Initiative : StatusEffectData
 {
-    public override void OnPlayerTurnStart(CombatManager combatManager)
+    public override void OnTurnStart(CombatManager combatManager)
     {
         if (stack < combatManager.enemy.statusEffects["initiative"].stack)
         {

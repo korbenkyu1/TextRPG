@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Data/StatusEffect/Etc/Reflect")]
@@ -9,19 +8,27 @@ public class Reflect : StatusEffectData
     {
         if(stack > 0 && isPlayer)
         {
-            damageCount = combatManager.player.damages.Count;
+            for(int i = 0; i < combatManager.player.damages.Count; i++)
+            {
+                if (combatManager.player.damages[i] > 0)
+                    damageCount++;
+            }
         }
     }
     public override void BeforePlayerAttack(CombatManager combatManager)
     {
         if (stack > 0 && !isPlayer)
         {
-            damageCount = combatManager.enemy.damages.Count;
+            for (int i = 0; i < combatManager.enemy.damages.Count; i++)
+            {
+                if (combatManager.enemy.damages[i] > 0)
+                    damageCount++;
+            }
         }
     }
     public override void AfterEnemyAttack(CombatManager combatManager)
     {
-        if(damageCount > 0 && isPlayer)
+        if(damageCount > 0)
         {
             for(int i = 0; i < damageCount; i++)
             {
@@ -33,7 +40,7 @@ public class Reflect : StatusEffectData
     }
     public override void AfterPlayerAttack(CombatManager combatManager)
     {
-        if (damageCount > 0 && !isPlayer)
+        if (damageCount > 0)
         {
             for (int i = 0; i < damageCount; i++)
             {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd9b76c3e28fab0439fe1c0625f5e137, type: 3}
   m_Name: MediatorDivisionTissue(Rare)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   rarity: 3
   skillName: 
   image: {fileID: 0}
@@ -22,6 +22,6 @@ MonoBehaviour:
   remainingUse: 30
   turnUsed: 0
   dodgable: 0
-  coolDown: 1
+  coolDown: 0
   coolDownCounter: 0
   scalar1: 290

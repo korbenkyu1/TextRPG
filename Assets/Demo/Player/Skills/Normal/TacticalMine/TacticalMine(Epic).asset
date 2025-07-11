@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5dc66ead1d0eba40bbbaa68c716fece, type: 3}
   m_Name: TacticalMine(Epic)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
   rarity: 2
   skillName: 
   image: {fileID: 0}
@@ -22,5 +22,5 @@ MonoBehaviour:
   remainingUse: 3
   turnUsed: 0
   dodgable: 0
-  coolDown: 0
+  coolDown: 4
   coolDownCounter: 0

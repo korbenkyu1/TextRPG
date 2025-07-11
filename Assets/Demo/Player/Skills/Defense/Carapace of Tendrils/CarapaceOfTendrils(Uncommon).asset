@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237dd11adfaa92c4f8b0f44870cec462, type: 3}
   m_Name: CarapaceOfTendrils(Uncommon)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
   rarity: 1
   skillName: 
   image: {fileID: 0}
@@ -22,6 +22,6 @@ MonoBehaviour:
   remainingUse: 25
   turnUsed: 0
   dodgable: 0
-  coolDown: 1
+  coolDown: 0
   coolDownCounter: 0
   scalar1: 75

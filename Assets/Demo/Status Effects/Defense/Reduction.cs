@@ -9,7 +9,7 @@ public class Reduction : StatusEffectData
         {
             for(int i = 0; i < stack && i < combatManager.player.damages.Count; i++)
             {
-                combatManager.player.damages[i] = (int)(combatManager.player.damages[i] / 0.5f);
+                combatManager.player.damages[i] = (int)(combatManager.player.damages[i] * 0.5f);
                 Debug.Log("경감으로 인해 플레이어가 받는 데미지 50% 감소");
             }
         }
@@ -20,7 +20,7 @@ public class Reduction : StatusEffectData
         {
             for (int i = 0; i < stack && i < combatManager.enemy.damages.Count; i++)
             {
-                combatManager.enemy.damages[i] = (int)(combatManager.enemy.damages[i] / 0.5f);
+                combatManager.enemy.damages[i] = (int)(combatManager.enemy.damages[i] * 0.5f);
                 Debug.Log("경감으로 인해 상대가 받는 데미지 50% 감소");
             }
         }

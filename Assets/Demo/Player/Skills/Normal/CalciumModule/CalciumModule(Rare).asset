@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4215252fec38c92439a7f93ea21bdffb, type: 3}
   m_Name: CalciumModule(Rare)
   m_EditorClassIdentifier: 
-  type: 0
-  rarity: 0
+  type: 2
+  rarity: 3
   skillName: 
   image: {fileID: 0}
   description: 
@@ -22,6 +22,6 @@ MonoBehaviour:
   remainingUse: 5
   turnUsed: 0
   dodgable: 0
-  coolDown: 0
+  coolDown: 5
   coolDownCounter: 0
   scalar1: 13

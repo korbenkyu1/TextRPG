@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad48144bcc2aea1468a7e48f51035aee, type: 3}
   m_Name: MitogenInjector(Epic)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 2
   rarity: 2
   skillName: 
   image: {fileID: 0}
@@ -22,6 +22,6 @@ MonoBehaviour:
   remainingUse: 5
   turnUsed: 0
   dodgable: 0
-  coolDown: 0
+  coolDown: 1
   coolDownCounter: 0
   scalar1: 25

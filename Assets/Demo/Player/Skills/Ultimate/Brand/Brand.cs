@@ -7,6 +7,6 @@ public class Brand : PlayerSkillData
     int scalar1;
     public override void OnActivate(CombatManager combatManager)
     {
-        combatManager.player.statusEffects["brand"].stack += scalar1;
+        combatManager.player.statusEffects["brand_stack"].stack += scalar1;
     }
 }

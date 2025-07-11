@@ -13,5 +13,6 @@ public class NullGrid: PlayerSkillData
         combatManager.enemy.damages.Add(damage);
         combatManager.enemy.damages.Add(damage);
         combatManager.enemy.statusEffects["unevadible"].stack += stack;
+        combatManager.enemy.stats.dodgeChance -= stack * 100;
     }
 }

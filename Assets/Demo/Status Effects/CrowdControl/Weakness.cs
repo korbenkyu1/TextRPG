@@ -7,11 +7,11 @@ public class Weakness : StatusEffectData
     {
         if(stack > 0 && isPlayer)
         {
-            combatManager.player.stats.attack = Mathf.Max(0, combatManager.enemy.stats.attack - stack);
+            combatManager.player.stats.attack = Mathf.Max(0, combatManager.player.stats.attack - stack);
             Debug.Log($"약화로 인해 플레이어의 공격력 {stack} 감소");
         }
     }
-    public override void BeforeEnemyAttack(CombatManager combatManager)
+    public override void OnEnemyTurnStart(CombatManager combatManager)
     {
         if (stack > 0 && !isPlayer)
         {

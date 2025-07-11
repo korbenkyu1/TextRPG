@@ -8,7 +8,7 @@ public class EternalBonusDamage : StatusEffectData
         if(stack > 0)
         {
             if (isPlayer) combatManager.player.stats.attack = Mathf.Min(70, combatManager.player.stats.attack + stack);
-            if (!isPlayer) combatManager.enemy.stats.attack = Mathf.Min(70, combatManager.enemy.stats.attack + stack);
+            else if (!isPlayer) combatManager.enemy.stats.attack = Mathf.Min(70, combatManager.enemy.stats.attack + stack);
         }
     }
 }

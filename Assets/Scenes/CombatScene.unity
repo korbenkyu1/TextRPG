@@ -386,15 +386,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   statusEffects:
   - {fileID: 11400000, guid: b9e72c35e1dac434abf67e8e3a737988, type: 2}
+  - {fileID: 11400000, guid: 368649468a1c7524cb383f5bccb176da, type: 2}
+  - {fileID: 11400000, guid: bf689b9f7f1c1da48ac0a1a092e7699c, type: 2}
+  - {fileID: 11400000, guid: 6a7fe15a9d50b924d901a5218a7434b0, type: 2}
+  - {fileID: 11400000, guid: 827d7b31ad631da41b5406f8391fe616, type: 2}
+  - {fileID: 11400000, guid: 0526b119644d8a942ab07ca1bc948910, type: 2}
   - {fileID: 11400000, guid: 7cacacc9fb4fab24c87a296d4b4a87fa, type: 2}
   - {fileID: 11400000, guid: 4c38220d873954640bda8cbccf7078ac, type: 2}
-  - {fileID: 11400000, guid: 0183cf9f891cafb4ca762122933b16a0, type: 2}
-  - {fileID: 11400000, guid: bc7f5d89fbaa41c44b1c1d5d674b5ce5, type: 2}
   - {fileID: 11400000, guid: 8c01c9d7429560d41b46b9a2828b37d1, type: 2}
   - {fileID: 11400000, guid: 0fabd3859697aa140aecaab6481249f5, type: 2}
   - {fileID: 11400000, guid: 033fa255a6b216446b7d43146cc7ca79, type: 2}
   - {fileID: 11400000, guid: 7c29f8cf9f8acc34493e0859eaa926d4, type: 2}
   - {fileID: 11400000, guid: 04b9286604c46fe438b66a471fb76658, type: 2}
+  - {fileID: 11400000, guid: 064b2900134a9da4aa70e44a1370ad1a, type: 2}
+  - {fileID: 11400000, guid: 9a8aef44b27e32149b6065a093f428e5, type: 2}
+  - {fileID: 11400000, guid: 0183cf9f891cafb4ca762122933b16a0, type: 2}
+  - {fileID: 11400000, guid: 1c9eda93f74019745b35db6af6084a09, type: 2}
+  - {fileID: 11400000, guid: 5556fb0ddd8f5374e87a8307976a9977, type: 2}
+  - {fileID: 11400000, guid: 21d6486b52698f5428aabdf3edee8a8a, type: 2}
+  - {fileID: 11400000, guid: c68b6ba9f6f0e934f84df3489f53cca8, type: 2}
+  - {fileID: 11400000, guid: f463c01735117aa49b13ec75c6b6ad8a, type: 2}
+  - {fileID: 11400000, guid: 2e325bedbc3d003429e3084aff37b4f3, type: 2}
+  - {fileID: 11400000, guid: 51b4a21ef0e4ef04c97b38f9a609e8be, type: 2}
+  - {fileID: 11400000, guid: 89e079fe35398114d8fef652479cf11c, type: 2}
+  - {fileID: 11400000, guid: 87c820e68abfe2440917a19a2265acd2, type: 2}
+  - {fileID: 11400000, guid: c0b8f57bd9baad04a8ce5d915f6e0e94, type: 2}
+  - {fileID: 11400000, guid: 29b5f2c42c4d80f4e805d22a0557abb5, type: 2}
+  - {fileID: 11400000, guid: bc7f5d89fbaa41c44b1c1d5d674b5ce5, type: 2}
+  - {fileID: 11400000, guid: b2cd95492c6b2154a87d9422aea54be5, type: 2}
   turn: 0
   state: 0
 --- !u!1 &2144501357
@@ -433,6 +452,14 @@ MonoBehaviour:
   enemyData: {fileID: 0}
   resultData:
     message: 
+    coin: 0
+    maxHealth: 0
+    health: 0
+    attack: 0
+    defense: 0
+    critChance: 0
+    dodgeChance: 0
+    type: 0
 --- !u!4 &2144501359
 Transform:
   m_ObjectHideFlags: 0

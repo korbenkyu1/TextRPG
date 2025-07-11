@@ -9,9 +9,9 @@ public class Fortify : StatusEffectData
         {
             for(int i = 0; i < combatManager.enemy.damages.Count; i++)
             {
-                combatManager.enemy.damages[i] = Mathf.Max(0, combatManager.enemy.damages[i]-stack);
+                combatManager.enemy.damages[i] = Mathf.Max(0, combatManager.enemy.damages[i] - stack);
             }
-            Debug.Log($"경감으로 인해 플레이어의 데미지 {stack} 감소");
+            Debug.Log($"철갑으로 인해 상대가 받는 데미지 {stack} 감소");
         }
     }
     public override void BeforeEnemyAttack(CombatManager combatManager)
@@ -22,7 +22,7 @@ public class Fortify : StatusEffectData
             {
                 combatManager.player.damages[i] = Mathf.Max(0, combatManager.player.damages[i] - stack);
             }
-            Debug.Log($"경감으로 인해 상대의 데미지 {stack} 감소");
+            Debug.Log($"철갑으로 인해 플레이어가 받는 데미지 {stack} 감소");
         }
     }
 }

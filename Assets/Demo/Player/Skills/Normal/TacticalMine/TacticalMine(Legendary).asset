@@ -22,5 +22,5 @@ MonoBehaviour:
   remainingUse: 5
   turnUsed: 0
   dodgable: 0
-  coolDown: 0
+  coolDown: 4
   coolDownCounter: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23fb17c13d877b5439220baed0b4e3ce, type: 3}
   m_Name: Parasitism(Epic)
   m_EditorClassIdentifier: 
-  type: 0
+  type: 3
   rarity: 2
   skillName: 
   image: {fileID: 0}

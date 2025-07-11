@@ -3,6 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Data/StatusEffect/Attack/Vampirism")]
 public class Vampirism : StatusEffectData
 {
+    public int totalHeal;
     public override void BeforePlayerAttack(CombatManager combatManager)
     {
         if(stack > 0 && isPlayer)
@@ -10,10 +11,8 @@ public class Vampirism : StatusEffectData
             for(int i = 0; i < combatManager.enemy.damages.Count; i++)
             {
                 int heal = (int)(combatManager.enemy.damages[i] * stack / 100f);
-                combatManager.player.stats.health += heal;
-                Debug.Log($"흡혈로 인해 플레이어의 체력 {heal} 회복");
+                totalHeal += heal;
             }
-            combatManager.player.stats.health = Mathf.Min(combatManager.player.stats.health, combatManager.player.stats.maxHealth);
         }
     }
     public override void BeforeEnemyAttack(CombatManager combatManager)
@@ -23,10 +22,28 @@ public class Vampirism : StatusEffectData
             for (int i = 0; i < combatManager.player.damages.Count; i++)
             {
                 int heal = (int)(combatManager.player.damages[i] * stack / 100f);
-                combatManager.enemy.stats.health += heal;
-                Debug.Log($"흡혈로 인해 상대의 체력 {heal} 회복");
+                totalHeal += heal;
             }
-            combatManager.enemy.stats.health = Mathf.Min(combatManager.enemy.stats.health, combatManager.enemy.stats.maxHealth);
+        }
+    }
+    public override void AfterPlayerAttack(CombatManager combatManager)
+    {
+        if(totalHeal > 0 && isPlayer)
+        {
+            combatManager.player.stats.health
+                = Mathf.Min(combatManager.player.stats.health + totalHeal, combatManager.player.stats.maxHealth);
+            Debug.Log($"흡혈로 인해 플레이어의 체력 {totalHeal} 회복");
+            totalHeal = 0;
+        }
+    }
+    public override void AfterEnemyAttack(CombatManager combatManager)
+    {
+        if (totalHeal > 0 && !isPlayer)
+        {
+            combatManager.enemy.stats.health
+                = Mathf.Min(combatManager.enemy.stats.health + totalHeal, combatManager.enemy.stats.maxHealth);
+            Debug.Log($"흡혈로 인해 상대의 체력 {totalHeal} 회복");
+            totalHeal = 0;
         }
     }
 }
