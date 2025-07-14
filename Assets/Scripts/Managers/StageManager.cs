@@ -1,93 +1,67 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
- 
+using UnityEngine.EventSystems;
+
 public class StageManager : MonoBehaviour
 {
-    [SerializeField] StageData[] stageData;
-    int stageIndex = 0;
-    int actIndex = 0;
+    [SerializeField] private RectTransform[] optionRects;
+    [SerializeField] private Canvas canvas;
 
-    StageData stage;
-    ActData act;
+    private ActData currentAct;
 
     void Start()
     {
-        // Todo: exception 
-        stageIndex = GameManager.Instance.stageIndex;
-        actIndex = GameManager.Instance.actIndex;  
-
-
-        Debug.Log($"Stage{stageIndex + 1} Act{actIndex + 1} started.");
-
-        // Load Stage & Act Data
-        stage = stageData[stageIndex];
-        if (stage.fixedActs[actIndex]) act = stage.fixedActs[actIndex];
-        else
-        {
-            float totalWeight = 0f;
-            for (int i = 0; i < stage.randomActs.Length; i++) totalWeight += stage.randomActs[i].weight;
-
-            float randomValue = Random.Range(0, totalWeight);
-            float currentWeightSum = 0f;
-            for (int i = 0; i < stage.randomActs.Length; i++)
-            {
-                currentWeightSum += stage.randomActs[i].weight;
-                if (randomValue <= currentWeightSum)
-                {
-                    act = stage.randomActs[actIndex].act;
-                    break;
-                }
-            }
-        }
-
-        // Todo: Serialize Info -> Setup UI
-        #region SerializeInfo
-        Debug.Log($"Image: [{act.image}].");
-        Debug.Log($"Description: {act.description}.");
-        for (int i = 0; i < act.options.Length; i++)
-        {
-
-            var option = act.options[i];
-            string buffer = $"Option{i + 1}: {option.label}.";
-            if (option.requiredCoin > 0) buffer += $"(-{option.requiredCoin} coins)";
-            if (option.requiredHealth > 0) buffer += $"(-{option.requiredHealth} hp)";
-            Debug.Log(buffer);
-        }
-        Debug.Log("¼ýÀÚ Å°¸¦ ´­·¯ ¼±ÅÃÁö ¼±ÅÃ ¶Ç´Â ESC Å°¸¦ ´­·¯ ¾×Æ® ½ºÅµ.");
-        #endregion
+        currentAct = GameManager.Instance.act;
     }
 
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("¾×Æ® ½ºÅµµÊ");
-            GameManager.Instance.actIndex++;
-            SceneManager.LoadScene("ActScene");
+            SkipAct();
+            return;
         }
 
-        for (int i = 1; i < 9 && i <= act.options.Length; i++)
+        for (int i = 1; i <= currentAct.options.Length && i < 10; i++)
         {
             if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)))
             {
-                OptionData option = act.options[i - 1];
-                Debug.Log($"¼±ÅÃÁö{i}({option.label})ÀÌ/°¡ ¼±ÅÃµÊ.");
-
-                EnemyData enemy = option.enemy;
-                ResultData result = option.result;
-
-                // coins
-                GameManager.Instance.coin -= option.requiredCoin;
-                GameManager.Instance.playerData.health -= option.requiredHealth;
-                
-                GameManager.Instance.enemyData = enemy;
-                GameManager.Instance.resultData = result;
-
-                if (enemy) SceneManager.LoadScene("CombatScene");
-                else SceneManager.LoadScene("ResultScene");
-                
+                ChooseOption(i - 1);
+                return;
             }
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePos = Input.mousePosition;
+            for (int i = 0; i < optionRects.Length && i < currentAct.options.Length; i++)
+            {
+                if (RectTransformUtility.RectangleContainsScreenPoint(optionRects[i], mousePos, canvas.worldCamera))
+                {
+                    ChooseOption(i);
+                    return;
+                }
+            }
+        }
+    }
+
+    private void SkipAct()
+    {
+        GameManager.Instance.actIndex++;
+        SceneManager.LoadScene("ActScene");
+    }
+
+    private void ChooseOption(int idx)
+    {
+        var option = currentAct.options[idx];
+        Debug.Log($"ì„ íƒì§€ {idx+1} ({option.label}) ì„ íƒë¨");
+
+        GameManager.Instance.coin -= option.requiredCoin;
+        GameManager.Instance.playerData.health -= option.requiredHealth;
+        GameManager.Instance.enemyData = option.enemy;
+        GameManager.Instance.resultData = option.result;
+
+        if (option.enemy != null) SceneManager.LoadScene("CombatScene");
+        else SceneManager.LoadScene("ResultScene");
     }
 }

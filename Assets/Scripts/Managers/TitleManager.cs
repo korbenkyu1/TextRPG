@@ -1,25 +1,35 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class TitleManager : MonoBehaviour
 {
-    [SerializeField] PlayerData player;
+    [SerializeField] private RectTransform startButtonRect;
+    [SerializeField] private Canvas canvas;
 
     void Start()
     {
-        // Init GameManager
         GameManager.Instance.stageIndex = 0;
         GameManager.Instance.actIndex = 0;
-        GameManager.Instance.playerData = player;
-
-        Debug.Log("¾Æ¹« Å°³ª ´­·¯ ½ÃÀÛ");
+        Debug.Log("ì•„ë¬´ í‚¤ë‚˜ ëˆŒëŸ¬ ì‹œìž‘");
     }
 
     void Update()
     {
-        if(Input.anyKey)
+        if (Input.anyKeyDown)
         {
             SceneManager.LoadScene("ActScene");
+            return;
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePos = Input.mousePosition;
+            if (RectTransformUtility.RectangleContainsScreenPoint(startButtonRect, mousePos, canvas.worldCamera))
+            {
+                SceneManager.LoadScene("ActScene");
+            }
         }
     }
 }
