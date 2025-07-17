@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      swordicon_0: 8247329723496179466
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

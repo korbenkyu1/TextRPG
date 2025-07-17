@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      poisonicon_0: 1755839632569004712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
