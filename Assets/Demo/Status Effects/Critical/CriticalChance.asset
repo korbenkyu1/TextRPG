@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: critical_chance
   stack: 0
   isPlayer: 0
+  Image: {fileID: -8895097146571576193, guid: 1dc09690ce30d3f4f940525d4eef0e5a, type: 3}

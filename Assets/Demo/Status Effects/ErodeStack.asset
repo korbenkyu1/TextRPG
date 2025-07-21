@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: erode_stack
   stack: 0
   isPlayer: 0
+  Image: {fileID: 3366501665613285966, guid: c8844b9908d0b634f85f97cfeff67634, type: 3}

@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: poison
   stack: 0
   isPlayer: 0
+  Image: {fileID: -4347532159779508366, guid: f27fa443aebd53941822bc36678308c4, type: 3}

@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: shield
   stack: 0
   isPlayer: 0
+  Image: {fileID: -6717884257390833292, guid: d95f4b8fcc732dc4bb467b2d76374051, type: 3}

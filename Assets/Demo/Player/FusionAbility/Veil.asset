@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0642dab72ebf3e45a46c8ac0e9c7c1b, type: 3}
-  m_Name: Paralyze
+  m_Script: {fileID: 11500000, guid: 69b557ccee8290c4c83a9e807bde45c6, type: 3}
+  m_Name: Veil
   m_EditorClassIdentifier: 
-  statusEffectName: paralyze
-  stack: 0
-  isPlayer: 0
+  level: 0
+  Image: {fileID: 1367531666088095907, guid: ef1ab33a769bcb24f96e383496ec6f30, type: 3}
+  isAssigned: 0

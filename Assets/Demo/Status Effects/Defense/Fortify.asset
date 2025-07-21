@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: fortify
   stack: 0
   isPlayer: 0
+  Image: {fileID: 4870125245114056259, guid: 7e87aae7734aece4cb3f92410581e326, type: 3}

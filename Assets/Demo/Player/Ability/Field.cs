@@ -1,5 +1,5 @@
 using UnityEngine;
-
+[CreateAssetMenu(menuName = "Data/Ability/Field")]
 public class Field : AbilityData
 {
     public int[] valueLV = new int[7]{ 1, 2, 4, 5, 8, 10, 12 };

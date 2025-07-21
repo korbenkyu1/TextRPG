@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: bonus_damage
   stack: 0
   isPlayer: 0
+  Image: {fileID: 3326342868991859701, guid: 53cf27b4758dab248ae870b070f09fc1, type: 3}

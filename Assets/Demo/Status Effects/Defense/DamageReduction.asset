@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: damage_reduction
   stack: 0
   isPlayer: 0
+  Image: {fileID: 2068440285350173690, guid: 27e1d733caa23e442af70c9ec6af9987, type: 3}

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b4ec2c4a5ae014d809f41d3fd00631, type: 3}
-  m_Name: Restrain
+  m_Script: {fileID: 11500000, guid: d221347650ef9a44c903798000a7523c, type: 3}
+  m_Name: Decline
   m_EditorClassIdentifier: 
-  statusEffectName: restrain
-  stack: 0
-  isPlayer: 0
+  level: 0
+  Image: {fileID: -893561410110736590, guid: f86088f8113b9ff4b80674d359e7e5ae, type: 3}
+  valueLV: 0100000002000000040000000500000006000000080000000a000000

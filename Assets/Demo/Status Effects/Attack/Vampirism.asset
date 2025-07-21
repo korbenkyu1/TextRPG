@@ -15,3 +15,5 @@ MonoBehaviour:
   statusEffectName: vampirism
   stack: 0
   isPlayer: 0
+  Image: {fileID: -6593547266033907436, guid: 629c0b99c247dd24d9f03111ade0f4d8, type: 3}
+  totalHeal: 0

@@ -1,4 +1,5 @@
 using UnityEngine;
+[CreateAssetMenu(menuName = "Data/Ability/Stop")]
 public class Stop : AbilityData
 {
     public int[] valueLV = new int[7]{ 7, 7, 6, 6, 5, 5, 4 };

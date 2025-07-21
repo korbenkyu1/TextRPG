@@ -1,4 +1,5 @@
 using UnityEngine;
+[CreateAssetMenu(menuName = "Data/Ability/Toughness")]
 public class Toughness : AbilityData
 {
     public int[] valueLV = new int[7]{ 3, 5, 9, 13, 15, 18, 20 };

@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: unstoppable
   stack: 0
   isPlayer: 0
+  Image: {fileID: -5532294121950807659, guid: 7463bbcf383f0bb4a98f5a75936f8a08, type: 3}

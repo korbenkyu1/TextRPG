@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: brand_stack
   stack: 0
   isPlayer: 0
+  Image: {fileID: -7183468463343320580, guid: c8fe36f4d2827c34b8f4590ea759eeef, type: 3}

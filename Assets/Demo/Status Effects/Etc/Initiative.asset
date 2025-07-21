@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: initiative
   stack: 0
   isPlayer: 0
+  Image: {fileID: -1116586342369642133, guid: 9c60a34697b8859418222ae13fe5188e, type: 3}

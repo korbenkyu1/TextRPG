@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f21dfd17b4d0bd42a3df19a7c60c842, type: 3}
-  m_Name: Weakness
+  m_Script: {fileID: 11500000, guid: 3db61c650aba7c548a405cff2aadbdd7, type: 3}
+  m_Name: Sharpness
   m_EditorClassIdentifier: 
-  statusEffectName: 
-  stack: 0
-  isPlayer: 0
+  level: 0
+  Image: {fileID: 4001562545827438556, guid: 07a1f56f97bc5b04d8f416e074509568, type: 3}
+  valueLV: 0200000004000000080000000a0000000e0000001200000019000000
+  count: 0

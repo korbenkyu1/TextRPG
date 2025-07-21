@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: bonus_evasion
   stack: 0
   isPlayer: 0
+  Image: {fileID: -8438042756086905733, guid: d7c8a28d16f61ce41901fdfcb8e349e9, type: 3}

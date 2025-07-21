@@ -15,3 +15,4 @@ MonoBehaviour:
   statusEffectName: bonus_action
   stack: 0
   isPlayer: 0
+  Image: {fileID: 3439410460563402983, guid: 4b31b3f93311eaf4cba6ea990c72f34f, type: 3}

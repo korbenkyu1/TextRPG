@@ -5,6 +5,7 @@ public class StatusEffectData : ScriptableObject
     public string statusEffectName;
     public int stack;
     public bool isPlayer;
+    public Sprite Image;
 
     public virtual void OnTurnStart(CombatManager combatManager) { }
     public virtual void OnPlayerTurnStart(CombatManager combatManager) { }
