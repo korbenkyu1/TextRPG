@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d7345c9aa9f0554098d85446f008bd9, type: 3}
   m_Name: Act1
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 68595fef546a8ae40bdd21de788f3c38, type: 3}
-  description: "\uAC08\uB9BC\uAE38\uC774 \uB098\uD0C0\uB0AC\uB2E4."
+  images:
+  - {fileID: 21300000, guid: 38013699221a92349a2895171898603c, type: 3}
+  descriptions:
+  - "\uAC08\uB9BC\uAE38\uC774 \uB098\uD0C0\uB0AC\uB2E4"
   options:
   - label: "\uC67C\uCABD \uAE38"
     requiredCoin: 0
@@ -21,9 +23,25 @@ MonoBehaviour:
     enemy: {fileID: 0}
     result:
       message: "\uD798\uC774 \uAC15\uD574\uC9C4 \uB290\uB08C\uC774 \uB4E0\uB2E4."
+      coin: 0
+      maxHealth: 0
+      health: 0
+      attack: 0
+      defense: 0
+      critChance: 0
+      dodgeChance: 0
+      type: 0
   - label: "\uC624\uB978\uCABD \uAE38"
     requiredCoin: 5
     requiredHealth: 0
     enemy: {fileID: 0}
     result:
       message: "\uBBFC\uCCA9\uD574\uC9C4 \uB290\uB08C\uC774 \uB4E0\uB2E4."
+      coin: 0
+      maxHealth: 0
+      health: 0
+      attack: 0
+      defense: 0
+      critChance: 0
+      dodgeChance: 0
+      type: 0

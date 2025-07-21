@@ -1,14 +1,25 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
- 
+using UnityEngine.UI;
+
 public class StageManager : MonoBehaviour
 {
+    public Image DialogBox;
+    public TMP_Text ActText;
+    public Image ActImage;
+    public GameObject OptionContainer;
+    public Button OptionButtonPrefab;
+    public Image EnemyImage;
+    public GameObject CombatStartButton;
+
     [SerializeField] StageData[] stageData;
     int stageIndex = 0;
     int actIndex = 0;
 
     StageData stage;
     ActData act;
+    int index = 0;
 
     void Start()
     {
@@ -16,8 +27,6 @@ public class StageManager : MonoBehaviour
         stageIndex = GameManager.Instance.stageIndex;
         actIndex = GameManager.Instance.actIndex;  
 
-
-        Debug.Log($"Stage{stageIndex + 1} Act{actIndex + 1} started.");
 
         // Load Stage & Act Data
         stage = stageData[stageIndex];
@@ -39,55 +48,62 @@ public class StageManager : MonoBehaviour
                 }
             }
         }
+    }
 
-        // Todo: Serialize Info -> Setup UI
-        #region SerializeInfo
-        Debug.Log($"Image: [{act.image}].");
-        Debug.Log($"Description: {act.description}.");
+    public void NextButton()
+    {
+        index++;
+        if (index < act.descriptions.Length)
+        {
+            ActText.text = act.descriptions[index];
+            ActImage.sprite = act.images[index];
+            return;
+        }
+
+        // To selection
+        DialogBox.rectTransform.sizeDelta = new Vector2(893, 632);
+        OptionContainer.SetActive(true);
+        // To combat
+        if (act.options.Length == 1 && act.options[0].enemy)
+        {
+            
+            return;
+        }
         for (int i = 0; i < act.options.Length; i++)
         {
-
             var option = act.options[i];
-            string buffer = $"Option{i + 1}: {option.label}.";
-            if (option.requiredCoin > 0) buffer += $"(-{option.requiredCoin} coins)";
-            if (option.requiredHealth > 0) buffer += $"(-{option.requiredHealth} hp)";
-            Debug.Log(buffer);
+            var button = Instantiate(OptionButtonPrefab, OptionContainer.transform);
+            int button_index = i;
+            button.onClick.AddListener(() => OptionButton(button_index));
+            button.GetComponentInChildren<TMP_Text>().text = option.label;
         }
-        Debug.Log("숫자 키를 눌러 선택지 선택 또는 ESC 키를 눌러 액트 스킵.");
-        #endregion
     }
-
-    void Update()
+    public void OptionButton(int i)
     {
+        OptionData option = act.options[i];
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        EnemyData enemy = option.enemy;
+        ResultData result = option.result;
+
+        // coins
+        GameManager.Instance.coin -= option.requiredCoin;
+        GameManager.Instance.playerData.health -= option.requiredHealth;
+
+        GameManager.Instance.enemyData = enemy;
+        GameManager.Instance.resultData = result;
+
+        if (enemy)
         {
-            Debug.Log("액트 스킵됨");
-            GameManager.Instance.actIndex++;
-            SceneManager.LoadScene("ActScene");
+            ActImage.gameObject.SetActive(false);
+            DialogBox.gameObject.SetActive(false);
+            OptionContainer.SetActive(false);
+
+            EnemyImage.gameObject.SetActive(true);
+            CombatStartButton.SetActive(true);
+
+            SceneManager.LoadScene("CombatScene");
         }
-
-        for (int i = 1; i < 9 && i <= act.options.Length; i++)
-        {
-            if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)))
-            {
-                OptionData option = act.options[i - 1];
-                Debug.Log($"선택지{i}({option.label})이/가 선택됨.");
-
-                EnemyData enemy = option.enemy;
-                ResultData result = option.result;
-
-                // coins
-                GameManager.Instance.coin -= option.requiredCoin;
-                GameManager.Instance.playerData.health -= option.requiredHealth;
-                
-                GameManager.Instance.enemyData = enemy;
-                GameManager.Instance.resultData = result;
-
-                if (enemy) SceneManager.LoadScene("CombatScene");
-                else SceneManager.LoadScene("ResultScene");
-                
-            }
-        }
+        else SceneManager.LoadScene("ResultScene");
     }
+    
 }

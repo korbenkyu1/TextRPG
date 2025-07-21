@@ -37,7 +37,7 @@ public class OptionData
 [CreateAssetMenu(menuName = "Data/Act")]
 public class ActData : ScriptableObject
 {
-    public Sprite image;
-    public string description;
+    public Sprite[] images;
+    public string[] descriptions;
     public OptionData[] options;
 }

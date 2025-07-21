@@ -12,7 +12,6 @@ public class TitleManager : MonoBehaviour
         GameManager.Instance.actIndex = 0;
         GameManager.Instance.playerData = player;
 
-        Debug.Log("아무 키나 눌러 시작");
     }
 
     void Update()
