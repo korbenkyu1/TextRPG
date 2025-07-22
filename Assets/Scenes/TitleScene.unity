@@ -611,7 +611,7 @@ MonoBehaviour:
   stageIndex: 0
   actIndex: 0
   coin: 0
-  playerData: {fileID: 0}
+  playerData: {fileID: 11400000, guid: 347da92ab4cece249a7f655a99224d38, type: 2}
   enemyData: {fileID: 0}
   resultData:
     message: 

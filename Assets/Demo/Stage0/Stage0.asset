@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc4aebf36dfa4c4c8aff09a0ca29f0d, type: 3}
+  m_Name: Stage0
+  m_EditorClassIdentifier: 
+  fixedActs:
+  - {fileID: 11400000, guid: 1d6d14570e25a3143a9302bb6bfa13ae, type: 2}
+  - {fileID: 11400000, guid: 920149b04064cbf499ccaf5109d68440, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  randomActs:
+  - weight: 1
+    act: {fileID: 11400000, guid: 6acc8f5287a8076408b22b9db7c4b7bf, type: 2}
+  - weight: 1
+    act: {fileID: 11400000, guid: f8995b8444e8554458ed3ebbe01f6ebb, type: 2}
+  - weight: 1
+    act: {fileID: 11400000, guid: 95e05320659b9744bb10b1aca40b9d66, type: 2}
+  commonFoodWeight: 1
+  uncommonFoodWeight: 0
+  rareFoodWeight: 0
+  epicFoodWeight: 0
+  legendaryFoodWeight: 0
+  mythicalFoodWeight: 0

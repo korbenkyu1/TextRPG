@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2ba97956608f0e14484563be39914109
+guid: 1eeabb0f9269e7847bbd8c313a159561
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6937122563872544080
-    second: HPBar_0
+      213: -6970318474658181686
+    second: HpBarBox 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HPBar_0
+      name: HpBarBox 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0baa70958c36abf90800000000000000
-      internalID: -6937122563872544080
+      spriteID: acd08a21744744f90800000000000000
+      internalID: -6970318474658181686
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      HPBar_0: -6937122563872544080
+      HpBarBox 1_0: -6970318474658181686
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

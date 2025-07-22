@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
+    public ProgressBarUI progressBarUI;
+
     public Image DialogBox;
     public TMP_Text ActText;
     public Image ActImage;
@@ -48,6 +50,9 @@ public class StageManager : MonoBehaviour
                 }
             }
         }
+        progressBarUI.UpdateUI();
+        ActImage.sprite = act.images[0];
+        ActText.text = act.descriptions[0];
     }
 
     public void NextButton()
@@ -98,12 +103,15 @@ public class StageManager : MonoBehaviour
             DialogBox.gameObject.SetActive(false);
             OptionContainer.SetActive(false);
 
+            EnemyImage.sprite = enemy.image;
             EnemyImage.gameObject.SetActive(true);
             CombatStartButton.SetActive(true);
-
-            SceneManager.LoadScene("CombatScene");
         }
         else SceneManager.LoadScene("ResultScene");
     }
-    
+    public void CombatStart()
+    {
+        SceneManager.LoadScene("CombatScene");
+    }
+
 }

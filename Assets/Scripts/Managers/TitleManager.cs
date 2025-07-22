@@ -18,7 +18,7 @@ public class TitleManager : MonoBehaviour
     {
         if(Input.anyKey)
         {
-            SceneManager.LoadScene("ActScene");
+            SceneManager.LoadScene("MainMenuScene");
         }
     }
 }

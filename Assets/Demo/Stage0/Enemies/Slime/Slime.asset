@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Slime
+  m_EditorClassIdentifier: 
+  maxHealth: 120
+  health: 120
+  attack: 5
+  defense: 7
+  critChance: 2
+  dodgeChance: 2
+  unitName: Slime
+  image: {fileID: 368543389579951487, guid: f6b0a667a2d8f9449a6cc1be8c177d1f, type: 3}
+  description: "\uBB34\uD574\uD55C \uC2AC\uB77C\uC784"
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: e2b1c45b307a50e489aa3b8312058f91, type: 2}
+  abilities: []

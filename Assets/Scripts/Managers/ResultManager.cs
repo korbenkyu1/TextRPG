@@ -1,4 +1,5 @@
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +12,8 @@ class PlayerSkill
 
 public class ResultManager : MonoBehaviour
 {
+    public TMP_Text ActText;
+
     [SerializeField] PlayerSkill[] attackSkills, defenseSkills, normalSkills, specialSkills, ultimateSkills;
     [SerializeField] FoodData[] commonFoods, uncommonFoods, rareFoods, epicFoods, legendaryFoods, mythicFoods;
 
@@ -37,7 +40,11 @@ public class ResultManager : MonoBehaviour
     void Start()
     {
         result = GameManager.Instance.resultData;
-        Debug.Log(result.message);
+        //ActText.text = result.message;
+
+        GameManager.Instance.actIndex++;
+        SceneManager.LoadScene("ActScene");
+
         GameManager.Instance.coin += result.coin;
         GameManager.Instance.playerData.maxHealth += result.maxHealth;
         GameManager.Instance.playerData.health += result.health;
@@ -117,8 +124,10 @@ public class ResultManager : MonoBehaviour
                     }
                 }
                 break;
-
         }
+    }
+    public void NextButton()
+    {
 
     }
 }

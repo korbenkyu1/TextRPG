@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Unstoppable_0: -5532294121950807659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

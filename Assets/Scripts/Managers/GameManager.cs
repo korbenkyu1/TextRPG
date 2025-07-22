@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            if (instance == null) instance = new GameManager();
+            if (instance == null) instance = new ();
             return instance;
         }
     }
@@ -43,16 +43,18 @@ public class GameManager : MonoBehaviour
 
     public void Save()
     {
-        BinaryFormatter formatter = new BinaryFormatter();
+        BinaryFormatter formatter = new ();
         string path = Application.persistentDataPath + "/TextRPG.sav";
-        FileStream stream = new FileStream(path, FileMode.Create);
+        FileStream stream = new (path, FileMode.Create);
 
-        GameData data = new GameData();
-        data.stageIndex = stageIndex;
-        data.actIndex = actIndex;
-        data.coin = coin;
-        data.playerData = playerData;
-        data.resultData = resultData;
+        GameData data = new()
+        {
+            stageIndex = stageIndex,
+            actIndex = actIndex,
+            coin = coin,
+            playerData = playerData,
+            resultData = resultData
+        };
 
         formatter.Serialize(stream, data);
         stream.Close();
@@ -62,8 +64,8 @@ public class GameManager : MonoBehaviour
         string path = Application.persistentDataPath + "/TextRPG.sav";
         if (File.Exists(path))
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
+            BinaryFormatter formatter = new ();
+            FileStream stream = new (path, FileMode.Open);
 
             GameData data = formatter.Deserialize(stream) as GameData;
             stageIndex = data.stageIndex;

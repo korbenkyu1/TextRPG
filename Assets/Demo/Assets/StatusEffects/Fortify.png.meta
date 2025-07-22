@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fortify_0: 4870125245114056259
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

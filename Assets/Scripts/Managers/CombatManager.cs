@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public enum CombatState
 {
@@ -27,13 +28,15 @@ public enum CombatState
 public class Unit
 {
     public StatsData stats;
-    public Dictionary<string, StatusEffectData> statusEffects;
-    public List<int> damages;
+    public Dictionary<string, StatusEffectData> statusEffects = new ();
+    public List<int> damages = new ();
     public int remainingAction;
 }
 
 public class CombatManager : MonoBehaviour
 {
+    public Image EnemyImage;
+    public Image PlayerImage;
 
     [SerializeField] StatusEffectData[] statusEffects;
     public int turn = 0;
@@ -63,6 +66,11 @@ public class CombatManager : MonoBehaviour
             statusEffect.isPlayer = false;
             enemy.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
         }
+
+        EnemyImage.sprite = enemyData.image;
+        PlayerImage.sprite = playerData.image;
+
+
         OnCombatStart();
     }
     bool IsCombatOver()
