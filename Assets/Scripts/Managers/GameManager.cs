@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public StageData[] stageData;
     public int stageIndex;
     public int actIndex;
     public int coin;
@@ -79,6 +80,21 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("Save file not found.");
         }
+    }
+    public void LoadNext()
+    {
+        actIndex++;
+        if (actIndex == stageData[stageIndex].fixedActs.Length) {
+            actIndex = 0;
+            stageIndex++;
+        }
+        if(stageIndex == stageData.Length)
+        {
+            Debug.Log("Game Clear");
+            SceneManager.LoadScene("ResultScene");
+            return;
+        }
 
+        SceneManager.LoadScene("ActScene");
     }
 }

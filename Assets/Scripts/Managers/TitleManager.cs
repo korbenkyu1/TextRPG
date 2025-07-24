@@ -3,22 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleManager : MonoBehaviour
 {
-    [SerializeField] PlayerData player;
-
-    void Start()
+    public void NewGame()
     {
-        // Init GameManager
-        GameManager.Instance.stageIndex = 0;
-        GameManager.Instance.actIndex = 0;
-        GameManager.Instance.playerData = player;
-
+        SceneManager.LoadScene("MainMenuScene");
     }
-
-    void Update()
+    public void LoadGame()
     {
-        if(Input.anyKey)
-        {
-            SceneManager.LoadScene("MainMenuScene");
-        }
+        GameManager.Instance.Load();
     }
 }

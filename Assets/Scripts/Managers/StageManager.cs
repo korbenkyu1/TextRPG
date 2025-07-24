@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class StageManager : MonoBehaviour
 {
-    public ProgressBarUI progressBarUI;
+    public ProgressBoxUI ProgressBoxUI;
+    public ProgressBarUI ProgressBarUI;
+    public HpBarUI HpBarUI;
 
     public Image DialogBox;
     public TMP_Text ActText;
@@ -15,7 +17,7 @@ public class StageManager : MonoBehaviour
     public Image EnemyImage;
     public GameObject CombatStartButton;
 
-    [SerializeField] StageData[] stageData;
+    
     int stageIndex = 0;
     int actIndex = 0;
 
@@ -26,6 +28,7 @@ public class StageManager : MonoBehaviour
     void Start()
     {
         // Todo: exception 
+        StageData[] stageData = GameManager.Instance.stageData;
         stageIndex = GameManager.Instance.stageIndex;
         actIndex = GameManager.Instance.actIndex;  
 
@@ -50,7 +53,11 @@ public class StageManager : MonoBehaviour
                 }
             }
         }
-        progressBarUI.UpdateUI();
+
+        ProgressBoxUI.UpdateUI();
+        ProgressBarUI.UpdateUI();
+        HpBarUI.UpdateUI();
+        
         ActImage.sprite = act.images[0];
         ActText.text = act.descriptions[0];
     }

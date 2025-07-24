@@ -73,17 +73,18 @@ public class CombatManager : MonoBehaviour
 
         OnCombatStart();
     }
+    public void Log(string msg)
+    {
+        Debug.Log(msg);
+    }
     bool IsCombatOver()
     {
         return player.stats.health <= 0 || enemy.stats.health <= 0;
     }
     void OnCombatStart()
     {
-        Debug.Log("====== 전투 시작 ======");
         foreach (var ability in playerData.abilities) ability.OnCombatStart(this);
         foreach (var ability in enemyData.abilities) ability.OnCombatStart(this);
-
-
         StartCoroutine(OnTurnStart());
     }
     IEnumerator OnTurnStart(){
@@ -108,8 +109,6 @@ public class CombatManager : MonoBehaviour
 
         player.stats.health = Mathf.Min(player.stats.maxHealth, playerOldHealth);
         enemy.stats.health = Mathf.Min(enemy.stats.maxHealth, enemyOldHealth);
-
-        Print();
 
         StartCoroutine(OnPlayerTurnStart());
     }
@@ -147,7 +146,7 @@ public class CombatManager : MonoBehaviour
     }
     void OnPlayerTurn(){
         state = CombatState.PlayerTurn;
-        Debug.Log("숫자 키를 눌러 스킬을 선택");
+
 
         if (IsCombatOver()) OnCombatEnd();
     }
@@ -299,19 +298,6 @@ public class CombatManager : MonoBehaviour
             Debug.Log("GAME OVER");
             // lost
         }
-    }
-    void Print()
-    {
-        string buffer = "combat log\n";
-        buffer += $"[Player]\n";
-        buffer += $"HP: {player.stats.health}/{player.stats.maxHealth} ATK: {player.stats.attack} DEF: {player.stats.defense} CC: {player.stats.critChance} DC: {player.stats.dodgeChance}\n";
-        foreach (var statusEffect in player.statusEffects.Values) if (statusEffect.stack > 0) buffer += $"[{statusEffect.statusEffectName}: {statusEffect.stack}] ";
-        buffer += "\n============\n";
-        buffer += $"[Enemy]\n";
-        buffer += $"HP: {enemy.stats.health}/{enemy.stats.maxHealth} ATK: {enemy.stats.attack} DEF: {enemy.stats.defense} CC: {enemy.stats.critChance} DC: {enemy.stats.dodgeChance}\n";
-        foreach (var statusEffect in enemy.statusEffects.Values) if (statusEffect.stack > 0) buffer += $"[{statusEffect.statusEffectName}: {statusEffect.stack}] ";
-        buffer += "\n============\n";
-        Debug.Log(buffer);
     }
     void Update()
     {

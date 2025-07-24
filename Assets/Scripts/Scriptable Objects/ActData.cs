@@ -12,7 +12,7 @@ public enum RewardType
 [System.Serializable]
 public class ResultData
 {
-    public string message;
+    public string[] messages;
     public int coin;
     public int maxHealth;
     public int health;
@@ -21,7 +21,7 @@ public class ResultData
     public int critChance;
     public int dodgeChance;
     public RewardType type;
-    // reward
+    public bool gameOver;
 }
 
 [System.Serializable]
