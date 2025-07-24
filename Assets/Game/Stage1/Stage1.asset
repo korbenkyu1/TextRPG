@@ -26,9 +26,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   randomActs: []
-  commonFoodWeight: 60
-  uncommonFoodWeight: 0
-  rareFoodWeight: 30
-  epicFoodWeight: 5
-  legendaryFoodWeight: 3
-  mythicalFoodWeight: 2
+  itemWeights:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  foodWeights:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  backgound: {fileID: -1955448553306655712, guid: 389c4a082315f2d45b1cb6fc31fdb256, type: 3}

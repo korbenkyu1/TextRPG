@@ -24,6 +24,7 @@ public abstract class PlayerSkillData : ScriptableObject
     public SkillType type;
     public Rarity rarity;
     public string skillName;
+    public Sprite icon;
     public Sprite image;
     public string description;
     public string flavorText;

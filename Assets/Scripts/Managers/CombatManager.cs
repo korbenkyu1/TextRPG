@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -35,8 +36,12 @@ public class Unit
 
 public class CombatManager : MonoBehaviour
 {
+    public TMP_Text TurnBox;
     public Image EnemyImage;
+    public HpBarUI EnemyHpBar;
     public Image PlayerImage;
+    public HpBarUI PlayerHpBar;
+    public Button[] SkillButtons;
 
     [SerializeField] StatusEffectData[] statusEffects;
     public int turn = 0;
@@ -67,9 +72,17 @@ public class CombatManager : MonoBehaviour
             enemy.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
         }
 
+        // UI
         EnemyImage.sprite = enemyData.image;
+        EnemyHpBar.UpdateUI(this);
         PlayerImage.sprite = playerData.image;
-
+        EnemyHpBar.UpdateUI(this);
+        for (int i = 0; i < 5; i++)
+        {
+            if (!playerData.skills[i]) continue;
+            SkillButtons[i].GetComponentInChildren<Image>().sprite = playerData.skills[i].image;
+            SkillButtons[i].GetComponentInChildren<TMP_Text>().text = $"{playerData.skills[i].remainingUse}/{playerData.skills[i].maxUse}";
+        }
 
         OnCombatStart();
     }
@@ -85,6 +98,8 @@ public class CombatManager : MonoBehaviour
     {
         foreach (var ability in playerData.abilities) ability.OnCombatStart(this);
         foreach (var ability in enemyData.abilities) ability.OnCombatStart(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         StartCoroutine(OnTurnStart());
     }
     IEnumerator OnTurnStart(){
@@ -99,29 +114,33 @@ public class CombatManager : MonoBehaviour
         enemy.stats = enemyData;
         player.damages.Clear();
         enemy.damages.Clear();
-        Debug.Log($"턴{turn}");
+
+        TurnBox.text = $"{turn}턴";
 
         foreach (var ability in playerData.abilities) ability.OnTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnTurnStart(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
-
-        player.stats.health = Mathf.Min(player.stats.maxHealth, playerOldHealth);
-        enemy.stats.health = Mathf.Min(enemy.stats.maxHealth, enemyOldHealth);
 
         StartCoroutine(OnPlayerTurnStart());
     }
     IEnumerator OnPlayerTurnStart(){
         state = CombatState.PlayerTurnStart;
         yield return new WaitForSeconds(1f);
-        Debug.Log("플레이어 턴");
+
+        EnemyImage.color = Color.gray;
+        PlayerImage.color = Color.white;
 
         // 특성 / 상태이상 처리
         foreach (var ability in playerData.abilities) ability.OnPlayerTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnPlayerTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnPlayerTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnPlayerTurnStart(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         float totalWeight = 0f;
@@ -138,16 +157,13 @@ public class CombatManager : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(enemySkill.naration);
-
-        
+        Log(enemySkill.naration);
+                
         if (player.remainingAction > 0) OnPlayerTurn();
         else StartCoroutine(OnPlayerTurnEnd()); 
     }
     void OnPlayerTurn(){
         state = CombatState.PlayerTurn;
-
-
         if (IsCombatOver()) OnCombatEnd();
     }
     IEnumerator BeforePlayerAttack(){
@@ -155,15 +171,19 @@ public class CombatManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         playerSkill.coolDownCounter = playerSkill.coolDown;
         playerSkill.OnActivate(this);
+        
         for (int i = 0; i < enemy.damages.Count; i++)
         {
             if (player.stats.critChance >= Random.Range(1, 101))
                 enemy.damages[i] = (int)(enemy.damages[i] * 1.5f);
         }
+
         foreach (var ability in playerData.abilities) ability.BeforePlayerAttack(this);
         foreach (var ability in enemyData.abilities) ability.BeforePlayerAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.BeforePlayerAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.BeforePlayerAttack(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
 
@@ -177,9 +197,9 @@ public class CombatManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         for (int i = 0; i < enemy.damages.Count; i++)
         {
-            Debug.Log($"적: {enemy.damages[i]} 데미지");
             enemy.stats.health -= enemy.damages[i];
         }
+        Log(string.Join(" ", enemy.damages) + " 피해를 입혔다.");
         StartCoroutine(AfterPlayerAttack());
     }
     IEnumerator AfterPlayerAttack(){
@@ -189,6 +209,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.AfterPlayerAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.AfterPlayerAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.AfterPlayerAttack(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         if (player.remainingAction > 0) OnPlayerTurn(); 
@@ -203,6 +225,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.OnPlayerTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnPlayerTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnPlayerTurnEnd(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnEnemyTurnStart());
@@ -210,10 +234,16 @@ public class CombatManager : MonoBehaviour
     IEnumerator OnEnemyTurnStart(){
         state = CombatState.EnemyTurnStart;
         yield return new WaitForSeconds(1f);
+
+        EnemyImage.color = Color.white;
+        PlayerImage.color = Color.gray;
+
         foreach (var ability in playerData.abilities) ability.OnEnemyTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnEnemyTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnEnemyTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnEnemyTurnStart(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
         if(enemy.remainingAction > 0) StartCoroutine(OnEnemyTurn()); 
         else StartCoroutine(OnEnemyTurnEnd());
@@ -238,6 +268,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.BeforeEnemyAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.BeforeEnemyAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.BeforeEnemyAttack(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         if (enemy.damages.Count > 0) StartCoroutine(OnEnemyAttack());   
@@ -251,6 +283,7 @@ public class CombatManager : MonoBehaviour
         {
             player.stats.health -= player.damages[i];
         }
+        Log(string.Join(" ", player.damages) + " 피해를 입었다.");
 
         StartCoroutine(AfterEnemyAttack());
     }
@@ -261,6 +294,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.AfterEnemyAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.AfterEnemyAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.AfterEnemyAttack(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
         if (enemy.remainingAction > 0) StartCoroutine(OnEnemyTurn()); 
         else StartCoroutine(OnEnemyTurnEnd()); 
@@ -272,6 +307,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.OnEnemyTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnEnemyTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnEnemyTurnEnd(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnTurnEnd());
@@ -283,6 +320,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.OnTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnTurnEnd(this);
+        EnemyHpBar.UpdateUI(this);
+        PlayerHpBar.UpdateUI(this);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnTurnStart());
@@ -299,27 +338,18 @@ public class CombatManager : MonoBehaviour
             // lost
         }
     }
-    void Update()
+
+    public void SkillButton(int i)
     {
-        switch(state)
+        if (state != CombatState.PlayerTurn) return;
+        playerSkill = playerData.skills[i - 1];
+        player.remainingAction -= playerSkill.turnUsed;
+        if (playerSkill.dodgable && Random.Range(1, 101) <= enemy.stats.dodgeChance)
         {
-            case CombatState.PlayerTurn:
-                for (int i = 1; i < 5; i++)
-                {
-                    if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)) && playerData.skills[i].coolDownCounter == 0)
-                    {
-                        playerSkill = playerData.skills[i-1];
-                        player.remainingAction -= playerSkill.turnUsed;
-                        if (playerSkill.dodgable && Random.Range(1, 101) <= enemy.stats.dodgeChance)
-                        {
-                            if (player.remainingAction > 0) OnPlayerTurn();
-                            else StartCoroutine(OnPlayerTurnEnd()); 
-                        }
-                        else StartCoroutine(BeforePlayerAttack()); 
-                        return;
-                    }
-                }
-                break;
+            if (player.remainingAction > 0) OnPlayerTurn();
+            else StartCoroutine(OnPlayerTurnEnd());
         }
+        else StartCoroutine(BeforePlayerAttack());
+        return;
     }
 }

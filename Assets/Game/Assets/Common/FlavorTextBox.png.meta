@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlavorTextBox_0: 1299382859408703547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
