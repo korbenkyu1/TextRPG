@@ -32,7 +32,7 @@ public class Vampirism : StatusEffectData
         {
             combatManager.player.stats.health
                 = Mathf.Min(combatManager.player.stats.health + totalHeal, combatManager.player.stats.maxHealth);
-            Debug.Log($"흡혈로 인해 플레이어의 체력 {totalHeal} 회복");
+            Debug.Log($"흡혈로 체력이 {totalHeal} 회복되었다!");
             totalHeal = 0;
         }
     }
@@ -42,7 +42,7 @@ public class Vampirism : StatusEffectData
         {
             combatManager.enemy.stats.health
                 = Mathf.Min(combatManager.enemy.stats.health + totalHeal, combatManager.enemy.stats.maxHealth);
-            Debug.Log($"흡혈로 인해 상대의 체력 {totalHeal} 회복");
+            Debug.Log($"흡혈로 적의 체력이 {totalHeal} 회복되었다!");
             totalHeal = 0;
         }
     }

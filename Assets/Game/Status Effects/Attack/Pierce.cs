@@ -10,13 +10,13 @@ public class Pierce : StatusEffectData
             if (!isPlayer)
             {
                 combatManager.enemy.stats.health -= stack;
-                Debug.Log($"관통으로 인해 상대는 {stack}의 데미지를 입었다");
+                combatManager.Log($"관통으로 적의 체력이 {stack} 감소되었다!");
                 stack = 0;
             }
             else if(isPlayer)
             {
                 combatManager.player.stats.health -= stack;
-                Debug.Log($"관통으로 인해 플레이어는 {stack}의 데미지를 입었다");
+                combatManager.Log($"관통으로 체력이 {stack} 감소되었다!");
                 stack = 0;               
             }
         }

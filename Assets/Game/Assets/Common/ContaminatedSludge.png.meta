@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ContaminatedSludge_0: 3968320295655005973
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

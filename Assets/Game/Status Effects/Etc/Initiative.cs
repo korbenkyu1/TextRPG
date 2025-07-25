@@ -7,7 +7,7 @@ public class Initiative : StatusEffectData
     {
         if (stack < combatManager.enemy.statusEffects["initiative"].stack)
         {
-            combatManager.player.statusEffects["paralyze"].stack++;
+            combatManager.player.remainingAction = 0;
             combatManager.player.statusEffects["initiative"].stack = 0;
             combatManager.enemy.statusEffects["initiative"].stack = 0;
         }

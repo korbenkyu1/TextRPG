@@ -8,7 +8,7 @@ public class Disable : StatusEffectData
         if(stack > 0 && isPlayer)
         {
             combatManager.player.statusEffects["weekness"].stack += stack;
-            Debug.Log($"무력화로 인해 플레이어에게 약화 {stack}스택 부여");
+            combatManager.Log($"무력화로 약화 {stack} 스택을 얻었다!");
         }
     }
     public override void OnEnemyTurnStart(CombatManager combatManager)
@@ -16,7 +16,7 @@ public class Disable : StatusEffectData
         if (stack > 0 && !isPlayer)
         {
             combatManager.enemy.statusEffects["weekness"].stack += stack;
-            Debug.Log($"무력화로 인해 상대에게 약화 {stack}스택 부여");
+            combatManager.Log($"무력화로 적이 약화 {stack} 스택을 얻었다!");
         }
     }
 }

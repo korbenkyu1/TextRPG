@@ -8,7 +8,7 @@ public class Paralyze : StatusEffectData
         if(stack > 0 && isPlayer && combatManager.player.statusEffects["unstoppable"].stack <= 0)
         {
             combatManager.player.remainingAction = 0;
-            Debug.Log($"마비로 인해 플레이어 행동 불가");
+            combatManager.Log($"마비로 행동할 수 없었다!");
         }
     }
     public override void OnEnemyTurnStart(CombatManager combatManager)
@@ -16,7 +16,7 @@ public class Paralyze : StatusEffectData
         if(stack > 0 && !isPlayer && combatManager.enemy.statusEffects["unstoppable"].stack <= 0)
         {
             combatManager.enemy.remainingAction = 0;
-            Debug.Log($"마비로 인해 상대 행동 불가");
+            combatManager.Log($"마비로 적은 행동할 수 없었다!");
         }
     }
     public override void OnPlayerTurnEnd(CombatManager combatManager)

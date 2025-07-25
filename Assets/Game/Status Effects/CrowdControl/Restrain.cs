@@ -9,7 +9,7 @@ public class Restrain : StatusEffectData
         {
             for(int i = 0; i < combatManager.enemy.damages.Count; i++)
                 combatManager.enemy.damages[i] = Mathf.Max(0, combatManager.enemy.damages[i] - stack);
-            Debug.Log($"수갑으로 인해 플레이어의 데미지 {stack} 감소");
+            combatManager.Log($"수갑으로 적이 받는 데미지가 {stack} 감소되었다!");
         }
     }
     public override void BeforeEnemyAttack(CombatManager combatManager)
@@ -18,7 +18,7 @@ public class Restrain : StatusEffectData
         {
             for (int i = 0; i < combatManager.player.damages.Count; i++)
                 combatManager.player.damages[i] = Mathf.Max(0, combatManager.player.damages[i] - stack);
-            Debug.Log($"수갑으로 인해 상대의 데미지 {stack} 감소");
+            combatManager.Log($"수갑으로 받는 데미지 {stack} 감소되었다!");
         }
     }
 }

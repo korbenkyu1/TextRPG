@@ -8,7 +8,7 @@ public class DamageReduction : StatusEffectData
         if(stack > 0 && isPlayer)
         {
             combatManager.player.damages[0] = (int)(Mathf.Max(0, combatManager.player.damages[0] - stack));
-            Debug.Log($"피해감소로 인해 플레이어가 받는 데미지 {stack} 감소");
+            combatManager.Log($"피해감소로 인해 받는 데미지 {stack} 감소되었다!");
             stack = 0;
         }
     }
@@ -17,7 +17,7 @@ public class DamageReduction : StatusEffectData
         if (stack > 0 && !isPlayer)
         {
             combatManager.enemy.damages[0] = (int)(Mathf.Max(0, combatManager.enemy.damages[0] - stack));
-            Debug.Log($"피해감소로 인해 상대가 받는 데미지 {stack} 감소");
+            combatManager.Log($"피해감소로 인해 적이 받는 데미지 {stack} 감소되었다!");
             stack = 0;
         }
     }

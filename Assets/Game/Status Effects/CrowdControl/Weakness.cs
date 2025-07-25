@@ -8,7 +8,7 @@ public class Weakness : StatusEffectData
         if(stack > 0 && isPlayer)
         {
             combatManager.player.stats.attack = Mathf.Max(0, combatManager.player.stats.attack - stack);
-            Debug.Log($"약화로 인해 플레이어의 공격력 {stack} 감소");
+            combatManager.Log($"약화로 공격력이 {stack} 감소되었다!");
         }
     }
     public override void OnEnemyTurnStart(CombatManager combatManager)
@@ -16,7 +16,7 @@ public class Weakness : StatusEffectData
         if (stack > 0 && !isPlayer)
         {
             combatManager.enemy.stats.attack = Mathf.Max(0, combatManager.enemy.stats.attack - stack);
-            Debug.Log($"약화로 인해 상대의 공격력 {stack} 감소");
+            combatManager.Log($"약화로 적의 공격력이 {stack} 감소되었다!");
         }
     }
 }
