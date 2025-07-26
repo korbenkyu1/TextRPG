@@ -8,7 +8,7 @@ public class Burn : StatusEffectData
         if (stack > 0 && isPlayer)
         {
             combatManager.player.stats.health -= stack;
-            Debug.Log($"플레이어는 {stack}의 화상 데미지를 입었다");
+            combatManager.Log($"화상으로 체력이 {stack} 감소되었다!");
         }
     }
     public override void OnEnemyTurnEnd(CombatManager combatManager)
@@ -16,7 +16,7 @@ public class Burn : StatusEffectData
         if (stack > 0 && !isPlayer)
         {
             combatManager.enemy.stats.health -= stack;
-            Debug.Log($"상대는 {stack}의 화상 데미지를 입었다");
+            combatManager.Log($"화상으로 적의 체력이 {stack} 감소되었다!");
         }
     }
     public override void AfterPlayerAttack(CombatManager combatManager)
@@ -24,7 +24,6 @@ public class Burn : StatusEffectData
         if(stack > 0 && !isPlayer)
         {
             stack--;
-            Debug.Log($"상대의 화상 스택 {stack + 1} >> {stack}");
         }
     }
     public override void AfterEnemyAttack(CombatManager combatManager)
@@ -32,7 +31,6 @@ public class Burn : StatusEffectData
         if(stack > 0 && isPlayer)
         {
             stack--;
-            Debug.Log($"플레이어의 화상 스택 {stack + 1} >> {stack}");
         }
     }
 }

@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Cycle")]
 public class Cycle : AbilityData
 {
@@ -8,6 +7,6 @@ public class Cycle : AbilityData
         combatManager.enemy.stats.health -= 15;
         combatManager.player.stats.health
             = Mathf.Min(combatManager.player.stats.maxHealth, combatManager.player.stats.health + 15);
-        Debug.Log("순환 융합특성으로 인해 상대는 15의 데미지를 받고, 플레이어는 15의 체력을 회복했다");
+        combatManager.Log("순환으로 적의 체력이 15 감소되었고, 플레이어의 체력이 15 회복되었다!");
     }
 }

@@ -9,6 +9,6 @@ public class Toughness : AbilityData
         {
             combatManager.player.damages[i] = (int)(combatManager.player.damages[i] * (100 - valueLV[level - 1]) / 100f);
         }
-        Debug.Log($"강인함 특성으로 인해 플레이어가 받는 데미지 {valueLV[level - 1]}% 감소");
+        combatManager.Log($"강인함으로 받는 데미지가 {valueLV[level - 1]}% 감소되었다!");
     }
 }

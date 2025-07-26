@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Aegis")]
 public class Aegis : AbilityData
 {
@@ -9,7 +8,7 @@ public class Aegis : AbilityData
         if (!isAssigned)
         {
             combatManager.player.statusEffects["reduction"].stack += 45;
-            Debug.Log("철벽 융합특성으로 인해 플레이어에게 경감 45 스택 부여");
+            combatManager.Log("철벽으로 경감 45 스택을 얻었다!");
             isAssigned = true;
         }
     }

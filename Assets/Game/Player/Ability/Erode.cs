@@ -6,7 +6,7 @@ public class Erode : AbilityData
     public override void OnTurnStart(CombatManager combatManager)
     {
         combatManager.enemy.statusEffects["erode_stack"].stack += valueLV[level - 1];
-        Debug.Log($"침식 특성으로 인해 적에게 침식 스택 {valueLV[level - 1]} 부여");
+        combatManager.Log($"적이 침식으로 침식 {valueLV[level - 1]} 스택을 얻었다!");
     }
 
 }

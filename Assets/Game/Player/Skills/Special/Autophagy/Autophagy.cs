@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/PlayerSkill/Autophagy")]
 public class Autophagy : PlayerSkillData
 {
@@ -13,5 +12,7 @@ public class Autophagy : PlayerSkillData
         combatManager.player.stats.defense += value;
         combatManager.player.statusEffects["eternal_bonus_damage"].stack += value;
         combatManager.player.statusEffects["eternal_bonus_defense"].stack += value;
+        combatManager.Log($"공격력이 {value} 증가되었다!");
+        combatManager.Log($"방어력이 {value} 증가되었다!");
     }
 }

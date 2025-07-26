@@ -9,6 +9,7 @@ public class BonusAction : StatusEffectData
         {
             combatManager.player.remainingAction += 1;
             stack--;
+            combatManager.Log("추가행동으로 추가행동턴이 1 증가되었다!");
         }
     }
     public override void OnEnemyTurnStart(CombatManager combatManager)
@@ -17,6 +18,7 @@ public class BonusAction : StatusEffectData
         {
             combatManager.enemy.remainingAction += 1;
             stack--;
+            combatManager.Log("추가행동으로 적의 추가행동턴이 1 증가되었다!");
         }
     }
 }

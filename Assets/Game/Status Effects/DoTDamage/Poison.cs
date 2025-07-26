@@ -9,7 +9,7 @@ public class Poison : StatusEffectData
         {
             combatManager.player.stats.health -= stack;
             stack--;
-            Debug.Log($"플레이어는 {stack}의 독 데미지를 입었다\n독 스택 {stack + 1} >> {stack}");
+            combatManager.Log($"독으로 체력이 {stack} 감소되었다!");
         }
     }
     public override void OnEnemyTurnEnd(CombatManager combatManager)
@@ -18,7 +18,7 @@ public class Poison : StatusEffectData
         {
             combatManager.enemy.stats.health -= stack;
             stack--;
-            Debug.Log($"상대는 {stack}의 독 데미지를 입었다\n독 스택 {stack + 1} >> {stack}");
+            combatManager.Log($"독으로 적의 체력이 {stack} 감소되었다!");
         }
     }
 }

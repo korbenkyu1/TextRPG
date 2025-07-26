@@ -6,7 +6,6 @@ public class Field : AbilityData
     public override void OnTurnStart(CombatManager combatManager)
     {
         combatManager.player.statusEffects["fortify"].stack += valueLV[level - 1];
-        Debug.Log($"결계 특성으로 인해 플레이어는 철갑 {valueLV[level - 1]} 스택 획득");
+        combatManager.Log($"결계로 플레이어는 철갑 {valueLV[level - 1]} 스택을 얻었다!");
     }
-
 }

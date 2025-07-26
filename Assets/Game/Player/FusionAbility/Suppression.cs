@@ -1,6 +1,4 @@
-using System.Runtime.InteropServices;
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Suppression")]
 public class Suppression : AbilityData
 {
@@ -10,7 +8,7 @@ public class Suppression : AbilityData
         if(!isAssigned)
         {
             combatManager.enemy.statusEffects["restrain"].stack += 30;
-            Debug.Log("억압 융합특성으로 인해 상대에게 수갑 30 스택 부여");
+            combatManager.Log("적이 억압으로 인해 수갑 30 스택을 얻었다!");
             isAssigned = true;
         }
     }

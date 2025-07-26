@@ -9,7 +9,7 @@ public class Stop : AbilityData
         if (turnCount == 0)
         {
             combatManager.enemy.statusEffects["paralyze"].stack++;
-            Debug.Log("정지 특성으로 인해 상대에게 마비 1 스택 부여");
+            combatManager.Log("정지로 적이 마비 1 스택을 얻었다!");
             turnCount = valueLV[level - 1];
         }
         else if(turnCount < 0)

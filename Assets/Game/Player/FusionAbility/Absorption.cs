@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Absorption")]
 public class Absorption : AbilityData
 {
@@ -16,7 +15,7 @@ public class Absorption : AbilityData
     {
         combatManager.player.stats.health
             = Mathf.Min(combatManager.player.stats.maxHealth, combatManager.player.stats.health + heal);
-        Debug.Log($"흡수 융합특성으로 인해 플레이어의 체력 {heal} 회복");
+        combatManager.Log($"흡수로 체력이 {heal} 회복되었다!");
         heal = 0;
     }
 }

@@ -10,6 +10,7 @@ public class Initiative : StatusEffectData
             combatManager.player.remainingAction = 0;
             combatManager.player.statusEffects["initiative"].stack = 0;
             combatManager.enemy.statusEffects["initiative"].stack = 0;
+            combatManager.Log("선공권으로 적이 먼저 행동한다!");
         }
     }
 }

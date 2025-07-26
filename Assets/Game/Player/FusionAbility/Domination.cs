@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Domination")]
 public class Domination : AbilityData
 {
@@ -8,6 +7,6 @@ public class Domination : AbilityData
     {
         attackReduction += 4;
         combatManager.enemy.stats.attack = Mathf.Max(0, combatManager.enemy.stats.attack - attackReduction);
-        Debug.Log("장악 융합특성으로 인해 상대의 공격력 4 감소");
+        combatManager.Log("장악으로 적의 공격력이 4 감소되었다!");
     }
 }

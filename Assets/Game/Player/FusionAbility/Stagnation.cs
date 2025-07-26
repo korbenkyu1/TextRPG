@@ -1,6 +1,4 @@
-using System.Runtime.InteropServices;
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Stagnation")]
 public class Stagnation : AbilityData
 {
@@ -15,7 +13,7 @@ public class Stagnation : AbilityData
         {
             count += 4;
             combatManager.enemy.statusEffects["paralyze"].stack++;
-            Debug.Log("정체 융합특성으로 인해 상대에게 마비 1 스택 부여");
+            combatManager.Log("적이 정체로 인해 마비 1 스택을 얻었다!");
         }
     }
 }

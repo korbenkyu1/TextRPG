@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Veil")]
 public class Veil : AbilityData
 {
@@ -9,7 +8,7 @@ public class Veil : AbilityData
         if(!isAssigned)
         {
             combatManager.player.statusEffects["shield"].stack += 30;
-            Debug.Log("장막 융합특성으로 인해 보호 30 스택 부여");
+            combatManager.Log("장막으로 보호 30 스택을 얻었다!");
             isAssigned = true;
         }
     }

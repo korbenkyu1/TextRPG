@@ -1,5 +1,4 @@
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "Data/FusionAbility/Seal")]
 public class Seal : AbilityData
 {
@@ -10,7 +9,7 @@ public class Seal : AbilityData
         {
             if (combatManager.player.damages.Count != 0)
                 combatManager.player.damages.Clear();
-            Debug.Log("봉인 융합특성으로 인해 상대의 데미지 무효화");
+            combatManager.Log("봉인으로 인해 데미지를 받지않는다!");
         }
     }
     public override void OnTurnEnd(CombatManager combatManager)

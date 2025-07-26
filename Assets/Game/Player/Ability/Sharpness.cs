@@ -11,7 +11,7 @@ public class Sharpness : AbilityData
     public override void AfterPlayerAttack(CombatManager combatManager)
     {
         combatManager.enemy.statusEffects["pierce"].stack += count * valueLV[level - 1];
-        Debug.Log($"예리함 특성으로 인해 상대에게 관통 {count * valueLV[level - 1]} 스택 부여");
+        combatManager.Log($"예리함으로 적이 관통 {count * valueLV[level - 1]} 스택을 얻었다!");
         count = 0;
     }
 }
