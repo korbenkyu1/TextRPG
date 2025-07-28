@@ -1894,6 +1894,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4899757889582982823, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6285755414804131602, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1252
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5512,9 +5520,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403106e487a0e734cb29df8b29f78365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageData: []
-  stageIndex: 0
+  actDatas: []
   actIndex: 0
+  stageIndex: 0
   coin: 0
   playerData: {fileID: 0}
   enemyData: {fileID: 0}

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2ab5aa55cd5bd4fa1313fb7cddbeb9, type: 3}
+  m_Name: SeoYoon
+  m_EditorClassIdentifier: 
+  maxHealth: 300
+  health: 300
+  attack: 20
+  defense: 24
+  critChance: 10
+  dodgeChance: 5
+  unitName: "\uC11C\uC724"
+  description: "\uACE0\uC544\uC6D0  \uCD9C\uC2E0 \uC18C\uB140 \uAC00\uC7A5"
+  flavorText: "\uC9C0\uD558\uCE35\uC758 \uACE0\uC544\uC6D0\uC774 \uAE30\uC5C5\uC5D0
+    \uC758\uD574 \uBAB0\uC0B4\uB2F9\uD55C \uC774\uD6C4 \uBCF5\uC218\uB97C \uC704\uD574
+    \uC11C\uC724\uC740 \uBAA8\uD5D8\uC744 \uB5A0\uB09C\uB2E4."
+  image: {fileID: 21300000, guid: 454dd20fe68125d4b975926699bfccba, type: 3}
+  icon: {fileID: 1389106765037798381, guid: fa1c08b4afaf2694aaa5d6d1f37090df, type: 3}
+  skills:
+  - {fileID: 11400000, guid: 8b24a2409a474424b8f4a75a5eb170f8, type: 2}
+  - {fileID: 11400000, guid: b15a506e01ef8674bb5886054ca3b7af, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  abilities: []

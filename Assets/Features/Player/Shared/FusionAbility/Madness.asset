@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf92c6aaf7c9ba45b38d758bfdf80af, type: 3}
+  m_Name: Madness
+  m_EditorClassIdentifier: 
+  level: 0
+  Image: {fileID: 5942626897892454440, guid: 21295f54dc9eb7041ae01ed8fa889ad4, type: 3}

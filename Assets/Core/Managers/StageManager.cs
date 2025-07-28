@@ -2,15 +2,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
 
-public class ActManager : MonoBehaviour
+public class StageManager : MonoBehaviour
 {
     public HeaderUI HeaderUI;
-
+    public GameObject Dialog;
     public Image DialogBox;
-    public TMP_Text StageText;
     public Image StageImage;
-    public GameObject OptionContainer;
+    public CanvasGroup OptionContainer;
     public Button OptionButtonPrefab;
     public Image EnemyImage;
     public GameObject CombatStartButton;
@@ -54,29 +54,45 @@ public class ActManager : MonoBehaviour
         HeaderUI.UpdateProgress();
         HeaderUI.UpdateHp();
         
+        var text = Dialog.GetComponentInChildren<Text>();
+        var button = Dialog.GetComponentInChildren<Button>();
+        button.interactable = false;
+        text.text = "";
+        text.DOText(stage.descriptions[0], stage.descriptions[0].Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
+            button.interactable = true;
+        });
         StageImage.sprite = stage.images[0];
-        StageText.text = stage.descriptions[0];
     }
 
-    public void NextButton()
+    public void Next()
     {
         index++;
         if (index < stage.descriptions.Length)
         {
-            StageText.text = stage.descriptions[index];
+            var text = Dialog.GetComponentInChildren<Text>();
+            var button = Dialog.GetComponentInChildren<Button>();
+            button.interactable = false;
+            text.text = "";
+            text.DOText(stage.descriptions[index], stage.descriptions[index].Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
+                button.interactable = true;
+            });
             StageImage.sprite = stage.images[index];
             return;
         }
 
-        // To selection
-        DialogBox.rectTransform.sizeDelta = new Vector2(893, 632);
-        OptionContainer.SetActive(true);
-
         // To combat
         if (stage.options.Length == 1 && stage.options[0].enemy)
-        { 
+        {
             return;
         }
+
+        // To option select
+        DialogBox.rectTransform.DOSizeDelta(new Vector2(894, 632), 0.25f);
+        OptionContainer.DOFade(1f, .25f).SetDelay(.25f).OnComplete(() => { 
+            OptionContainer.interactable = true;
+            OptionContainer.blocksRaycasts = true;
+        });
+
         for (int i = 0; i < stage.options.Length; i++)
         {
             var option = stage.options[i];
@@ -104,7 +120,7 @@ public class ActManager : MonoBehaviour
         {
             StageImage.gameObject.SetActive(false);
             DialogBox.gameObject.SetActive(false);
-            OptionContainer.SetActive(false);
+            //OptionContainer.SetActive(false);
 
             EnemyImage.sprite = enemy.image;
             EnemyImage.gameObject.SetActive(true);

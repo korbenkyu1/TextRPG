@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18b115b0dec0174492844a14f56f3c4, type: 3}
+  m_Name: Suppression
+  m_EditorClassIdentifier: 
+  level: 0
+  Image: {fileID: 6809857918554193607, guid: bbdf2d793122a2e41a508b8c70a341ab, type: 3}
+  isAssigned: 0
