@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -18,9 +19,11 @@ class SkillGroup
 public class ResultManager : MonoBehaviour
 {
     [Header("UI")]
-    public TMP_Text StageText;
+    public HeaderUI HeaderUI;
+    public GameObject Dialog;
     public GameObject RewardsPanel;
     public GameObject RewardInfoPanel;
+    public CoinUI Coin;
 
     [Header("Skills")] 
     [SerializeField] List<SkillGroup> attackSkills;
@@ -58,17 +61,25 @@ public class ResultManager : MonoBehaviour
 
     void Log(string msg)
     {
-        StageText.text += msg + "\n";
+        var text = Dialog.GetComponentInChildren<Text>();
+        var button = Dialog.GetComponentInChildren<Button>();
+        button.interactable = false;
+        text.text = "";
+        text.DOText(msg, msg.Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
+            button.interactable = true;
+        });
     }
 
     void Start()
     {
         result = GameManager.Instance.resultData;
-        StageText.text = result.messages[0];
+
+        HeaderUI.UpdatePlayerIcon();
+        HeaderUI.UpdateProgress();
+        HeaderUI.UpdateHp();
+        Coin.UpdateUI();
 
         Log(result.messages[0]);
-
-
     }
     public void NextButton()
     {
@@ -81,18 +92,20 @@ public class ResultManager : MonoBehaviour
         if(index == result.messages.Length)
         {
             bool flag = false;
+            string buffer = "";
 
             if (result.coin != 0)
             {
-                Log("코인 " + result.coin.ToString("+#;-#;0"));
+                buffer += "코인 " + result.coin.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.coin += result.coin;
+                Coin.UpdateUI();
                 flag = true;
             }
 
             PlayerData player = GameManager.Instance.playerData;
             if (result.maxHealth != 0)
             {
-                Log("최대 체력 " + result.maxHealth.ToString("+#;-#;0"));
+                buffer += "최대 체력 " + result.maxHealth.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.maxHealth = Mathf.Min(player.maxHealth + result.maxHealth, 900);
                 GameManager.Instance.playerData.health = Mathf.Min(player.health + result.maxHealth, GameManager.Instance.playerData.maxHealth);
                 player = GameManager.Instance.playerData;
@@ -100,38 +113,42 @@ public class ResultManager : MonoBehaviour
             }
             if (result.health != 0)
             {
-                Log("체력 " + result.health.ToString("+#;-#;0"));
+                buffer += "체력 " + result.health.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.health = Mathf.Min(player.health + result.health, player.maxHealth);
                 player = GameManager.Instance.playerData;
                 flag = true;
             }
             if (result.attack != 0)
             {
-                Log("공격력 " + result.attack.ToString("+#;-#;0"));
+                buffer += "공격력 " + result.attack.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.attack = Mathf.Min(player.attack + result.attack, 70);
                 flag = true;
             }
             if (result.defense != 0)
             {
-                Log("방어력 " + result.attack.ToString("+#;-#;0"));
+                buffer += "방어력 " + result.attack.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.defense = Mathf.Min(player.defense + result.defense, 99);
                 flag = true;
             }
             if (result.critChance != 0)
             {
-                Log("치명타율 " + result.attack.ToString("+#;-#;0"));
+                buffer += "치명타율 " + result.attack.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.critChance = Mathf.Min(player.critChance + result.critChance, 99);
                 flag = true;
             }
 
             if (result.dodgeChance != 0)
             {
-                Log("회피율 " + result.attack.ToString("+#;-#;0"));
+                buffer += "회피율 " + result.attack.ToString("+#;-#;0") + "\n";
                 GameManager.Instance.playerData.dodgeChance = Mathf.Min(player.dodgeChance + result.dodgeChance, 70);
                 flag = true;
             }
 
-            if(flag) return;
+            if (flag)
+            {
+                Log(buffer);
+                return;
+            }
         }
 
         switch (result.type)

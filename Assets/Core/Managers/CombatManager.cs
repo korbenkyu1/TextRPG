@@ -37,6 +37,7 @@ public class CombatManager : MonoBehaviour
 {
     public Image EnemyImage;
     public Image PlayerImage;
+    public CoinUI Coin;
 
     [SerializeField] StatusEffectData[] statusEffects;
     public int turn = 0;
@@ -69,7 +70,7 @@ public class CombatManager : MonoBehaviour
 
         EnemyImage.sprite = enemyData.image;
         PlayerImage.sprite = playerData.image;
-
+        Coin.UpdateUI();
 
         OnCombatStart();
     }

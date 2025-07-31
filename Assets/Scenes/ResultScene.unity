@@ -927,9 +927,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ac0dcaa0538324a8d2bf624ca7044b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActText: {fileID: 0}
+  StageText: {fileID: 0}
   RewardsPanel: {fileID: 1086683967}
   RewardInfoPanel: {fileID: 951237388}
+  Coin: {fileID: 1383154618}
   attackSkills: []
   defenseSkills: []
   normalSkills: []
@@ -1899,13 +1900,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403106e487a0e734cb29df8b29f78365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageData: []
-  stageIndex: 0
+  actDatas: []
   actIndex: 0
+  stageIndex: 0
   coin: 0
   playerData: {fileID: 0}
   enemyData: {fileID: 0}
   resultData:
+    images: []
     messages: []
     coin: 0
     maxHealth: 0
@@ -1916,6 +1918,10 @@ MonoBehaviour:
     dodgeChance: 0
     type: 0
     gameOver: 0
+  settings:
+    music: 0
+    sfx: 0
+    speed: 0
 --- !u!4 &1064324405
 Transform:
   m_ObjectHideFlags: 0
@@ -2830,6 +2836,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1291187506027390975, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
   m_PrefabInstance: {fileID: 1383154616}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1383154618 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6041602407960807743, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
+  m_PrefabInstance: {fileID: 1383154616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880931591f81e8b4685915c7fc445cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1449426602
 GameObject:
   m_ObjectHideFlags: 0

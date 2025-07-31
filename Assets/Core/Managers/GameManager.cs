@@ -2,7 +2,22 @@ using UnityEngine;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine.SceneManagement;
+using System;
 
+public enum Speed
+{
+    Slow,
+    Normal,
+    Fast,
+}
+
+[Serializable]
+public class Settings
+{
+    public bool music;
+    public bool sfx;
+    public Speed speed;
+}
 public class GameData
 {
     public int actIndex;
@@ -10,6 +25,7 @@ public class GameData
     public int coin;
     public PlayerData playerData;
     public ResultData resultData;
+    public Settings settings;
 }
 
 public class GameManager : MonoBehaviour
@@ -31,7 +47,7 @@ public class GameManager : MonoBehaviour
     public PlayerData playerData;
     public EnemyData enemyData;
     public ResultData resultData;
-
+    public Settings settings;
     void Awake()
     {
         if (instance == null)
@@ -44,41 +60,38 @@ public class GameManager : MonoBehaviour
 
     public void Save()
     {
-        BinaryFormatter formatter = new ();
-        string path = Application.persistentDataPath + "/TextRPG.sav";
-        FileStream stream = new (path, FileMode.Create);
-
         GameData data = new()
         {
             actIndex = actIndex,
             stageIndex = stageIndex,
             coin = coin,
             playerData = playerData,
-            resultData = resultData
+            resultData = resultData,
+            settings = settings,
         };
+        string json = JsonUtility.ToJson(data);
 
-        formatter.Serialize(stream, data);
-        stream.Close();
+        PlayerPrefs.SetString("Save", json);
+        PlayerPrefs.Save();
     }
     public void Load()
     {
-        string path = Application.persistentDataPath + "/TextRPG.sav";
-        if (File.Exists(path))
+        if (PlayerPrefs.HasKey("Save"))
         {
-            BinaryFormatter formatter = new ();
-            FileStream stream = new (path, FileMode.Open);
+            string json = PlayerPrefs.GetString("Save");
+            GameData data = JsonUtility.FromJson<GameData>(json);
 
-            GameData data = formatter.Deserialize(stream) as GameData;
             actIndex = data.actIndex;
             stageIndex = data.stageIndex;
             coin = data.coin;
             playerData = data.playerData;
             resultData = data.resultData;
+            settings = data.settings;
             SceneManager.LoadScene("ActScene");
         }
         else
         {
-            Debug.Log("Save file not found.");
+            Debug.Log("Save not found.");
         }
     }
     public void LoadNext()

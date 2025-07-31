@@ -156,6 +156,7 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: a56a9744c4335ed439da403324c27b62, type: 2}
   enemyData: {fileID: 0}
   resultData:
+    images: []
     messages: []
     coin: 0
     maxHealth: 0
@@ -166,6 +167,10 @@ MonoBehaviour:
     dodgeChance: 0
     type: 0
     gameOver: 0
+  settings:
+    music: 0
+    sfx: 0
+    speed: 0
 --- !u!4 &374700977
 Transform:
   m_ObjectHideFlags: 0
@@ -934,6 +939,7 @@ MonoBehaviour:
   OptionButtonPrefab: {fileID: 1942042141402822518, guid: 1655f87d979a6f4478d79964c059c5bc, type: 3}
   EnemyImage: {fileID: 969258143}
   CombatStartButton: {fileID: 1547970857}
+  Coin: {fileID: 2958429160530611044}
 --- !u!4 &1316374070
 Transform:
   m_ObjectHideFlags: 0
@@ -1569,6 +1575,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1501239465}
   m_SourcePrefab: {fileID: 100100000, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
+--- !u!114 &2958429160530611044 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6041602407960807743, guid: be47c2cc10c82ea449b73bda3e8cfc5b, type: 3}
+  m_PrefabInstance: {fileID: 2958429160530611043}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880931591f81e8b4685915c7fc445cdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6983834564601710214
 PrefabInstance:
   m_ObjectHideFlags: 0

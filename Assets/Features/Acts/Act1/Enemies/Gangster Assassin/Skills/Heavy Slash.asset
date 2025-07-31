@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd65673383389446be3a8102951dafc, type: 3}
+  m_Name: Heavy Slash
+  m_EditorClassIdentifier: 
+  naration: "\uC554\uC0B4\uC790\uAC00 \uB2E8\uAC80\uC744 \uB2E8\uB2E8\uD788 \uC950\uACE0
+    \uD798\uC744 \uBAA8\uC74D\uB2C8\uB2E4."
+  dodgable: 1
+  attackCoefficient: 50
+  attackCount: 1

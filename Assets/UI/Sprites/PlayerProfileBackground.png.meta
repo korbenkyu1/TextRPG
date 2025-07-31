@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a618d7f1633032c4b9b664b60713769d
+guid: 38635db717e17fa40bc67a079f4c72c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1364167608218797776
-    second: PlayerProfileBackground_0
+      213: -5452710557282059983
+    second: PlayerProfileBackground 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,9 +46,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlayerProfileBackground_0
+      name: PlayerProfileBackground 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 039360ab9c0811de0800000000000000
-      internalID: -1364167608218797776
+      spriteID: 1393e2a43a41454b0800000000000000
+      internalID: -5452710557282059983
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PlayerProfileBackground_0: -1364167608218797776
+      PlayerProfileBackground 1_0: -5452710557282059983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

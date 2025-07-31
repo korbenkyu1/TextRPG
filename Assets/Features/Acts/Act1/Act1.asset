@@ -15,7 +15,7 @@ MonoBehaviour:
   backgound: {fileID: 21300000, guid: 7a714949c3a0ec34b8269c61dd9a7e46, type: 3}
   fixedStages:
   - {fileID: 11400000, guid: 1ef09359cf414b34e88d72d7b5601010, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 0cc3b106ed72c7e42a331730dfd2eb88, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}

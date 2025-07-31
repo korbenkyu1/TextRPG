@@ -14,6 +14,7 @@ public class StageManager : MonoBehaviour
     public Button OptionButtonPrefab;
     public Image EnemyImage;
     public GameObject CombatStartButton;
+    public CoinUI Coin;
 
     int stageIndex = 0;
     int actIndex = 0;
@@ -53,7 +54,8 @@ public class StageManager : MonoBehaviour
         HeaderUI.UpdatePlayerIcon();
         HeaderUI.UpdateProgress();
         HeaderUI.UpdateHp();
-        
+        Coin.UpdateUI();
+
         var text = Dialog.GetComponentInChildren<Text>();
         var button = Dialog.GetComponentInChildren<Button>();
         button.interactable = false;
@@ -67,6 +69,8 @@ public class StageManager : MonoBehaviour
     public void Next()
     {
         index++;
+
+        // Show next message
         if (index < stage.descriptions.Length)
         {
             var text = Dialog.GetComponentInChildren<Text>();

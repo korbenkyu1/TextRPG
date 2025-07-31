@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Gangster Sniper
+  m_EditorClassIdentifier: 
+  maxHealth: 150
+  health: 150
+  attack: 23
+  defense: 12
+  critChance: 10
+  dodgeChance: 0
+  unitName: "\uC800\uACA9\uC218 \uAC74\uB2EC"
+  description: "\uC124\uBA85 \uC880 \uC871\uC5B4\uB77C \uC9C0\uC12D"
+  flavorText: "\uD301 \uC880 \uC801\uC5B4\uB77C \uC9C0\uC12D\uC544"
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: b2359212694987349aea892d92878ad3, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: a153fceff302c344683c86884965eee8, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: af49d56bc39f6714ab71e6a7d5c7834d, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 0385b56a7130b4c49a060567e6ad7795, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: c34cc1049dc8bb34c9e0f11f6c2ac2f7, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3d8166911b227bb4698390bd4909401b, type: 2}
+  abilities: []

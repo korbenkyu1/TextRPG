@@ -948,7 +948,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403106e487a0e734cb29df8b29f78365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actDatas: []
+  actDatas:
+  - {fileID: 11400000, guid: 672f04e2a8fb59345abd3eeaabed3288, type: 2}
   actIndex: 0
   stageIndex: 0
   coin: 0
@@ -965,6 +966,10 @@ MonoBehaviour:
     dodgeChance: 0
     type: 0
     gameOver: 0
+  settings:
+    music: 1
+    sfx: 1
+    speed: 1
 --- !u!4 &1828971093
 Transform:
   m_ObjectHideFlags: 0
@@ -1154,7 +1159,7 @@ Transform:
   m_GameObject: {fileID: 1925187128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7992132, y: 3.9494684, z: 3.3323693}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

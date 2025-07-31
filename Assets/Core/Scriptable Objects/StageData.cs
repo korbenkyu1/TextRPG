@@ -12,8 +12,8 @@ public enum RewardType
 [System.Serializable]
 public class ResultData
 {
-    // public Spritep[] images
-    public string[] messages;
+    public Sprite[] images;
+    [TextArea] public string[] messages;
     public int coin;
     public int maxHealth;
     public int health;
@@ -35,11 +35,11 @@ public class OptionData
     public ResultData result;
 }
 
-[CreateAssetMenu(menuName = "Data/Act")]
+[CreateAssetMenu(menuName = "Data/Stage")]
 public class StageData : ScriptableObject
 {
     public Sprite[] images;
-    public string[] descriptions;
+    [TextArea] public string[] descriptions;
     public OptionData[] options;
     public ResultData deadEnding;
 }

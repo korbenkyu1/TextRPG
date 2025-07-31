@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Gangster Thug
+  m_EditorClassIdentifier: 
+  maxHealth: 120
+  health: 120
+  attack: 18
+  defense: 21
+  critChance: 15
+  dodgeChance: 0
+  unitName: "\uC591\uC544\uCE58 \uAC74\uB2EC"
+  description: 
+  flavorText: 
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 424444bbd50650249a2d51d5d45da91b, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 2529e675fddfc164aad6dbd667a7549f, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 0e166f1fed0192f4da3e25f5c134bec6, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: e136e7432dd890a4ab0e8a21920d8c76, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 33d1420f9155da447b4da4fa5133eca5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4306f9b5e4be0944bb7292d696ba9ccd, type: 2}
+  abilities: []

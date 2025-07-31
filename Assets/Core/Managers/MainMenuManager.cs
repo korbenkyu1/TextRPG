@@ -16,6 +16,7 @@ public class MainMenuManager : MonoBehaviour
     PlayerData selectedPlayer;
     void Start()
     {
+        foreach (Transform child in PlayerButtonContainer) Destroy(child.gameObject);
         foreach(var playerData in playerDatas)
         {
             if (playerData == null)
@@ -33,7 +34,7 @@ public class MainMenuManager : MonoBehaviour
                     PlayerImage.sprite = playerData.image;
                     PlayerName.text = playerData.unitName;
                     PlayerDescription.text = playerData.description;
-                    PlayerFlavorText.text = $"'{playerData.flavorText}'";
+                    PlayerFlavorText.text = playerData.flavorText;
                     selectedPlayer = playerData;
                 });
             }
@@ -42,8 +43,6 @@ public class MainMenuManager : MonoBehaviour
     }
     public void GameStart()
     {
-        if (selectedPlayer == null) return;
-
         GameManager.Instance.playerData = selectedPlayer;
         SceneManager.LoadScene("StageScene");
     }
