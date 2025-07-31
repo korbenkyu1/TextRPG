@@ -12,15 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
   m_Name: Gangster Assassin
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
-  critChance: 0
+  maxHealth: 175
+  health: 175
+  attack: 21
+  defense: 14
+  critChance: 10
   dodgeChance: 0
-  unitName: 
+  unitName: "\uC554\uC0B4\uC790 \uAC74\uB2EC"
   description: 
   flavorText: 
   image: {fileID: 0}
-  skills: []
-  abilities: []
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 6f6bd0ae01c9af345909ef710e4cb315, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 00b483db66879bc43876621786bf9787, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3675fa4d8c5416142bae9afec3954ce7, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4159b0857bb4afa41be0e0bf97c4152a, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 160e60a9ee6c37d47b6905add43f205b, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1325606a7fa52154e9326887d44c9cce, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4f39a46779898d54d8239249384a4b88, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: ae07b904340cbf446a7f24cef94c7d0d, type: 2}

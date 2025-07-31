@@ -12,15 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
   m_Name: Gangster Boss
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
-  critChance: 0
+  maxHealth: 200
+  health: 200
+  attack: 30
+  defense: 17
+  critChance: 25
   dodgeChance: 0
-  unitName: 
+  unitName: "\uAC74\uB2EC \uB450\uBAA9"
   description: 
   flavorText: 
   image: {fileID: 0}
   skills: []
-  abilities: []
+  abilities:
+  - {fileID: 11400000, guid: 03506319b2969de4bb6d71fb61908a1b, type: 2}

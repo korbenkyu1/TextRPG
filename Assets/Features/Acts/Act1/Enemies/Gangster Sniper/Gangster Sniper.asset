@@ -34,5 +34,8 @@ MonoBehaviour:
   - weight: 1
     skill: {fileID: 11400000, guid: c34cc1049dc8bb34c9e0f11f6c2ac2f7, type: 2}
   - weight: 1
+    skill: {fileID: 11400000, guid: c34cc1049dc8bb34c9e0f11f6c2ac2f7, type: 2}
+  - weight: 1
     skill: {fileID: 11400000, guid: 3d8166911b227bb4698390bd4909401b, type: 2}
-  abilities: []
+  abilities:
+  - {fileID: 11400000, guid: 29768f82dfe54914bb0dd0bdcba28c60, type: 2}

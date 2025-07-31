@@ -22,5 +22,21 @@ MonoBehaviour:
   description: 
   flavorText: 
   image: {fileID: 0}
-  skills: []
-  abilities: []
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 6561c49f37f6071499f0929a0286ce66, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: e35abb44c98d6304183ac27f6a2d8b8d, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: f165da89beb64ba4caa1908e791bc179, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 62b6302ccda23d944a9cd4e7fd854ee1, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: d1b2d397438793f459c91afa2ab6c874, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 51c9f2a27518e3740aa7a773db655364, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 140c788a2e104ce49946feaeb616fe1b, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 210ac68d0a5285a4bb15e19e2e249034, type: 2}
+  - {fileID: 11400000, guid: 99be5047255bbbf44a20bf4f5ec08d28, type: 2}

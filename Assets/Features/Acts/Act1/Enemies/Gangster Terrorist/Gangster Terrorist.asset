@@ -12,15 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
   m_Name: Gangster Terrorist
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
-  critChance: 0
+  maxHealth: 110
+  health: 110
+  attack: 20
+  defense: 15
+  critChance: 10
   dodgeChance: 0
-  unitName: 
+  unitName: "\uD14C\uB7EC\uB9AC\uC2A4\uD2B8 \uAC74\uB2EC"
   description: 
   flavorText: 
   image: {fileID: 0}
-  skills: []
-  abilities: []
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: f56bc9a625954ae4d924a641c36ad205, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: ef1ce153b9fa9ed408d15ee53041ff12, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: a03cd2d214293ee40894c854b0a10b6f, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 7ced619f8bd3e8b489ff922bceaa3b7e, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: a454dd07f13965b40a7b3989758700a5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: a720a704fd5a7c643b5a39cccea374e0, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 403ad4ba5c4217c46b322c4ce86ce2a9, type: 2}

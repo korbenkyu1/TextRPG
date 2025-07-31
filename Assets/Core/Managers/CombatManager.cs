@@ -46,7 +46,7 @@ public class CombatManager : MonoBehaviour
     public CombatState state;
     
     PlayerData playerData;
-    EnemyData enemyData;
+    public EnemyData enemyData;
 
     PlayerSkillData playerSkill;
     EnemySkillData enemySkill;
