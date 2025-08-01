@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cedddc8d4b5ca419f3ca9aa9d988f1, type: 3}
+  m_Name: Wen Entangle
+  m_EditorClassIdentifier: 
+  naration: "\uC2E4\uD5D8\uCCB4\uAC00 \uCD09\uC218\uC5D0\uC11C \uB048\uC801\uD55C
+    \uC2E4\uC744 \uBD84\uBE44\uD558\uAE30 \uC2DC\uC791\uD569\uB2C8\uB2E4."
+  dodgable: 1
+  attackCoefficient: 80
+  attackCount: 1
+  effectName: unevadible
+  stack: 2
+  isTargetingPlayer: 1

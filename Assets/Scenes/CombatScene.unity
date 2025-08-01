@@ -5307,6 +5307,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0526b119644d8a942ab07ca1bc948910, type: 2}
   - {fileID: 11400000, guid: 7cacacc9fb4fab24c87a296d4b4a87fa, type: 2}
   - {fileID: 11400000, guid: 4c38220d873954640bda8cbccf7078ac, type: 2}
+  - {fileID: 11400000, guid: 06a7a463e657db3459ba7833588c3dd8, type: 2}
   - {fileID: 11400000, guid: 8c01c9d7429560d41b46b9a2828b37d1, type: 2}
   - {fileID: 11400000, guid: 0fabd3859697aa140aecaab6481249f5, type: 2}
   - {fileID: 11400000, guid: 033fa255a6b216446b7d43146cc7ca79, type: 2}
@@ -5328,8 +5329,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 29b5f2c42c4d80f4e805d22a0557abb5, type: 2}
   - {fileID: 11400000, guid: bc7f5d89fbaa41c44b1c1d5d674b5ce5, type: 2}
   - {fileID: 11400000, guid: b2cd95492c6b2154a87d9422aea54be5, type: 2}
+  - {fileID: 11400000, guid: 39c0a0eca5ad9494dae9a8aba2166e3c, type: 2}
   turn: 0
   state: 0
+  enemyData: {fileID: 0}
 --- !u!1 &2087709919
 GameObject:
   m_ObjectHideFlags: 0

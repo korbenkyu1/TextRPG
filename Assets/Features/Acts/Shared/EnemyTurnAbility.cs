@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/EnemyAbility/EnemyTurnAbility")]
+[CreateAssetMenu(menuName = "Data/EnemyAbility/Shared/EnemyTurnAbility")]
 public class EnemyTurnAbility : AbilityData
 {
     private int count = 0;

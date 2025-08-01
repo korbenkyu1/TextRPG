@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/EnemySkill/EnemyEffectSkill")]
+[CreateAssetMenu(menuName = "Data/EnemySkill/Shared/EnemyEffectSkill")]
 public class EnemyEffectSkill : EnemySkillData
 {
     [SerializeField]

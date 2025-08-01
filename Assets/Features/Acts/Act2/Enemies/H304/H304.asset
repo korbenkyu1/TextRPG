@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: H304
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  health: 200
+  attack: 28
+  defense: 20
+  critChance: 15
+  dodgeChance: 0
+  unitName: "\uC2E4\uD5D8\uCCB4-H304"
+  description: 
+  flavorText: 
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 2667fa19b6cc19d40bb4d32ab5835035, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 34155d065473f0548b708f191ae3ec36, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 67028bf2305859045a82fc186e7e6d9e, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 25187be8459159040b55565b70474612, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 37425a539a977e6419e7a50535f107da, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3b1170ffb896bee4c92e4ba50ef44193, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: bf5826ecf6a87bb488446116a0d99719, type: 2}
+  abilities: []

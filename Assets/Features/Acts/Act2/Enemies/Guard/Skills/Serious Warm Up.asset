@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f58f32fc21c5024189f66ce74663c55, type: 3}
+  m_Name: Serious Warm Up
+  m_EditorClassIdentifier: 
+  naration: "\uACBD\uBE44\uC6D0\uC774 \uBAA9\uC744 \uC88C\uC6B0\uB85C \uB3CC\uB9AC\uBA70
+    \uBCF8\uACA9\uC801\uC778 \uC804\uD22C \uC790\uC138\uB97C \uCDE8\uD569\uB2C8\uB2E4."
+  dodgable: 1
+  effectName1: evasion_chance
+  stack1: 60
+  isTargetingPlayer1: 0
+  effectName2: eternal_bonus_damage
+  stack2: 3
+  isTargetingPlayer2: 0
+  AttackCoefficient: 150
+  AttackCount: 1

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62492ca1d8d474c4b969ca742083813a, type: 3}
+  m_Name: Final Struggle
+  m_EditorClassIdentifier: 
+  naration: "\uC2E4\uD5D8\uCCB4\uAC00 \uC644\uC804\uD788 \uBBF8\uCE5C\uAC83 \uAC19\uC2B5\uB2C8\uB2E4!"
+  dodgable: 1

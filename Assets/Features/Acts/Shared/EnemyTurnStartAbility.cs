@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Data/EnemyAbility/EnemyTurnStartAbility")]
+[CreateAssetMenu(menuName = "Data/EnemyAbility/Shared/EnemyTurnStartAbility")]
 public class EnemyTurnStartAbility : AbilityData
 {
     public bool isUsed = false;
