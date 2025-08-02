@@ -6,7 +6,7 @@ public class PlayerProfileUI : MonoBehaviour
 {
     [SerializeField] TMP_Text AttackStats, DefenseStats, CriticalStats, DodgeStats;
     [SerializeField] Transform AbilityContainer;
-    [SerializeField] GameObject AbilityButton;
+    [SerializeField] GameObject AbilityButtonPrefab;
     [SerializeField] TMP_Text PlayerName, PlayerDescription;
 
     void OnEnable()
@@ -19,7 +19,7 @@ public class PlayerProfileUI : MonoBehaviour
 
         foreach(AbilityData ability in player.abilities)
         {
-            var abilityButton = Instantiate(AbilityButton, AbilityContainer);
+            var abilityButton = Instantiate(AbilityButtonPrefab, AbilityContainer);
             abilityButton.GetComponent<Image>().sprite = ability.Image;
             // abilityButton.GetComponent<Button>().onClick.AddListener
         }

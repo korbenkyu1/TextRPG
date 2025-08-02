@@ -14,9 +14,9 @@ public enum Speed
 [Serializable]
 public class Settings
 {
-    public bool music;
-    public bool sfx;
-    public Speed speed;
+    public bool music = true;
+    public bool sfx = true;
+    public Speed speed = Speed.Fast;
 }
 public class GameData
 {
@@ -41,9 +41,9 @@ public class GameManager : MonoBehaviour
     }
 
     public ActData[] actDatas;
-    public int actIndex;
-    public int stageIndex;
-    public int coin;
+    public int actIndex = 0;
+    public int stageIndex = 0;
+    public int coin = 0;
     public PlayerData playerData;
     public EnemyData enemyData;
     public ResultData resultData;

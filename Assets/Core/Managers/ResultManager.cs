@@ -22,6 +22,7 @@ public class ResultManager : MonoBehaviour
     public HeaderUI HeaderUI;
     public GameObject Dialog;
     public GameObject RewardsPanel;
+    public Image[] RewardImages = new Image[3];
     public GameObject RewardInfoPanel;
     public CoinUI Coin;
 
@@ -175,6 +176,8 @@ public class ResultManager : MonoBehaviour
 
                     int rarity = Mathf.Min(skills[type] ? (int)skills[type].rarity + 1 : minimumRarity[type], 5);
                     skillRewards[i] = (new PlayerSkillData[] { skillGroup.commonSkill, skillGroup.uncommonSkill, skillGroup.rareSkill, skillGroup.epicSkill, skillGroup.legendarySkill, skillGroup.mythicSkill })[rarity];
+                    RewardImages[i].sprite = skillRewards[i].image;
+                    Debug.Log(skillRewards[i].skillName);
                 }
                 break;
             case RewardType.Item:
@@ -194,6 +197,8 @@ public class ResultManager : MonoBehaviour
                             var itemList = itemLists[j];
                             int k = Random.Range(0, itemList.Count);
                             itemRewards[i] = itemList[k];
+                            RewardImages[i].sprite = itemRewards[i].image;
+                            Debug.Log(itemRewards[i].itemName);
                             itemList.RemoveAt(k);
                             break;
                         }
@@ -217,6 +222,8 @@ public class ResultManager : MonoBehaviour
                             var foodList = foodLists[j];
                             int k = Random.Range(0, foodList.Count);
                             foodRewards[i] = foodList[k];
+                            RewardImages[i].sprite = foodRewards[i].image;
+                            Debug.Log(foodRewards[i].foodName);
                             foodList.RemoveAt(k);
                             break;
                         }

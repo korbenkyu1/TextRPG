@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CoinUI : MonoBehaviour
 {
-    TMP_Text text;
+    public TMP_Text text;
     public void UpdateUI()
     {
         text.text = GameManager.Instance.coin.ToString();

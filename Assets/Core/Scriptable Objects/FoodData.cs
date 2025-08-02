@@ -4,6 +4,7 @@ using UnityEngine;
 public class FoodData : StatsData
 {
     public string foodName;
+    public Sprite icon;
     public Sprite image;
     public string description;
     public string flavorText;

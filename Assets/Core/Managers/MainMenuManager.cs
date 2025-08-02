@@ -44,6 +44,8 @@ public class MainMenuManager : MonoBehaviour
     public void GameStart()
     {
         GameManager.Instance.playerData = selectedPlayer;
+        Debug.Log(selectedPlayer);
+        Debug.Log(GameManager.Instance.playerData);
         SceneManager.LoadScene("StageScene");
     }
 }

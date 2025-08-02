@@ -1110,6 +1110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 880931591f81e8b4685915c7fc445cdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 3453414698655921627}
 --- !u!1 &3903203063532841525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,12 +1798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ea397496b6a33e408bf6986342e7b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AttackStats: {fileID: 0}
-  DefenseStats: {fileID: 0}
-  CriticalStats: {fileID: 0}
-  DodgeStats: {fileID: 0}
-  AbilityContainer: {fileID: 0}
-  AbilityButton: {fileID: 0}
+  AttackStats: {fileID: 1836795581096533581}
+  DefenseStats: {fileID: 7829142916600982092}
+  CriticalStats: {fileID: 3640212878251651635}
+  DodgeStats: {fileID: 4941915053763195045}
+  AbilityContainer: {fileID: 2203112419711854054}
+  AbilityButtonPrefab: {fileID: 0}
   PlayerName: {fileID: 0}
   PlayerDescription: {fileID: 0}
 --- !u!1 &4900356552551286201
