@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dadf04267ed8ff043b88b7ed9f134a54, type: 3}
+  m_Name: Reflective Coating
+  m_EditorClassIdentifier: 
+  naration: "\uACE8\uB818\uC758 \uC804\uC2E0\uC774 \uAE08\uC18D \uAD11\uD0DD\uC73C\uB85C
+    \uBCC0\uD558\uBA70 \uAC00\uC2DC\uB85C \uB36E\uC785\uB2C8\uB2E4."
+  dodgable: 0
+  effectName1: reflect
+  stack1: 5
+  isTargetingPlayer1: 0
+  effectName2: fortify
+  stack2: 2
+  isTargetingPlayer2: 0

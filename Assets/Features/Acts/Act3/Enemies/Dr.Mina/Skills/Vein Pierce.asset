@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cedddc8d4b5ca419f3ca9aa9d988f1, type: 3}
+  m_Name: Vein Pierce
+  m_EditorClassIdentifier: 
+  naration: "\uC5F0\uAD6C\uC6D0\uC774 \uD608\uAD00\uC744 \uC815\uD655\uD788 \uB178\uB824
+    \uC8FC\uC0AC\uBC14\uB298\uC744 \uCC0C\uB985\uB2C8\uB2E4."
+  dodgable: 1
+  attackCoefficient: 85
+  attackCount: 1
+  effectName: bleed
+  stack: 2
+  isTargetingPlayer: 1

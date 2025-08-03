@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cedddc8d4b5ca419f3ca9aa9d988f1, type: 3}
+  m_Name: Rainbow Explosion
+  m_EditorClassIdentifier: 
+  naration: "\"\uBB34\uC9C0\uAC1C\uCC98\uB7FC \uC608\uC058\uAC8C \uD3ED\uBC1C\uD560\uAC70\uC57C~!\""
+  dodgable: 1
+  attackCoefficient: 120
+  attackCount: 1
+  effectName: unevadible
+  stack: 2
+  isTargetingPlayer: 1

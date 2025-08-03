@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Lab Assistant Bot
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  health: 500
+  attack: 50
+  defense: 40
+  critChance: 13
+  dodgeChance: 0
+  unitName: "\uC2E4\uD5D8 \uBCF4\uC870 \uB85C\uBD07"
+  description: 
+  flavorText: 
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: fff13f7c7432eb64fad3d6649312c64a, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1303204df962745419f371f801d894e9, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9bedec7b9ccab0c4585ba4b3e8b0ef6a, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: df4fff4ff2e33d24b8e9c97ec2d3cfe5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1b1e446bed8c2d540a8581082b03161a, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 95d7b2b6bb3074c48bec5079dc13cde1, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: dfd45da789769744d8b57e2654c171b9, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 806427f4df5d1634e986461f9927c276, type: 2}
+  abilities: []

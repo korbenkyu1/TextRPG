@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0deaf8c26da128946a97f39b95f07f14, type: 3}
+  m_Name: Spike Explosion
+  m_EditorClassIdentifier: 
+  naration: "\uACE8\uB818\uC758 \uBAB8\uC5D0\uC11C \uAC00\uC2DC\uB4E4\uC774 \uD3ED\uBC1C\uD558\uBA70
+    \uC0AC\uBC29\uC73C\uB85C \uD280\uC5B4\uB098\uAC11\uB2C8\uB2E4."
+  dodgable: 1

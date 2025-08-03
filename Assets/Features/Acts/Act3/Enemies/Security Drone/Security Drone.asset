@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Security Drone
+  m_EditorClassIdentifier: 
+  maxHealth: 370
+  health: 370
+  attack: 45
+  defense: 30
+  critChance: 13
+  dodgeChance: 0
+  unitName: "\uACBD\uBE44 \uB4DC\uB860"
+  description: 
+  flavorText: 
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 55d4ea60f034c824a842a6f504e84425, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 23ab3a81f6632ad4b871b8c5267c532f, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 01e912719ea52b64a93e87a4de01a3dc, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 120f428d8d45dee44b126fe712f2e003, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4cc3ba7ba1a23ff44874158c6b232022, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 926451f66c9ca8c41bb76d36bbe9e259, type: 2}
+  abilities: []

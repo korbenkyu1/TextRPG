@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: HaYoon
+  m_EditorClassIdentifier: 
+  maxHealth: 600
+  health: 600
+  attack: 55
+  defense: 45
+  critChance: 30
+  dodgeChance: 25
+  unitName: "\uB9C8\uBC95\uC18C\uB140 \uD558\uC724"
+  description: 
+  flavorText: 
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1b41779bd8028454da0f5ad4d5464c75, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: ce64ed41244e8ab4397f0af0a784b1c5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: db845f05de94bee4fb060105b872ba19, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: cc11f2bcbfa3b72478cdccdb21c661a5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 902923df5e4a3774585de43d0349ba1e, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9f80c4d53af5b3f49bb80f1018d9d123, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 325ec62242154b54196adfe66f3a9349, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 45bac02367aaa7a4580ce7552a65ff19, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3a8fe67ced56cd546aa20725edaa41ff, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 768a6ac164a4c714da3aa8d04dabd48f, type: 2}
