@@ -12,6 +12,8 @@ public class StageManager : MonoBehaviour
     public Image StageImage;
     public CanvasGroup OptionContainer;
     public Button OptionButtonPrefab;
+
+    public GameObject BeforeCombat;
     public Image EnemyImage;
     public GameObject CombatStartButton;
     public CoinUI Coin;
@@ -87,6 +89,7 @@ public class StageManager : MonoBehaviour
         // To combat
         if (stage.options.Length == 1 && stage.options[0].enemy)
         {
+            OptionButton(0);
             return;
         }
 
@@ -127,8 +130,7 @@ public class StageManager : MonoBehaviour
             //OptionContainer.SetActive(false);
 
             EnemyImage.sprite = enemy.image;
-            EnemyImage.gameObject.SetActive(true);
-            CombatStartButton.SetActive(true);
+            BeforeCombat.SetActive(true);
         }
         else SceneManager.LoadScene("ResultScene");
     }

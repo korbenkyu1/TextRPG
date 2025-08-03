@@ -24,6 +24,9 @@ public class ResultManager : MonoBehaviour
     public GameObject RewardsPanel;
     public Image[] RewardImages = new Image[3];
     public GameObject RewardInfoPanel;
+    public Image RewardInfoIcon;
+    public TMP_Text RewardInfoName;
+    public TMP_Text RewardInfoFlavorText;
     public CoinUI Coin;
 
     [Header("Skills")] 
@@ -152,12 +155,17 @@ public class ResultManager : MonoBehaviour
             }
         }
 
+        Debug.Log("=========================================================");
+
         switch (result.type)
         {
+            case RewardType.None:
+                GameManager.Instance.LoadNext();
+                return;
             case RewardType.Skill:
                 var skills = GameManager.Instance.playerData.skills;
                 var skillGroupLists = new List<List<SkillGroup>> { attackSkills, defenseSkills, normalSkills, specialSkills, ultimateSkills };
-                int[] minimumRarity = { 1, 1, 2, 4, 5 };
+                int[] minimumRarity = { 1, 1, 2, 3, 4 };
 
                 for (int i=0; i<5; i++)
                 {
@@ -177,23 +185,27 @@ public class ResultManager : MonoBehaviour
                     int rarity = Mathf.Min(skills[type] ? (int)skills[type].rarity + 1 : minimumRarity[type], 5);
                     skillRewards[i] = (new PlayerSkillData[] { skillGroup.commonSkill, skillGroup.uncommonSkill, skillGroup.rareSkill, skillGroup.epicSkill, skillGroup.legendarySkill, skillGroup.mythicSkill })[rarity];
                     RewardImages[i].sprite = skillRewards[i].image;
-                    Debug.Log(skillRewards[i].skillName);
+
                 }
                 break;
             case RewardType.Item:
+                Debug.Log("1");
                 var itemLists = new List<List<ItemData>> { commonItems, uncommonItems, rareItems, epicItems, legendaryItems, mythicItems };
                 float[] itemWeights = GameManager.Instance.actDatas[GameManager.Instance.actIndex].foodWeights;
                 float totalItemWeight = 0f;
                 for (int i = 0; i < 6; i++) totalItemWeight += itemWeights[i];
+
+                Debug.Log("2");
                 for (int i = 0; i < 3; i++)
                 {
                     float randomValue = Random.Range(0, totalItemWeight);
                     float currentWeightSum = 0f;
                     for (int j = 0; j < 6; j++)
                     {
-                        totalItemWeight += itemWeights[i];
+                        currentWeightSum += itemWeights[i];
                         if (randomValue <= currentWeightSum)
                         {
+                            Debug.Log("3");
                             var itemList = itemLists[j];
                             int k = Random.Range(0, itemList.Count);
                             itemRewards[i] = itemList[k];
@@ -204,6 +216,8 @@ public class ResultManager : MonoBehaviour
                         }
                     }
                 }
+                Debug.Log("4");
+                Debug.Log(itemRewards);
                 break;
             case RewardType.Food:
                 var foodLists = new List<List<FoodData>> { commonFoods, uncommonFoods, rareFoods, epicFoods, legendaryFoods, mythicFoods };
@@ -230,9 +244,7 @@ public class ResultManager : MonoBehaviour
                     }
                 }
                 break;
-            case RewardType.None:
-                GameManager.Instance.LoadNext();
-                return;
+
         }
 
         RewardsPanel.SetActive(true);
@@ -242,16 +254,25 @@ public class ResultManager : MonoBehaviour
         switch (result.type)
         {
             case RewardType.Skill:
-                RewardInfoPanel.GetComponentInChildren<Image>().sprite = skillRewards[i].image;
-                RewardInfoPanel.GetComponentInChildren<Button>().GetComponentInChildren<TMP_Text>().text = skillRewards[i].flavorText;
+                selectedSkill = skillRewards[i];
+                Debug.Log(selectedSkill);
+                RewardInfoIcon.sprite = selectedSkill.icon;
+                RewardInfoName.text = selectedSkill.skillName;
+                RewardInfoFlavorText.text = selectedSkill.flavorText;
                 break;
             case RewardType.Item:
-                RewardInfoPanel.GetComponentInChildren<Image>().sprite = itemRewards[i].image;
-                RewardInfoPanel.GetComponentInChildren<Button>().GetComponentInChildren<TMP_Text>().text = itemRewards[i].flavorText;
+                selectedItem = itemRewards[i];
+                Debug.Log(selectedItem);
+                RewardInfoIcon.sprite = selectedItem.icon;
+                RewardInfoName.text = selectedItem.itemName;
+                RewardInfoFlavorText.text = selectedItem.flavorText;
                 break;
             case RewardType.Food:
-                RewardInfoPanel.GetComponentInChildren<Image>().sprite = foodRewards[i].image;
-                RewardInfoPanel.GetComponentInChildren<Button>().GetComponentInChildren<TMP_Text>().text = foodRewards[i].flavorText;
+                selectedFood = foodRewards[i];
+                Debug.Log(selectedFood);
+                RewardInfoIcon.sprite = selectedFood.icon;
+                RewardInfoName.text = selectedFood.foodName;
+                RewardInfoFlavorText.text = selectedFood.flavorText;
                 break;
         }
 

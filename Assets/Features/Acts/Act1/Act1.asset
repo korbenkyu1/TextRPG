@@ -16,28 +16,29 @@ MonoBehaviour:
   fixedStages:
   - {fileID: 11400000, guid: 1ef09359cf414b34e88d72d7b5601010, type: 2}
   - {fileID: 11400000, guid: 0cc3b106ed72c7e42a331730dfd2eb88, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 95eb2cb7bb2228d448da236e6aa6cae7, type: 2}
+  - {fileID: 11400000, guid: 303ea615b82ccdc4b8077ffe451dfe88, type: 2}
+  - {fileID: 11400000, guid: c70272c48e4f5af4eb0f187fd409cf5e, type: 2}
+  - {fileID: 11400000, guid: a3bd4b69a77831a4fa931b5aa964cb40, type: 2}
+  - {fileID: 11400000, guid: 41393677107104440ad52a3d2aa93788, type: 2}
+  - {fileID: 11400000, guid: 459ae3626a9be3a4aaf3a8e81cd7315b, type: 2}
+  - {fileID: 11400000, guid: e11241abc3426474f98ad3582ca3324d, type: 2}
+  - {fileID: 11400000, guid: fd751cdc88377a24386eccd77e95b118, type: 2}
+  - {fileID: 11400000, guid: 7ebd2ecd92bc65c449f43dbbf6005273, type: 2}
+  - {fileID: 11400000, guid: 0e4acb0a1bb99c64d89e853660256b27, type: 2}
+  - {fileID: 11400000, guid: cc265608eda0230439444f48e7fb1b31, type: 2}
   randomStages: []
   itemWeights:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 60
+  - 20
+  - 10
+  - 5
+  - 3
+  - 2
   foodWeights:
+  - 60
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 10
+  - 5
+  - 3
+  - 2

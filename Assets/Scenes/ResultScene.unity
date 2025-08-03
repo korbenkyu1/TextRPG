@@ -119,6 +119,357 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &103439567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 103439568}
+  - component: {fileID: 103439570}
+  - component: {fileID: 103439569}
+  m_Layer: 5
+  m_Name: Name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &103439568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103439567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365014366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -24.7}
+  m_SizeDelta: {x: 600, y: 50}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &103439569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103439567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uC138\uD3EC\uBD84\uC5F4\uC81C(\uC774\uB984)"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
+  m_sharedMaterial: {fileID: -6820543181108597933, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 34
+  m_fontSizeBase: 34
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &103439570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103439567}
+  m_CullTransparentMesh: 1
+--- !u!1 &358155734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358155735}
+  - component: {fileID: 358155737}
+  - component: {fileID: 358155736}
+  m_Layer: 5
+  m_Name: FlavorText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &358155735
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358155734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365014366}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -72}
+  m_SizeDelta: {x: 700, y: 118}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &358155736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358155734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\uACE0\uC544\uC6D0\uC5D0\uC11C \uC0AC\uC6A9\uD558\uACE4 \uD558\uB358 \uBCF4\uC628\uBCD1.
+    \n\uADF8\uB54C\uC758 \uB530\uB73B\uD55C \uAE30\uC5B5\uCC98\uB7FC \uC628\uAE30\uAC00
+    \uB0A8\uC544\uC788\uB294\uB4EF \uD558\uB2E4."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
+  m_sharedMaterial: {fileID: -6820543181108597933, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 32
+  m_fontSizeBase: 32
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &358155737
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358155734}
+  m_CullTransparentMesh: 1
+--- !u!1 &365014365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365014366}
+  - component: {fileID: 365014368}
+  - component: {fileID: 365014367}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &365014366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365014365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 103439568}
+  - {fileID: 358155735}
+  m_Father: {fileID: 1087241155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -542}
+  m_SizeDelta: {x: 709, y: 213}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &365014367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365014365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -5538236943439548987, guid: 120e9eeaeb5d9dd469dcfccf86661b3d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &365014368
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365014365}
+  m_CullTransparentMesh: 1
 --- !u!1 &388287414
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +509,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 540, y: -960}
-  m_SizeDelta: {x: 1080, y: 0}
+  m_SizeDelta: {x: 1080, y: 655}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &388287416
 MonoBehaviour:
@@ -199,7 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.75686276, g: 0.84705883, b: 0.67058825, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -493,24 +844,244 @@ MonoBehaviour:
   - {fileID: 1399905283}
   - {fileID: 1495475983}
   RewardInfoPanel: {fileID: 951237388}
+  RewardInfoIcon: {fileID: 1284297287}
+  RewardInfoName: {fileID: 103439569}
+  RewardInfoFlavorText: {fileID: 358155736}
   Coin: {fileID: 1383154618}
-  attackSkills: []
-  defenseSkills: []
-  normalSkills: []
-  specialSkills: []
-  ultimateSkills: []
-  commonItems: []
-  uncommonItems: []
-  rareItems: []
-  epicItems: []
-  legendaryItems: []
-  mythicItems: []
-  commonFoods: []
-  uncommonFoods: []
+  attackSkills:
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 2a7791ecd11a2c048ad89032112e289f, type: 2}
+    rareSkill: {fileID: 11400000, guid: 32394050edbb0d94c8decb86292586b7, type: 2}
+    epicSkill: {fileID: 11400000, guid: e8ec2347fa873ad4c8d0e2abf6750f42, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 3e209edfdb05dca47911c49ec7e43808, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 3fa45f150df9c2948b73e51132d77c71, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 4566ab5e753398e47b4ca3728ac3c5d1, type: 2}
+    rareSkill: {fileID: 11400000, guid: ecdc1c4eabb38014a92efd5f3992c135, type: 2}
+    epicSkill: {fileID: 11400000, guid: 7707be8f951c1b548aa6a7c9c3b3d5cc, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 6e1cdb1a7ea6de24c90c26d0b5c53dab, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 409894d469ae32140a33ead3a02712ab, type: 2}
+  - commonSkill: {fileID: 11400000, guid: 8b24a2409a474424b8f4a75a5eb170f8, type: 2}
+    uncommonSkill: {fileID: 11400000, guid: f61d5c4ff4db38240bf5cefe055c64ae, type: 2}
+    rareSkill: {fileID: 11400000, guid: 2aa8ca7374932fd43a48bd236a7b6638, type: 2}
+    epicSkill: {fileID: 11400000, guid: f08fa8c328e38d74396f0c9c5b519d93, type: 2}
+    legendarySkill: {fileID: 11400000, guid: da4591bd1f4dbdd439377d0ef7c0cb74, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 702b85ea8e8397c4aa97f7b4812c7d3f, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 50204b2113d20e745b9688b7d7f5cbf1, type: 2}
+    rareSkill: {fileID: 11400000, guid: ce2d9b33215a24347b036a8bd37cb5a0, type: 2}
+    epicSkill: {fileID: 11400000, guid: fa490887cd8ae0f4886e3b280d605c4c, type: 2}
+    legendarySkill: {fileID: 11400000, guid: fd9a717f7a3890143a6afc037c89b340, type: 2}
+    mythicSkill: {fileID: 11400000, guid: c03de697e35e2bc428743f6ed44887a4, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 733706eb9e039014abcbc69c64192428, type: 2}
+    rareSkill: {fileID: 11400000, guid: 0517b65c8e516504ab3833b7d0323ab0, type: 2}
+    epicSkill: {fileID: 11400000, guid: 3bbf55b1350e5f04f89cec01792ca04e, type: 2}
+    legendarySkill: {fileID: 11400000, guid: e56242c91ebf9ee4ea23a9dd2233f36b, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 2ff6eae23d2905b4381e24a768ae465e, type: 2}
+  defenseSkills:
+  - commonSkill: {fileID: 11400000, guid: b15a506e01ef8674bb5886054ca3b7af, type: 2}
+    uncommonSkill: {fileID: 11400000, guid: 757400ae128092a4badef7aa00d3110c, type: 2}
+    rareSkill: {fileID: 11400000, guid: b57c8b76e9a201a41a0c2a536781e691, type: 2}
+    epicSkill: {fileID: 11400000, guid: 0bdb84fe0e0ee8f4bb3581af90dfb40e, type: 2}
+    legendarySkill: {fileID: 11400000, guid: b54bf8bfbdf26d640b589b0417635706, type: 2}
+    mythicSkill: {fileID: 11400000, guid: d9bd4ad16fab87441825f82f22618c10, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 3ea3a1551ed85b14a970eadd1f28ed05, type: 2}
+    rareSkill: {fileID: 11400000, guid: 605dcd1280e62ba459bbb43f91d5b09d, type: 2}
+    epicSkill: {fileID: 11400000, guid: 2d313ff8cdbac764a9e1cb011f0eae13, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 5b5a28a519ef92346a9e58886c117e88, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 5e646dee676b03744842f34e7eac54d4, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 95541405d3587c0498f8f0f2972ae1ac, type: 2}
+    rareSkill: {fileID: 11400000, guid: 4951ea1f0da732f4f8cbe57366b53d51, type: 2}
+    epicSkill: {fileID: 11400000, guid: ef92320a861c7d340aa45d3581f50f79, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 0be9321f25749ea46bac1c71fb5cfd94, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 74dbe973cff8c204fbf450835934ffd4, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: e5ca6a6d060175541a05ea4e33f33c46, type: 2}
+    rareSkill: {fileID: 11400000, guid: 06ba3dca71c022a41ab4dcbe9a40bedd, type: 2}
+    epicSkill: {fileID: 11400000, guid: e7230f3ac7ad6ee41ba571897f2d981d, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 89f79bc51cd10fa42bebe398630a3c6d, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 72f8cd70107ab544281178078e8e53f2, type: 2}
+  normalSkills:
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 11400000, guid: 96635bd071169d043b6845b7dce79bb5, type: 2}
+    rareSkill: {fileID: 11400000, guid: 08834a8ca4dd9854dbebde1ea5b2cae5, type: 2}
+    epicSkill: {fileID: 11400000, guid: f0e9149e2bb83194f8d1200a207850fa, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 92295f64df9a00e4c922c40b0142b111, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 64bc0ad5daa7e6e4b90b075d2018f7bc, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: fc4ee5be649b13a4e8ac40d980e86395, type: 2}
+    epicSkill: {fileID: 11400000, guid: cd6c65ab81732ab4d9947416de746260, type: 2}
+    legendarySkill: {fileID: 11400000, guid: a46efd5b25ddae44d9dd4df682fbf971, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 5b29221b47e26a7428ad2c41766c54c7, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 3ceb866852ba8384a913ce76bc229b5d, type: 2}
+    epicSkill: {fileID: 11400000, guid: a58b5bfac369ab24a81a4390231a4b25, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 59975278fa5844846ae536fc84772aaa, type: 2}
+    mythicSkill: {fileID: 11400000, guid: d1b89176a3c38c0419710d7773e0e7a1, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: ceba9f4cd673f314e9c68669a84d01e1, type: 2}
+    epicSkill: {fileID: 11400000, guid: f95a13fa85b0cbc45b70a0aee0d6a4da, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 38afee15fb4f7224aa2b8e632523b559, type: 2}
+    mythicSkill: {fileID: 11400000, guid: f9473339234d7b24baaf174c73c95d71, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 9d90e3cd7b23cd544a65f62d78a9d32e, type: 2}
+    epicSkill: {fileID: 11400000, guid: 7f308047a7264f94faa0ddce56d8fa8d, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 7d7856d270da8e545a7a8c856322cba2, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 7511770e0bdaca349820bb1460a859d0, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 10b2225493a201d458dd27ab854018df, type: 2}
+    epicSkill: {fileID: 11400000, guid: 7db967062813b3c4191446aee0518381, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 75a8e3a15ec2d944a82b677a65789825, type: 2}
+    mythicSkill: {fileID: 11400000, guid: e7e7fab1f128b0d4397deeba38b4fba0, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 32b5961cb3b61c54c9720cd4d1fdee73, type: 2}
+    epicSkill: {fileID: 11400000, guid: 1a9c59e75ff54d841ab662d3549344bc, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 576ccf8ee80eb8f4190783bd83866e74, type: 2}
+    mythicSkill: {fileID: 11400000, guid: e620510e59711944e8c74cc4268b504a, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: f98824b78682d5446a22069a3535c87d, type: 2}
+    epicSkill: {fileID: 11400000, guid: eaea13c8652418f4ca9bca848f5514b8, type: 2}
+    legendarySkill: {fileID: 11400000, guid: a1996a4b91a3b254781abdec72bd1fc5, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 38d08eea32311a54c868485e54bf2a3f, type: 2}
+  specialSkills:
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 253842c00bf9bb14a889ba6932476f7f, type: 2}
+    epicSkill: {fileID: 11400000, guid: 3d0bb018d4c3a4a4b9170575c6590092, type: 2}
+    legendarySkill: {fileID: 11400000, guid: f23694e841fcfa7469646e71ed57c841, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 362d0c7f53118ba4fb932b102f0da6ad, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 92d5a24d8a12d9d4b9054276712ecd5a, type: 2}
+    epicSkill: {fileID: 11400000, guid: ffaef5253f7ad294580df472149249fb, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 02c5fa7ce5edaae45bc3b34a399ce8ee, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 36bfe4499e7e073408e8a69c55dd4693, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: a7bc16ed39d324648a9fffbf1d067634, type: 2}
+    epicSkill: {fileID: 11400000, guid: eb6063c489230c548a367e49a625609f, type: 2}
+    legendarySkill: {fileID: 11400000, guid: 98da85d9607f65c41963a336573f944f, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 92d25e84f05ac254ab1d19fa50676e96, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 634367f9d1885474db0bcbf8d0d49286, type: 2}
+    epicSkill: {fileID: 11400000, guid: 3ee210e647fc7ff4c979b92f08ba7cc0, type: 2}
+    legendarySkill: {fileID: 11400000, guid: ef1709e565c321d45a30acd1f463a041, type: 2}
+    mythicSkill: {fileID: 11400000, guid: cccc93273e5aff24e94da3afd88c8d8f, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 11400000, guid: 3bde81a75fbea194cae029584e9a8a66, type: 2}
+    epicSkill: {fileID: 11400000, guid: 57ca054fed2385145be5db7c1656a006, type: 2}
+    legendarySkill: {fileID: 11400000, guid: ae15f9fe55505fc4495bb9de55d63b9c, type: 2}
+    mythicSkill: {fileID: 11400000, guid: f801fe4a335922b408dc89f072ee9359, type: 2}
+  ultimateSkills:
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 0}
+    epicSkill: {fileID: 0}
+    legendarySkill: {fileID: 11400000, guid: 9cb731fc326bc5e4982e9f84cbaa5da9, type: 2}
+    mythicSkill: {fileID: 11400000, guid: ed229f0f92366c4448cd35e3152ed303, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 0}
+    epicSkill: {fileID: 0}
+    legendarySkill: {fileID: 11400000, guid: 938859fc5fe3f054da1bfa18d1542036, type: 2}
+    mythicSkill: {fileID: 11400000, guid: b47a92435368c3c40b850f89fbde593a, type: 2}
+  - commonSkill: {fileID: 0}
+    uncommonSkill: {fileID: 0}
+    rareSkill: {fileID: 0}
+    epicSkill: {fileID: 0}
+    legendarySkill: {fileID: 11400000, guid: 48b463f841f0cfd409323e0d48f623bd, type: 2}
+    mythicSkill: {fileID: 11400000, guid: 2a131f8d573f6df42a4a1f8e15efcb2c, type: 2}
+  commonItems:
+  - {fileID: 11400000, guid: b3c57c87a5567ce4ca092017968d78e7, type: 2}
+  - {fileID: 11400000, guid: e1d4ff8e3e319374eaed8968d57f9349, type: 2}
+  - {fileID: 11400000, guid: dced6872838578e4f8ec168f5c30ced4, type: 2}
+  - {fileID: 11400000, guid: 488b8a9826ae0ad46b3a5e05900c38f5, type: 2}
+  - {fileID: 11400000, guid: bd8e52d9eed5d3b458ca8658a10351db, type: 2}
+  - {fileID: 11400000, guid: b32b69271268de64ebc91259959d7ebd, type: 2}
+  - {fileID: 11400000, guid: 53dcba340fb1e20478147862fd185691, type: 2}
+  - {fileID: 11400000, guid: 96f3576cd133ada49aeddb20d8523976, type: 2}
+  - {fileID: 11400000, guid: 749bac793a1c49549b604b4a3d6d2474, type: 2}
+  - {fileID: 11400000, guid: 0db21cb48ea14d34292c772e50f37abe, type: 2}
+  uncommonItems:
+  - {fileID: 11400000, guid: 89eef619f7e273242afea3812add98e3, type: 2}
+  - {fileID: 11400000, guid: 27c08cfadccc02a4aae266326625ab19, type: 2}
+  - {fileID: 11400000, guid: c8c3d7e06deb46e4ea33826795fef4c8, type: 2}
+  - {fileID: 11400000, guid: bb4f42cba0c488844b4cda4adc636773, type: 2}
+  - {fileID: 11400000, guid: b6e96735711a24143bbd3b6aa3f5ada1, type: 2}
+  - {fileID: 11400000, guid: 375f876a334c1df4782e53ae4b48ba3f, type: 2}
+  - {fileID: 11400000, guid: b9753b3b78ac350438c51e0ace7d4089, type: 2}
+  rareItems:
+  - {fileID: 11400000, guid: 87f1c6f76c389eb42b4f035e31a9d5e9, type: 2}
+  - {fileID: 11400000, guid: 4cd196ea7c7b81749a6e1804b3bed8e7, type: 2}
+  - {fileID: 11400000, guid: 003c8b4dc4b449745892647ab0f027ef, type: 2}
+  - {fileID: 11400000, guid: ce60348b5a6cdfa4d835ca61faeb7091, type: 2}
+  - {fileID: 11400000, guid: 31d168bfcccb78547bea2161f1a21240, type: 2}
+  epicItems:
+  - {fileID: 11400000, guid: a4b91279fcf6ed34488835c266d45a89, type: 2}
+  - {fileID: 11400000, guid: b5ba5831da12cf1419ee4441a1e5b183, type: 2}
+  - {fileID: 11400000, guid: c691ea9611930e349b3ef1361f624b99, type: 2}
+  - {fileID: 11400000, guid: de7d281a01c4cbc43ba00a7eb41d2819, type: 2}
+  - {fileID: 11400000, guid: a001c9d9dbd6b6841b719bfdbc66734e, type: 2}
+  - {fileID: 11400000, guid: f2ca213f004595847a582217637a78dc, type: 2}
+  legendaryItems:
+  - {fileID: 11400000, guid: bf3b4ce9558f98a41bc64e9bbfd57b38, type: 2}
+  - {fileID: 11400000, guid: c47d3234089671a418ea9b70e7609c47, type: 2}
+  - {fileID: 11400000, guid: 56a0f8da364eb864ca574307377e6d96, type: 2}
+  - {fileID: 11400000, guid: be7200de11f922d43beb81fdea7c9b4d, type: 2}
+  mythicItems:
+  - {fileID: 11400000, guid: 9f5108df8cba5ce4191ede56c3a1ce34, type: 2}
+  - {fileID: 11400000, guid: 242cb7bb87b713f44843eb64823e1337, type: 2}
+  - {fileID: 11400000, guid: 71759aaa46b685b458ddc912dc5c74df, type: 2}
+  - {fileID: 11400000, guid: acb63b26d21cd67409a92cdd352f963f, type: 2}
+  commonFoods:
+  - {fileID: 11400000, guid: 6b0f6571e07eb0f41a57ce7cd6b1f314, type: 2}
+  - {fileID: 11400000, guid: f3272cc70166c4847ae808a40b138475, type: 2}
+  - {fileID: 11400000, guid: 1f5e49aac37132546a1cf606635828d7, type: 2}
+  - {fileID: 11400000, guid: 38befbee7f5d96f4890cc4876b8d7eca, type: 2}
+  - {fileID: 11400000, guid: a2a0a530428c0984daaf33760edadde7, type: 2}
+  - {fileID: 11400000, guid: 22f4f225c5bd3d94c8877a81b81345dd, type: 2}
+  - {fileID: 11400000, guid: 2e01c6c05a2a3f048aab4256ce5b185e, type: 2}
+  - {fileID: 11400000, guid: 7516761afa9b4474c8fde00eadead5f7, type: 2}
+  - {fileID: 11400000, guid: 2e9050d0ca9644a459de78d139f8adde, type: 2}
+  - {fileID: 11400000, guid: 8cd6c0f27b022784480366cc10a6b3c1, type: 2}
+  - {fileID: 11400000, guid: 23f97c41c3b14b54fb2353825167da28, type: 2}
+  uncommonFoods:
+  - {fileID: 11400000, guid: e781bbf03c05b134db7eae4bbf55ed76, type: 2}
+  - {fileID: 11400000, guid: aad43110006f1f640b4f1ae099eeb70e, type: 2}
+  - {fileID: 11400000, guid: 3b141b602f2c20949aedfd946d850ec0, type: 2}
+  - {fileID: 11400000, guid: b41fb4966a7e1b9449530a418ed72700, type: 2}
+  - {fileID: 11400000, guid: ac0441d80806c074cadf52f35698cfbe, type: 2}
+  - {fileID: 11400000, guid: a7377fb5e26187d41bb1797a6e3329df, type: 2}
+  - {fileID: 11400000, guid: f818c28dd2b96e5429922a28f7700c26, type: 2}
   rareFoods: []
-  epicFoods: []
-  legendaryFoods: []
-  mythicFoods: []
+  epicFoods:
+  - {fileID: 11400000, guid: a883e2c055e117a4dacd21e543883ea8, type: 2}
+  - {fileID: 11400000, guid: fe67ce1d31a2c5244bc10a186fe075e3, type: 2}
+  - {fileID: 11400000, guid: 0ddaad7ee5029b54785f9d15c4e00d61, type: 2}
+  - {fileID: 11400000, guid: 7e8804b551b9fad4db6ed758fb9cdcd5, type: 2}
+  - {fileID: 11400000, guid: 1691aff17d71d344ca95e8e003cf9032, type: 2}
+  legendaryFoods:
+  - {fileID: 11400000, guid: c7ba716bea038c04cbc73e97a1c3c670, type: 2}
+  - {fileID: 11400000, guid: f2a104a8a92e0dd41bbddfddabbd0055, type: 2}
+  - {fileID: 11400000, guid: 8eaa4deffec62b147832d3d9ed04421b, type: 2}
+  - {fileID: 11400000, guid: 4b8e9bca7751b334bbcf5bd5c9137257, type: 2}
+  - {fileID: 11400000, guid: 5c3f2bc392b1d3c4fa9daa58a1fb9d6e, type: 2}
+  mythicFoods:
+  - {fileID: 11400000, guid: 610c4b8be677fb8458cfa349e71908f1, type: 2}
+  - {fileID: 11400000, guid: d67c012fb26c2c94989f86a461fd211e, type: 2}
+  - {fileID: 11400000, guid: 45ef5ef7ff933424182898847ebd8414, type: 2}
 --- !u!1 &809899906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1921,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1284297286}
-  - {fileID: 1325606613}
+  - {fileID: 365014366}
   - {fileID: 1260673789}
   m_Father: {fileID: 951237389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1372,7 +1943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6, g: 0.38039216, b: 0.38039216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1505,7 +2076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1542,7 +2113,7 @@ GameObject:
   - component: {fileID: 1284297288}
   - component: {fileID: 1284297287}
   m_Layer: 5
-  m_Name: RewardImage
+  m_Name: RewardIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1565,7 +2136,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -74}
-  m_SizeDelta: {x: 486, y: 426}
+  m_SizeDelta: {x: 425, y: 424}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1284297287
 MonoBehaviour:
@@ -1604,142 +2175,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284297285}
-  m_CullTransparentMesh: 1
---- !u!1 &1325606612
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1325606613}
-  - component: {fileID: 1325606615}
-  - component: {fileID: 1325606614}
-  m_Layer: 5
-  m_Name: FlavorText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1325606613
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325606612}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1087241155}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -542}
-  m_SizeDelta: {x: 709, y: 213}
-  m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1325606614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325606612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "\u3141\u3134\u3147"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
-  m_sharedMaterial: {fileID: -6820543181108597933, guid: 4e29a996b886e7d46b7302f8ddeb3614, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1325606615
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325606612}
   m_CullTransparentMesh: 1
 --- !u!1001 &1383154616
 PrefabInstance:
@@ -1985,7 +2420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 540, y: 0}
+  m_AnchoredPosition: {x: 540, y: -327.5}
   m_SizeDelta: {x: 317, y: 454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1399905282
@@ -2117,7 +2552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 900, y: 0}
+  m_AnchoredPosition: {x: 900, y: -327.5}
   m_SizeDelta: {x: 317, y: 454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1495475982
@@ -2385,7 +2820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 180, y: 0}
+  m_AnchoredPosition: {x: 180, y: -327.5}
   m_SizeDelta: {x: 317, y: 454}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014984632

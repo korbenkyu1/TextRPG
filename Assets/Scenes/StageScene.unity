@@ -937,6 +937,7 @@ MonoBehaviour:
   StageImage: {fileID: 7226130246847463147}
   OptionContainer: {fileID: 888575735}
   OptionButtonPrefab: {fileID: 1942042141402822518, guid: 1655f87d979a6f4478d79964c059c5bc, type: 3}
+  BeforeCombat: {fileID: 2017550413}
   EnemyImage: {fileID: 969258143}
   CombatStartButton: {fileID: 1547970857}
   Coin: {fileID: 2958429160530611044}

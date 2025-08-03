@@ -68,7 +68,7 @@ MonoBehaviour:
         \uBBF8\uB798 \uACC4\uD68D\uC740\uC740 \uC0AC\uCE58\uACA0\uC8E0."
       coin: 0
       maxHealth: 0
-      health: -45
+      health: 0
       attack: 0
       defense: 0
       critChance: 0
