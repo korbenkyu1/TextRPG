@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   rarity: 4
-  skillName: 
-  image: {fileID: 0}
-  description: "\uACF5\uACA9\uB825\uC758 (X/150/170/190/210/230)%\uB9CC\uD07C \uC8FC\uACE0,
-    \uD2B9\uC218 \uD53C\uD574\uB97C \uACF5\uACA9\uB825\uC758 (X/30/35/40/45/50)%\uB9CC\uD07C
-    \uC785\uB294\uB2E4. \uC801\uC758 \uCE68\uC2DD\uC2A4\uD0DD\uC744 1\uC81C\uAC70\uD55C\uB2E4."
-  flavorText: 
+  skillName: "\uC808\uB2E8\uC758\uC2DD"
+  icon: {fileID: -8314819772880967469, guid: 38888a3c2af299746a4e595079f80b62, type: 3}
+  image: {fileID: -8789016856562734651, guid: 9e2e6e4f8acb7654c976ff8cf7961b1e, type: 3}
+  description: description
+  flavorText: flavor text
   maxUse: -1
   remainingUse: -1
   turnUsed: 0
-  dodgable: 0
+  dodgable: 1
   coolDown: 0
   coolDownCounter: 0
   scalar1: 210

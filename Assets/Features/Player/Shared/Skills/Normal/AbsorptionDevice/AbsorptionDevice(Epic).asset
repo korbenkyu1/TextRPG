@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   rarity: 2
-  skillName: 
-  image: {fileID: 0}
-  description: 
-  flavorText: 
+  skillName: "\uD761\uC218\uC7A5\uCE58"
+  icon: {fileID: 2418141533399462355, guid: 608b2aa7e37e00b43adb55b63e22609b, type: 3}
+  image: {fileID: 2418141533399462355, guid: 68a2a792e0175cf4b8ffc34efd6d4c26, type: 3}
+  description: description
+  flavorText: flavor text
   maxUse: 7
   remainingUse: 7
   turnUsed: 0

@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 3
   rarity: 2
-  skillName: 
-  image: {fileID: 0}
-  description: 
-  flavorText: 
+  skillName: "\uCD09\uC218\uAC15\uD0C0"
+  icon: {fileID: 1028245083232478422, guid: e7968a4ebfe9e3c4bbbe436a568f5cbd, type: 3}
+  image: {fileID: 1028245083232478422, guid: fcb0dfb607b71124282144881e8c9e2c, type: 3}
+  description: description
+  flavorText: flavor text
   maxUse: 5
   remainingUse: 5
   turnUsed: 0
-  dodgable: 0
+  dodgable: 1
   coolDown: 1
   coolDownCounter: 0
   scalar1: 250

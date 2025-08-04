@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   rarity: 3
-  skillName: parasite_link
-  image: {fileID: 0}
-  description: 
-  flavorText: 
+  skillName: "\uAE30\uC0DD\uC5F0\uC1C4"
+  icon: {fileID: -6412791366241085182, guid: 4ed380ef98c720c4b998861114d8653d, type: 3}
+  image: {fileID: 3339095018945504686, guid: 7aa9f42aa681c1847b7ff01ae3b74853, type: 3}
+  description: description
+  flavorText: flavor text
   maxUse: -1
   remainingUse: -1
   turnUsed: 1
