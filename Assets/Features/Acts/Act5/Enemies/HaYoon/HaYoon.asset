@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: HaYoon
+  m_EditorClassIdentifier: 
+  maxHealth: 1600
+  health: 1600
+  attack: 130
+  defense: 130
+  critChance: 20
+  dodgeChance: 0
+  unitName: "\uC57D\uBB3C\uAC1C\uC870 \uB9C8\uBC95\uC18C\uB140 \uD558\uC724"
+  description: description
+  flavorText: flavor text
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 5d24f8fce604f7549bd597970e28a536, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3e17c506b2d483a42a03211e665fea4d, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 66b42724a38f89c46b07a66753d0e79e, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9f70f26a25a4e3c4eb99b1de1ce29194, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: d3c7ae086666ad647a7f25f939a1e154, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: d24eb4074a8fb7a419fec12f514f9181, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 8335adc7904e2f84d8c3dca74789cca3, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 33f08b9d49a8aae4984be76efdc154a6, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 7ba59decb361a12438900874062df46c, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: d85c68e876ddde74ba10c44838f950cb, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 5896719415baf0e4ca33aabaefc6032b, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 05450c1978dbf1742b343eb8dc181705, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 079ccf313e74c844082398427773b9db, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: de0e825241634b34db969067e32e44b9, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4e1e32a89aad89a409cee4b3f5231ecb, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: eaee4f29e721f8c42a6986275d313c2c, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 79649ea102518ea46b7024bfc4ef26a7, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 6edc3e4ac27fcb245a892bb411d817b6, type: 2}
+  abilities: []

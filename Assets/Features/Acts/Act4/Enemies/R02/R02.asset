@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: R02
+  m_EditorClassIdentifier: 
+  maxHealth: 700
+  health: 700
+  attack: 70
+  defense: 70
+  critChance: 13
+  dodgeChance: 0
+  unitName: "\uB9C8\uBC95\uC18C\uB140 \uB808\uD50C\uB9AC\uCE74 R-02"
+  description: description
+  flavorText: flavor text
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 669a5db84c177c04289739aef51dad8e, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: bc3143f015e43a145a68e24d1a5118ae, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9929a9f5f76757747ae68e80223053e5, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 43328f23be44ed0409cfdd1dd51b2053, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 50cee5a0e21bff14888218e223bd9e0d, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 5ccd3db5c1c98874abf6af59a0f60793, type: 2}

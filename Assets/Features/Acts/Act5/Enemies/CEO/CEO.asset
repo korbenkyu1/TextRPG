@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: CEO
+  m_EditorClassIdentifier: 
+  maxHealth: 1500
+  health: 1500
+  attack: 150
+  defense: 130
+  critChance: 0
+  dodgeChance: 0
+  unitName: "\uB300\uAE30\uC5C5 \uCD1D\uC218"
+  description: description
+  flavorText: flavor text
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: ad4aa8548ac669e4ca1fdb369fcdfe61, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 36907393f16fbf7419e13361e7be1e10, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: bc620e55cb1e2344b8641c47561a290c, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 82262a3da7c6e404b98f3e78ce1a1e09, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: de645c559addea44181e6d6a60274d86, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 26a052aafae911b429e42839cf47e8c4, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9a259a2f1dfceb74ba7c97a3797932bb, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 644e7aa59dc311e45828cb880ff9b4e8, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 20cf3a7a3f5da524fadfbe0dd47a4c5f, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 2512ab3b8aa7dd44c8b67d0c5c6fb062, type: 2}
+  abilities: []

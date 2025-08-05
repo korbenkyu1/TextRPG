@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3ffc5b98f2f8424dbb6ba2c6e57d4c7, type: 3}
+  m_Name: Smile Practice
+  m_EditorClassIdentifier: 
+  naration: "\uB808\uD50C\uB9AC\uCE74\uAC00 \uBD80\uC790\uC5F0\uC2A4\uB7EC\uC6B4
+    \uBBF8\uC18C\uB97C \uC5F0\uC2B5\uD569\uB2C8\uB2E4."
+  dodgable: 1
+  AttackCoefficient: 50
+  HpValue: 80

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mitogen Injector4_0: 2833529382130525763
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

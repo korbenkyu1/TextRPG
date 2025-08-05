@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb7afc749d506a4897fefee5d59ef43, type: 3}
+  m_Name: Memory Manipulation
+  m_EditorClassIdentifier: 
+  naration: "\"\uB204\uAD6C\uC600\uB354\uB77C...\" \uC911\uC5BC\uAC70\uB9AC\uBA70
+    \uACFC\uAC70\uAC00 \uB4A4\uC11E\uC785\uB2C8\uB2E4."
+  dodgable: 1
+  effectName: paralyze
+  stack: 2
+  isTargetingPlayer: 1

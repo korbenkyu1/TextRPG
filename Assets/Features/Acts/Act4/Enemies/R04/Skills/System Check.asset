@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb7afc749d506a4897fefee5d59ef43, type: 3}
+  m_Name: System Check
+  m_EditorClassIdentifier: 
+  naration: "\uB0B4\uBD80 \uC2DC\uC2A4\uD15C\uC744 \uC810\uAC80\uD558\uBA70 \uC131\uB2A5\uC744
+    \uCD5C\uC801\uD654\uD569\uB2C8\uB2E4."
+  dodgable: 0
+  effectName: eternal_bonus_damage
+  stack: 20
+  isTargetingPlayer: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cedddc8d4b5ca419f3ca9aa9d988f1, type: 3}
+  m_Name: Final Magic
+  m_EditorClassIdentifier: 
+  naration: "\"\uBAA8\uB450... \uD568\uAED8...\" \uC18D\uC0AD\uC774\uB294 \uBAA9\uC18C\uB9AC\uC640
+    \uD568\uAED8 \uBAA8\uB4E0 \uAC83\uC744 \uC9D1\uC5B4\uC0BC\uD0A4\uB294 \uBE5B\uC774
+    \uBC88\uC9D1\uB2C8\uB2E4."
+  dodgable: 1
+  attackCoefficient: 280
+  attackCount: 1
+  effectName: bleed
+  stack: 100
+  isTargetingPlayer: 0

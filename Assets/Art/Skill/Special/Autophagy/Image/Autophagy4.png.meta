@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Autophagy4_0: -7668664527772395330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de610d145f73f7d468799814f37b94bc, type: 3}
+  m_Name: System Reboot
+  m_EditorClassIdentifier: 
+  naration: "\uBAA8\uB4E0 \uC2DC\uC2A4\uD15C\uC744 \uC7AC\uC2DC\uC791\uD558\uBA70
+    \uC644\uC804\uD55C \uC0C1\uD0DC\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4."
+  dodgable: 1

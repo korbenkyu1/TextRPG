@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: Ra
+  m_EditorClassIdentifier: 
+  maxHealth: 1000
+  health: 1000
+  attack: 90
+  defense: 90
+  critChance: 28
+  dodgeChance: 0
+  unitName: "\uB9C8\uBC95\uC18C\uB140 \uB808\uD50C\uB9AC\uCE74 R-\u03B1"
+  description: description
+  flavorText: flavor text
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3acd572c6afdeda48b9aaf783f2199ac, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 974faa2f6dbfaa9478a7d94c551ee631, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: c8015b741b2b19145a9fbd473848484c, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9b126fa0dd1789441b523660b40c8130, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 4c8fd64417473c240add92f44072270a, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: c42a2dc1332fec840a7087e6777e69c1, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 5ccd3db5c1c98874abf6af59a0f60793, type: 2}

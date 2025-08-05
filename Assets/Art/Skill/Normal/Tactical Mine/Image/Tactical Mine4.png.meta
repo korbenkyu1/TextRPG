@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tactical Mine4_0: 2939217411594127137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cedddc8d4b5ca419f3ca9aa9d988f1, type: 3}
+  m_Name: Dark Finisher
+  m_EditorClassIdentifier: 
+  naration: "\uB9C8\uBC95\uC18C\uB140 \uD3EC\uC988\uB97C \uCDE8\uD558\uC9C0\uB9CC
+    \uADF8 \uC190\uB05D\uC5D0\uC11C \uB098\uC624\uB294 \uAC83\uC740..."
+  dodgable: 1
+  attackCoefficient: 180
+  attackCount: 1
+  effectName: eternal_bonus_damage
+  stack: 35
+  isTargetingPlayer: 0

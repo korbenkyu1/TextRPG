@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Parasitism1_0: 6484618734197279069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

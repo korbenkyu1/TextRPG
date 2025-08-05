@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e81db9eccfeeba64fbf351e5504a3c88, type: 3}
+  m_Name: Magical Overload
+  m_EditorClassIdentifier: 
+  naration: "\uBAB8\uC5D0\uC11C \uD758\uB7EC\uB098\uC624\uB294 \uB9C8\uB825\uC774
+    \uD1B5\uC81C\uB97C \uBC97\uC5B4\uB098 \uD3ED\uD48D\uCC98\uB7FC \uD718\uBAB0\uC544\uCE69\uB2C8\uB2E4."
+  dodgable: 1

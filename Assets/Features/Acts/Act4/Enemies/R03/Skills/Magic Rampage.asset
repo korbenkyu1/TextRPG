@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f58f32fc21c5024189f66ce74663c55, type: 3}
+  m_Name: Magic Rampage
+  m_EditorClassIdentifier: 
+  naration: "\uC81C\uC5B4\uB418\uC9C0 \uC54A\uC740 \uB9C8\uB825\uC774 \uD3ED\uC8FC\uD569\uB2C8\uB2E4."
+  dodgable: 1
+  effectName1: burn
+  stack1: 30
+  isTargetingPlayer1: 0
+  effectName2: burn
+  stack2: 30
+  isTargetingPlayer2: 1
+  AttackCoefficient: 110
+  AttackCount: 1

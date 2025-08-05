@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d015ab4235f3f254e878c3a908429001, type: 3}
+  m_Name: Corrupted Transformation
+  m_EditorClassIdentifier: 
+  naration: "\uB9AC\uBCF8\uC774 \uD480\uB9AC\uACE0 \uB4DC\uB808\uC2A4\uAC00 \uCC22\uC5B4\uC9C0\uBA70
+    \uBB34\uC5B8\uAC00 \uB2E4\uB978 \uAC83\uC774 \uB4DC\uB7EC\uB0A9\uB2C8\uB2E4."
+  dodgable: 1

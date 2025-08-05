@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb7afc749d506a4897fefee5d59ef43, type: 3}
+  m_Name: Command Order
+  m_EditorClassIdentifier: 
+  naration: "\uC2A4\uC2A4\uB85C\uC5D0 \uB300\uD55C \uC644\uBCBD\uD55C \uD1B5\uC81C\uB97C
+    \uBCF4\uC774\uACE0 \uC788\uC2B5\uB2C8\uB2E4."
+  dodgable: 0
+  effectName: bonus_action
+  stack: 2
+  isTargetingPlayer: 0

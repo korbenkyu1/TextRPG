@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e073d6b81ea5a843a869f2f9350e3d9, type: 3}
+  m_Name: R01
+  m_EditorClassIdentifier: 
+  maxHealth: 600
+  health: 600
+  attack: 55
+  defense: 40
+  critChance: 15
+  dodgeChance: 0
+  unitName: "\uB9C8\uBC95\uC18C\uB140 \uB808\uD50C\uB9AC\uCE74 R-01"
+  description: description
+  flavorText: flavor text
+  image: {fileID: 0}
+  skills:
+  - weight: 1
+    skill: {fileID: 11400000, guid: 9330acfa4248be342887aaa68a013b95, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 96f4573cbfa27644891200930b6b5843, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 3c201cebd8fa6584b825b943f850bddf, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 72309ca445546bc48bf490673fa75dda, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1bce55f65e91cd141b4c16c62626fc09, type: 2}
+  - weight: 1
+    skill: {fileID: 11400000, guid: 1bce55f65e91cd141b4c16c62626fc09, type: 2}
+  abilities:
+  - {fileID: 11400000, guid: 5ccd3db5c1c98874abf6af59a0f60793, type: 2}

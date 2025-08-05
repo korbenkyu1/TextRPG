@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Insulation Gel4_0: 906233774234029631
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a99851573d1294387a72e180dc8eeb, type: 3}
+  m_Name: System Error
+  m_EditorClassIdentifier: 
+  naration: "\uB808\uD50C\uB9AC\uCE74\uC758 \uB208\uC774 \uAE5C\uBE61\uC774\uBA70
+    \uAE30\uACC4\uC801 \uC624\uC791\uB3D9\uC744 \uC77C\uC73C\uD0B5\uB2C8\uB2E4."
+  dodgable: 0

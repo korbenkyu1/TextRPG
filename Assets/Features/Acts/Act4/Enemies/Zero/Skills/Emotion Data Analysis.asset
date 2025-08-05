@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dadf04267ed8ff043b88b7ed9f134a54, type: 3}
+  m_Name: Emotion Data Analysis
+  m_EditorClassIdentifier: 
+  naration: "\uC774\uD574\uD560 \uC218 \uC5C6\uB294 \uAC10\uC815\uC5D0 \uC190\uC744
+    \uBED7\uC2B5\uB2C8\uB2E4."
+  dodgable: 1
+  effectName1: mark
+  stack1: 3
+  isTargetingPlayer1: 1
+  effectName2: burn
+  stack2: 20
+  isTargetingPlayer2: 0
