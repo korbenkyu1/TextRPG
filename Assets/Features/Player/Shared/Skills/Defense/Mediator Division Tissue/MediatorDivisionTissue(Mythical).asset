@@ -17,8 +17,9 @@ MonoBehaviour:
   skillName: "\uAC1C\uC7AC\uBD84\uC5F4\uC870\uC9C1"
   icon: {fileID: -8234242239965629128, guid: b5ad640d9b74fa64493a12d948805322, type: 3}
   image: {fileID: -8234242239965629128, guid: 24af6bb1aa24a9b49a704cd7b179eb4d, type: 3}
-  description: description
-  flavorText: flavor text
+  description: "\uBC29\uC5B4\uB825\uC758 30% \uB9CC\uD07C \uBCF4\uD638 \uC2A4\uD0DD\uC744
+    \uC5BB\uB294\uB2E4. \uCE68\uC2DD\uC744 1\uC2A4\uD0DD \uC81C\uAC70\uD558\uACE0
+    \uBC29\uC5B4\uB825\uC758 360% \uB9CC\uD07C\uC758 \uCCB4\uB825\uC744 \uD68C\uBCF5\uD55C\uB2E4."
   maxUse: 35
   remainingUse: 35
   turnUsed: 0

@@ -17,8 +17,7 @@ MonoBehaviour:
   skillName: "\uC804\uAE30\uC7A5"
   icon: {fileID: -6980432347116491415, guid: d1c7f2d96da943c4694e41e972ae8b61, type: 3}
   image: {fileID: -6980432347116491415, guid: e8afaa552e81bd04a81c8a211018fdb6, type: 3}
-  description: description
-  flavorText: flavor text
+  description: "\uC801\uC5D0\uAC8C \uB9C8\uBE44\uB97C 2 \uBD80\uC5EC\uD55C\uB2E4."
   maxUse: 7
   remainingUse: 7
   turnUsed: 0
