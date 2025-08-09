@@ -19,9 +19,9 @@ MonoBehaviour:
   critChance: 25
   dodgeChance: 0
   unitName: "\uAC74\uB2EC \uB450\uBAA9"
-  description: 
-  flavorText: 
-  image: {fileID: 0}
+  description: description
+  flavorText: flavor text
+  image: {fileID: 8008061982585313621, guid: e491563fa7abf81429bdcc5e587a60f3, type: 3}
   skills: []
   abilities:
   - {fileID: 11400000, guid: 03506319b2969de4bb6d71fb61908a1b, type: 2}

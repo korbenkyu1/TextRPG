@@ -21,7 +21,7 @@ MonoBehaviour:
   unitName: "\uC800\uACA9\uC218 \uAC74\uB2EC"
   description: "\uC124\uBA85 \uC880 \uC871\uC5B4\uB77C \uC9C0\uC12D"
   flavorText: "\uD301 \uC880 \uC801\uC5B4\uB77C \uC9C0\uC12D\uC544"
-  image: {fileID: 0}
+  image: {fileID: -2190812772618612273, guid: 007d687fc0c3e0047ab0de0f48eb0b07, type: 3}
   skills:
   - weight: 1
     skill: {fileID: 11400000, guid: b2359212694987349aea892d92878ad3, type: 2}
