@@ -7,5 +7,4 @@ public class FoodData : StatsData
     public Sprite icon;
     public Sprite image;
     public string description;
-    public string flavorText;
 }

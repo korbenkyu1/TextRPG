@@ -15,7 +15,6 @@ public class ItemData : ScriptableObject
     public Sprite icon;
     public Sprite image;
     public string description;
-    public string flavorText;
     public AbilityModifier[] abilityModifiers;
     public AbilityData requiredAbilityA, requiredAbilityB;
 }

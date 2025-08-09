@@ -26,7 +26,7 @@ public class ResultManager : MonoBehaviour
     public GameObject RewardInfoPanel;
     public Image RewardInfoIcon;
     public TMP_Text RewardInfoName;
-    public TMP_Text RewardInfoFlavorText;
+    public TMP_Text RewardInfoDescription;
     public CoinUI Coin;
 
     [Header("Skills")] 
@@ -247,21 +247,21 @@ public class ResultManager : MonoBehaviour
                 Debug.Log(selectedSkill);
                 RewardInfoIcon.sprite = selectedSkill.icon;
                 RewardInfoName.text = selectedSkill.skillName;
-                RewardInfoFlavorText.text = selectedSkill.flavorText;
+                RewardInfoDescription.text = selectedSkill.description;
                 break;
             case RewardType.Item:
                 selectedItem = itemRewards[i];
                 Debug.Log(selectedItem);
                 RewardInfoIcon.sprite = selectedItem.icon;
                 RewardInfoName.text = selectedItem.itemName;
-                RewardInfoFlavorText.text = selectedItem.flavorText;
+                RewardInfoDescription.text = selectedItem.description;
                 break;
             case RewardType.Food:
                 selectedFood = foodRewards[i];
                 Debug.Log(selectedFood);
                 RewardInfoIcon.sprite = selectedFood.icon;
                 RewardInfoName.text = selectedFood.foodName;
-                RewardInfoFlavorText.text = selectedFood.flavorText;
+                RewardInfoDescription.text = selectedFood.description;
                 break;
         }
 

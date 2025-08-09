@@ -27,7 +27,6 @@ public abstract class PlayerSkillData : ScriptableObject
     public Sprite icon;
     public Sprite image;
     public string description;
-    public string flavorText;
     public int maxUse;
     public int remainingUse;
     public int turnUsed;

@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 358155737}
   - component: {fileID: 358155736}
   m_Layer: 5
-  m_Name: FlavorText
+  m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,7 @@ MonoBehaviour:
   RewardInfoPanel: {fileID: 951237388}
   RewardInfoIcon: {fileID: 1284297287}
   RewardInfoName: {fileID: 103439569}
-  RewardInfoFlavorText: {fileID: 358155736}
+  RewardInfoDescription: {fileID: 358155736}
   Coin: {fileID: 1383154618}
   attackSkills:
   - commonSkill: {fileID: 0}
