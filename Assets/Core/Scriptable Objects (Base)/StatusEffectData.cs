@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class StatusEffectData : ScriptableObject
 {
-    public string statusEffectName;
     public int stack;
     public bool isPlayer;
     public Sprite Image;

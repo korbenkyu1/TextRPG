@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f21dfd17b4d0bd42a3df19a7c60c842, type: 3}
   m_Name: Weakness
   m_EditorClassIdentifier: 
-  statusEffectName: 
+  statusEffectName: weakness
   stack: 0
   isPlayer: 0
   Image: {fileID: 4035860371971368088, guid: 6fb665508ceeb614c8e4572333f18f4a, type: 3}

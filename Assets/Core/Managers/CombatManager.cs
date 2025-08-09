@@ -63,9 +63,9 @@ public class CombatManager : MonoBehaviour
         foreach (var statusEffect in statusEffects)
         {
             statusEffect.isPlayer = true;
-            player.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
+            player.statusEffects.Add(statusEffect.GetType().Name, statusEffect);
             statusEffect.isPlayer = false;
-            enemy.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
+            enemy.statusEffects.Add(statusEffect.GetType().Name, statusEffect);
         }
 
         EnemyImage.sprite = enemyData.image;

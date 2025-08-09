@@ -20,7 +20,7 @@ public class ResultManager : MonoBehaviour
 {
     [Header("UI")]
     public HeaderUI HeaderUI;
-    public GameObject Dialog;
+    public DialogUI Dialog;
     public GameObject RewardsPanel;
     public Image[] RewardImages = new Image[3];
     public GameObject RewardInfoPanel;
@@ -63,17 +63,6 @@ public class ResultManager : MonoBehaviour
 
     int index = 0;
 
-    void Log(string msg)
-    {
-        var text = Dialog.GetComponentInChildren<Text>();
-        var button = Dialog.GetComponentInChildren<Button>();
-        button.interactable = false;
-        text.text = "";
-        text.DOText(msg, msg.Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
-            button.interactable = true;
-        });
-    }
-
     void Start()
     {
         result = GameManager.Instance.resultData;
@@ -83,14 +72,14 @@ public class ResultManager : MonoBehaviour
         HeaderUI.UpdateHp();
         Coin.UpdateUI();
 
-        Log(result.messages[0]);
+        Dialog.Type(result.messages[0]);
     }
     public void NextButton()
     {
         index++;
         if(index < result.messages.Length)
         {
-            Log(result.messages[index]);
+            Dialog.Type(result.messages[index]);
             return;
         }
         if(index == result.messages.Length)
@@ -150,7 +139,7 @@ public class ResultManager : MonoBehaviour
 
             if (flag)
             {
-                Log(buffer);
+                Dialog.Type(buffer);
                 return;
             }
         }
@@ -308,39 +297,41 @@ public class ResultManager : MonoBehaviour
 
             case RewardType.Food:
                 PlayerData player = GameManager.Instance.playerData;
+                string buffer = "";
                 if (result.maxHealth != 0)
                 {
-                    Log("최대 체력 " + result.maxHealth.ToString("+#;-#;0"));
+                    buffer += "최대 체력 " + result.maxHealth.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.maxHealth = Mathf.Min(player.maxHealth + selectedFood.maxHealth, 900);
                     GameManager.Instance.playerData.health = Mathf.Min(player.health + selectedFood.maxHealth, GameManager.Instance.playerData.maxHealth);
                     player = GameManager.Instance.playerData;
                 }
                 if (result.health != 0)
                 {
-                    Log("체력 " + result.health.ToString("+#;-#;0"));
+                    buffer += "체력 " + result.health.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.health = Mathf.Min(player.health + selectedFood.health, player.maxHealth);
                     player = GameManager.Instance.playerData;
                 }
                 if (result.attack != 0)
                 {
-                    Log("공격력 " + result.attack.ToString("+#;-#;0"));
+                    buffer += "공격력 " + result.attack.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.attack = Mathf.Min(player.attack + selectedFood.attack, 70);
                 }
                 if (result.defense != 0)
                 {
-                    Log("방어력 " + result.attack.ToString("+#;-#;0"));
+                    buffer += "방어력 " + result.attack.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.defense = Mathf.Min(player.defense + selectedFood.defense, 99);
                 }
                 if (result.critChance != 0)
                 {
-                    Log("치명타율 " + result.attack.ToString("+#;-#;0"));
+                    buffer += "치명타율 " + result.attack.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.critChance = Mathf.Min(player.critChance + selectedFood.critChance, 99);
                 }
                 if (result.dodgeChance != 0)
                 {
-                    Log("회피율 " + result.attack.ToString("+#;-#;0"));
+                    buffer += "회피율 " + result.attack.ToString("+#;-#;0") + "\n";
                     GameManager.Instance.playerData.dodgeChance = Mathf.Min(player.dodgeChance + selectedFood.dodgeChance, 70);
                 }
+                Dialog.Type(buffer);
                 break;
         }
 

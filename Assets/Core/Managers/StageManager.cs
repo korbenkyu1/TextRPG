@@ -7,16 +7,17 @@ using DG.Tweening;
 public class StageManager : MonoBehaviour
 {
     public HeaderUI HeaderUI;
-    public GameObject Dialog;
-    public Image DialogBox;
-    public Image StageImage;
+
     public CanvasGroup OptionContainer;
     public Button OptionButtonPrefab;
+    public Image DialogBox;
 
     public GameObject BeforeCombat;
     public Image EnemyImage;
     public GameObject CombatStartButton;
     public CoinUI Coin;
+    public DialogUI Dialog;
+
 
     int stageIndex = 0;
     int actIndex = 0;
@@ -57,17 +58,8 @@ public class StageManager : MonoBehaviour
         HeaderUI.UpdateProgress();
         HeaderUI.UpdateHp();
         Coin.UpdateUI();
-
-        var text = Dialog.GetComponentInChildren<Text>();
-        var button = Dialog.GetComponentInChildren<Button>();
-        button.interactable = false;
-        text.text = "";
-        text.DOText(stage.descriptions[0], stage.descriptions[0].Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
-            button.interactable = true;
-        });
-        StageImage.sprite = stage.images[0];
+        Dialog.Type(stage.descriptions[0], stage.images[0]);
     }
-
     public void Next()
     {
         index++;
@@ -75,14 +67,7 @@ public class StageManager : MonoBehaviour
         // Show next message
         if (index < stage.descriptions.Length)
         {
-            var text = Dialog.GetComponentInChildren<Text>();
-            var button = Dialog.GetComponentInChildren<Button>();
-            button.interactable = false;
-            text.text = "";
-            text.DOText(stage.descriptions[index], stage.descriptions[index].Length * 0.05f).SetEase(Ease.Linear).OnComplete(() => {
-                button.interactable = true;
-            });
-            StageImage.sprite = stage.images[index];
+            Dialog.Type(stage.descriptions[index], stage.images[index]);
             return;
         }
 
@@ -125,8 +110,7 @@ public class StageManager : MonoBehaviour
 
         if (enemy)
         {
-            StageImage.gameObject.SetActive(false);
-            DialogBox.gameObject.SetActive(false);
+            Dialog.gameObject.SetActive(false);
             //OptionContainer.SetActive(false);
 
             EnemyImage.sprite = enemy.image;
