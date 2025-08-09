@@ -5,7 +5,7 @@ public class Initiative : StatusEffectData
 {
     public override void OnTurnStart(CombatManager combatManager)
     {
-        if (stack < combatManager.enemy.statusEffects[typeof(Initiative).Name].stack)
+        if (stack < combatManager.enemy.statusEffects["initiative"].stack)
         {
             combatManager.player.remainingAction = 0;
             combatManager.player.statusEffects["initiative"].stack = 0;
