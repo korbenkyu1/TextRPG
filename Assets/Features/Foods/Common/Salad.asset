@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: Salad
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 50
   health: 0
   attack: 0
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uC0D0\uB7EC\uB4DC"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 8508900254858724525, guid: 88544f9f5a31b6445bf3572cf267a272, type: 3}
+  image: {fileID: 8508900254858724525, guid: 542a3e060a424ff4b901ad39bc27144f, type: 3}
+  description: "\uCD5C\uB300 \uCCB4\uB825 + 50"

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Dual-SealCore
   m_EditorClassIdentifier: 
   itemName: "\uC774\uC911 \uACB0\uACC4 \uCF54\uC5B4"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -1929300338487215455, guid: 35d6f8818fcc7d64d9fad856d52f3c21, type: 3}
+  image: {fileID: -1929300338487215455, guid: 04223bd0006b8e64d83eeff51ef565bc, type: 3}
+  description: "\uACB0\uACC4 +3lv, \uD65C\uB825 +3lv, \uC815\uC9C0 +2lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

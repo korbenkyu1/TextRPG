@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 0
   health: 0
-  attack: 0
+  attack: 2
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uC1E0\uACE0\uAE30\uB9DB \uB2E8\uBC31\uC9C8\uBC14"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -7998672443417877019, guid: e6deb95dccadb12498008c8ad503a6f9, type: 3}
+  image: {fileID: -7998672443417877019, guid: a4307d6b73e529c43bfc8454d39ecfbb, type: 3}
+  description: "\uACF5\uACA9\uB825 + 2"

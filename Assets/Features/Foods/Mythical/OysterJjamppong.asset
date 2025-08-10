@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: OysterJjamppong
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
-  critChance: 0
-  dodgeChance: 0
+  maxHealth: 400
+  health: 400
+  attack: 15
+  defense: 15
+  critChance: 15
+  dodgeChance: 8
   foodName: "\uAD74 \uC9EC\uBF55"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 470939706857023528, guid: 1c43e4c773b7aa145ab08f316de59fb5, type: 3}
+  image: {fileID: 470939706857023528, guid: d903f60a53472ff4da1de268341c5d74, type: 3}
+  description: "\"\uCD5C\uB300 \uCCB4\uB825 + 400,  \uCCB4\uB825 + 400,  \uACF5\uACA9\uB825
+    + 15,  \uBC29\uC5B4\uB825 + 15,  \uCE58\uBA85\uD0C0\uC728 + 15%,  \uD68C\uD53C\uC728
+    + 8%\""

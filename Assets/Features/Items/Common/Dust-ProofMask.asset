@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Dust-ProofMask
   m_EditorClassIdentifier: 
   itemName: "\uBC29\uC9C4 \uB9C8\uC2A4\uD06C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 8141487731179803747, guid: e215bea9281245744a2311d97f1a5601, type: 3}
+  image: {fileID: 8141487731179803747, guid: 4442afd8844f7d040aac48323a193ce9, type: 3}
+  description: "\uD65C\uB825 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

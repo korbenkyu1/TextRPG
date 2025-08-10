@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ExperimentalHappinessStick
   m_EditorClassIdentifier: 
   itemName: "\uC2E4\uD5D8\uC6A9 \u2018\uD574\uD53C\uB2C8\uC2A4 \uC2A4\uD2F1\u2019"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 1948975604853357207, guid: d2096b1970d89014690fb877c27c72f5, type: 3}
+  image: {fileID: 1948975604853357207, guid: eddb959ed9167a84fb53e68c2670079c, type: 3}
+  description: "\uBD84\uB178 +3lv, \uC815\uC9C0 +2lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

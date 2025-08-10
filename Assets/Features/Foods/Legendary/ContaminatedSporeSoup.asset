@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: ContaminatedSporeSoup
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: -80
   attack: 0
-  defense: 0
+  defense: 10
   critChance: 0
-  dodgeChance: 0
+  dodgeChance: 5
   foodName: "\uC624\uC5FC\uB41C \uD3EC\uC790\uC2A4\uD504"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8042772758027322915, guid: 07325a754ee24e449a489708d2636ab0, type: 3}
+  image: {fileID: -8042772758027322915, guid: bcfc69c6f8babc34b9ace3b51566b145, type: 3}
+  description: "\uCCB4\uB825 - 80, \uBC29\uC5B4\uB825 + 10, \uD68C\uD53C\uC728 +
+    5%"

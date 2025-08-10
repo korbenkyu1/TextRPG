@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: JunkFoodSetA
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: 80
+  attack: -1
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uC815\uD06C\uD478\uB4DC\uC138\uD2B8A"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8085571144378868035, guid: 99df831c0806d3345b1a4b8a9c8d8178, type: 3}
+  image: {fileID: -8085571144378868035, guid: d55e8e11865eb214b8949c24b35bdd5b, type: 3}
+  description: "\uCCB4\uB825 + 80, \uACF5\uACA9\uB825 -1"

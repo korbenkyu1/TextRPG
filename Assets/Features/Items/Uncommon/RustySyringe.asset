@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RustySyringe
   m_EditorClassIdentifier: 
   itemName: "\uB179\uC2A8 \uC8FC\uC0AC\uAE30"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 1132135068729615313, guid: a4a39d4dcf03f334797c5aea9ba99414, type: 3}
+  image: {fileID: 1132135068729615313, guid: a882ef15093ebf247b921f0b5fdea6ce, type: 3}
+  description: "\uBD84\uB178 +1lv, \uC815\uC9C0+1lv "
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

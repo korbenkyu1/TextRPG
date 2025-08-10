@@ -15,10 +15,10 @@ MonoBehaviour:
   maxHealth: 0
   health: 0
   attack: 0
-  defense: 0
+  defense: 2
   critChance: 0
   dodgeChance: 0
   foodName: "\uB531\uB531\uD55C \uAD74 \uC218\uD504"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 324272507235027171, guid: feded0d09444fd240b182ebf30205f73, type: 3}
+  image: {fileID: 324272507235027171, guid: 03bdedeec01c68b43aab8bcf85c95d6e, type: 3}
+  description: "\uBC29\uC5B4\uB825 + 2"

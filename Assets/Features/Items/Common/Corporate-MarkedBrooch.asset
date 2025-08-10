@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Corporate-MarkedBrooch
   m_EditorClassIdentifier: 
   itemName: "\uB300\uAE30\uC5C5 \uB9C8\uD06C\uAC00 \uADF8\uB824\uC9C4 \uBE0C\uB85C\uCE58"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 6997409166409616873, guid: 1e3b7dea49999c74e8885828c76d5fa5, type: 3}
+  image: {fileID: 6997409166409616873, guid: c3fe7751922ccb046927d8b7e4ff18ce, type: 3}
+  description: "\uBD84\uB178 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

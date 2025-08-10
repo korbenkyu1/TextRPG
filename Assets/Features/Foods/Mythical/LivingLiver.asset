@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: LivingLiver
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
+  maxHealth: 300
+  health: 200
+  attack: 20
   defense: 0
   critChance: 0
-  dodgeChance: 0
+  dodgeChance: 10
   foodName: "\uC0B4\uC544\uC6C0\uC9C1\uC774\uB294 \uAC04"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -2326437730967965157, guid: f4170084e01e9f44f8e56809504e47f4, type: 3}
+  image: {fileID: -786165138492410654, guid: 67812cf7169c7964c9bd7791d8f7bc84, type: 3}
+  description: "\uCD5C\uB300\uCCB4\uB825 + 300, \uCCB4\uB825 + 200, \uBC29\uC5B4\uB825
+    + 20, \uD68C\uD53C\uC728 + 10%"

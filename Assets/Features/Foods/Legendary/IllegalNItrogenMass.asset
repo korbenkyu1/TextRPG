@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: IllegalNItrogenMass
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: -80
+  attack: 10
   defense: 0
-  critChance: 0
+  critChance: 15
   dodgeChance: 0
   foodName: "\uBD88\uBC95 \uC9C8\uC18C \uD568\uC720 \uC9C8\uB7C9"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 1183011104445971728, guid: 3e1495ee9ed74854d972a579e512d5e0, type: 3}
+  image: {fileID: 1183011104445971728, guid: 39512d09521b74941bc4fd09648680e2, type: 3}
+  description: "\uCCB4\uB825 - 80, \uACF5\uACA9\uB825 + 10, \uCE58\uBA85\uD0C0\uC728
+    +15%"

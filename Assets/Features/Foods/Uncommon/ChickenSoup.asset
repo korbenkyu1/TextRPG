@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: ChickenSoup
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: 50
+  attack: 2
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uB2ED\uC2A4\uD504"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 6543909772156737802, guid: 13a984d9e3ef377469760fd3f2c7951b, type: 3}
+  image: {fileID: 6543909772156737802, guid: c4379fa689aebcc4f9e67833af1613a6, type: 3}
+  description: "\uCCB4\uB825 + 50, \uACF5\uACA9\uB825 + 2"

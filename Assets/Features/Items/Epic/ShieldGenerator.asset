@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ShieldGenerator
   m_EditorClassIdentifier: 
   itemName: "\uC274\uB4DC \uC0DD\uC131\uC7A5\uCE58"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -2056055094602782791, guid: 9c50363c9f629df4f99f29dcedc84db6, type: 3}
+  image: {fileID: -2056055094602782791, guid: ab5a9aed1ae26a346a818ef79ece1e93, type: 3}
+  description: "\uACB0\uACC4 +3lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

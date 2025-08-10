@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: LabVisionDisc
   m_EditorClassIdentifier: 
   itemName: "\uC5F0\uAD6C\uC2E4\uC6A9 \uBE44\uC804CD"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 467127544196191476, guid: 8cc00cc2421c2b74c8a630c3ba044140, type: 3}
+  image: {fileID: 467127544196191476, guid: a6b8ac871a1142c41a946a80907cce02, type: 3}
+  description: "\uC815\uC9C0 +2lv,  \uACB0\uACC4 +2lv"
   abilityModifiers:
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

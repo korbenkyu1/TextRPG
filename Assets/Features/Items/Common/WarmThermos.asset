@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WarmThermos
   m_EditorClassIdentifier: 
   itemName: "\uB530\uB73B\uD55C \uBCF4\uC628\uBCD1"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 2456758896136414791, guid: 584de01659787e148a0e2494aa04ed1e, type: 3}
+  image: {fileID: 2456758896136414791, guid: 3bdc8407247db5442956ededb88ea67f, type: 3}
+  description: "\uD65C\uB825 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

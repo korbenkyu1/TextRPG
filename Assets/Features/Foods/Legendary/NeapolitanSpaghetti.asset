@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: NeapolitanSpaghetti
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: 200
   attack: 0
-  defense: 0
+  defense: 8
   critChance: 0
   dodgeChance: 0
   foodName: "\uB098\uD3F4\uB9AC\uD0C4 \uC2A4\uD30C\uAC8C\uD2F0"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8447143086721419937, guid: 4682d645e0c1e6e49a9a75c8b954acde, type: 3}
+  image: {fileID: -8447143086721419937, guid: 8af32f2d3b6abbb4e99c22751e379bd9, type: 3}
+  description: "\uCCB4\uB825 + 200, \uBC29\uC5B4\uB825 + 8"

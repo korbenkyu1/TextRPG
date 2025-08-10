@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: EmergencyRationCan
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: 50
   attack: 0
-  defense: 0
+  defense: 2
   critChance: 0
   dodgeChance: 0
-  foodName: "\uC751\uAE09\uC2DD\uB7C9\uD1B5\uC870\uB9BC"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  foodName: "\uB4DC\uB7FC\uD1B5\uB9DB \uCE94"
+  icon: {fileID: 4895203279197296743, guid: a377fea24e6746147a2fd279d8e05674, type: 3}
+  image: {fileID: 4895203279197296743, guid: 02fad6d375d101843bd82d9ae1f5b12d, type: 3}
+  description: "\uCCB4\uB825 + 50, \uBC29\uC5B4\uB825 + 2"

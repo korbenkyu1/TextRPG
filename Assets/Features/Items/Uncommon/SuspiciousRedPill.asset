@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: SuspiciousRedPill
   m_EditorClassIdentifier: 
   itemName: "\uC218\uC0C1\uD55C \uBE68\uAC04 \uC54C\uC57D"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 6416181360340769231, guid: 542b387ad337d02469082e5e6ff3c03a, type: 3}
+  image: {fileID: 6416181360340769231, guid: b7ed9263910065c4e8a4c934d4676df9, type: 3}
+  description: "\uD65C\uB825 -1lv, \uCE68\uC2DD +2lv"
   abilityModifiers:
-  - modifier: 1
+  - modifier: -1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 0a1fac0dbb2544044a2bd5e212358f96, type: 2}

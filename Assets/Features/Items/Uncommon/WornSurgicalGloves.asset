@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WornSurgicalGloves
   m_EditorClassIdentifier: 
   itemName: "\uB9C8\uBAA8\uB41C \uC218\uC220\uC6A9 \uC7A5\uAC11"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -114196338452751834, guid: 62cc162becab47b4cbacc39d93233a2a, type: 3}
+  image: {fileID: -114196338452751834, guid: 60330a9719f59fe4daa4752d0d1e03b3, type: 3}
+  description: "\uD65C\uB825 +1lv , \uC1E0\uB77D +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

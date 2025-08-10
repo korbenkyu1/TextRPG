@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: PotPorridge
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: 40
   attack: 0
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uD3EC\uD2B8\uC8FD"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -2078105842449795172, guid: 19d58b372c1280b43bcb6d99611e1e67, type: 3}
+  image: {fileID: -2078105842449795172, guid: 842e3f7ce57ab7246aeee22806c29782, type: 3}
+  description: "\uCCB4\uB825 + 40"

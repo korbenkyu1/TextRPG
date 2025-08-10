@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ColdMedicine
   m_EditorClassIdentifier: 
   itemName: "\uAC10\uAE30\uC57D"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 3634237973247279865, guid: 0a0672d1d06602348b14b653e918eb29, type: 3}
+  image: {fileID: 3634237973247279865, guid: 2d3942c7cf30eea4b95dbf9893ce4951, type: 3}
+  description: "\uD65C\uB825 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: HardenedRedRitualStrap
   m_EditorClassIdentifier: 
   itemName: "\uBD89\uAC8C \uAD73\uC740 \uB9AC\uBCF8\uC2A4\uD2B8\uB7A9"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 3766978732097579067, guid: 36e1e816b3ba8a44ca855ab0d5f0d8e1, type: 3}
+  image: {fileID: 3766978732097579067, guid: 986e89dbe1e70e64aac04979dffec2d8, type: 3}
+  description: "\uBD84\uB178 +4lv, \uACB0\uACC4 +2lv, \uC815\uC9C0 +2lv"
   abilityModifiers:
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

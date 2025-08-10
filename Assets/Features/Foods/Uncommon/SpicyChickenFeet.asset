@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: SpicyChickenFeet
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: -100
+  attack: 5
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uBD88\uB2ED\uBC1C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8379463794311095072, guid: 195209886199a6a44a75d0611ff3df13, type: 3}
+  image: {fileID: -8379463794311095072, guid: dbeee01aed3c34c42b449a952d0fdd9b, type: 3}
+  description: "\uCCB4\uB825 - 100, \uACF5\uACA9\uB825 + 5"

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: DiscardedOysterShell
   m_EditorClassIdentifier: 
-  itemName: "\uBC84\uB824\uC9C4 \uAD74\uAECD\uB370\uAE30"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uBC84\uB824\uC9C4 \uAD74 \uD328\uAC01"
+  icon: {fileID: 8545041804585392402, guid: a8ab622900239814399f9019fc3afdf8, type: 3}
+  image: {fileID: 8545041804585392402, guid: 2600eb6ab7f015d4fb4c6135036acdcd, type: 3}
+  description: "\uACB0\uACC4 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

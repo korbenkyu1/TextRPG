@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: ShardOfDarkShadow
   m_EditorClassIdentifier: 
   itemName: "\uC5B4\uB450\uC6B4 \uADF8\uB9BC\uC790 \uD30C\uD3B8"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 7769034100792204356, guid: ed648162560894546b8263e1d7f7bd56, type: 3}
+  image: {fileID: 7769034100792204356, guid: 284f50cf2c729c846bb1bc142893876a, type: 3}
+  description: "\uCE68\uC2DD +1lv,  \uD65C\uB825 -1lv"
   abilityModifiers:
-  - modifier: 1
+  - modifier: -1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 0a1fac0dbb2544044a2bd5e212358f96, type: 2}

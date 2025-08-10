@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
-  m_Name: OctopusInkSoup
+  m_Name: Hamburger2
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: 80
   attack: 0
   defense: 0
   critChance: 0
   dodgeChance: 0
-  foodName: "\uBA39\uBB3C \uBB3B\uC740 \uBB38\uC5B4\uC218\uD504"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  foodName: "\uD584\uBC84\uAC70"
+  icon: {fileID: 3351542848941748312, guid: 2999e62e43b23aa41be10ae7af172339, type: 3}
+  image: {fileID: 3351542848941748312, guid: 3daf08a89163f0449bdde781c3531c92, type: 3}
+  description: "\uCCB4\uB825 + 80"

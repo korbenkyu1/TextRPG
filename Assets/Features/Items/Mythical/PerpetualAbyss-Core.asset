@@ -12,14 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: PerpetualAbyss-Core
   m_EditorClassIdentifier: 
-  itemName: "\uC120\uC5B8\uB418\uC9C0 \uC54A\uC740 \uC601\uC6D0"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uC601\uAC81\uC758 \uC2EC\uC5F0\uCCB4 \uCF54\uC5B4"
+  icon: {fileID: -8235875137334317453, guid: e65cc62bd70b93b4b879cf9dacfcbcd0, type: 3}
+  image: {fileID: -8235875137334317453, guid: 4ae075a6570ff2a45b959cdd0699f367, type: 3}
+  description: "\uCE68\uC2DD +5lv, \uBD84\uB178 +3lv, \uACB0\uACC4 +3lv, \uD65C\uB825
+    -3lv"
   abilityModifiers:
   - modifier: 5
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}
-  - modifier: 5
-    abilityData: {fileID: 11400000, guid: 3755d309b1f3296448893103889750bf, type: 2}
+  - modifier: 3
+    abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}
+  - modifier: 3
+    abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}
+  - modifier: -3
+    abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
   requiredAbilityA: {fileID: 0}
   requiredAbilityB: {fileID: 0}

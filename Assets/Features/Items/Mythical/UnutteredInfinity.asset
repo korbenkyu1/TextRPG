@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: UnutteredInfinity
   m_EditorClassIdentifier: 
   itemName: "\uC120\uC5B8\uB418\uC9C0 \uC54A\uC740 \uC601\uC6D0"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 4350036558146883826, guid: c33c74aa0a944bc4ba808a5ad1e3f629, type: 3}
+  image: {fileID: 4350036558146883826, guid: 6d8cf2397a4975240970022bc1ba8276, type: 3}
+  description: "\uC815\uC9C0 +5lv, \uC1E0\uB77D +5lv"
   abilityModifiers:
   - modifier: 5
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

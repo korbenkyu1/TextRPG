@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: CompulsoryStimulator
   m_EditorClassIdentifier: 
-  itemName: "\uAC15\uC81C\uB3D9\uAE30 \uC2E0\uACBD\uC81C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uC2E0\uACBD\uCD09\uC9C4\uC81C"
+  icon: {fileID: 9102011426893263382, guid: cd2679b4fba57a54d8960b474905a0b7, type: 3}
+  image: {fileID: 9102011426893263382, guid: ae2a42a7ff1b260499c1e9c1e9790148, type: 3}
+  description: "\uBD84\uB178 +3lv, \uC1E0\uB77D +1lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

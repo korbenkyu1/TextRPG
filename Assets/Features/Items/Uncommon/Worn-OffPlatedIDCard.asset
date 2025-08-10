@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Worn-OffPlatedIDCard
   m_EditorClassIdentifier: 
   itemName: "\uBC97\uACA8\uC9C4 \uB3C4\uAE08\uC758 ID\uCE74\uB4DC"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -4591132234180374680, guid: 9b0a71f7f30b9c946a540aedd82a8319, type: 3}
+  image: {fileID: -4591132234180374680, guid: 1a20ce3b0988e2446b30ec1221e2b8bc, type: 3}
+  description: "\uC815\uC9C0 +1lv, \uACB0\uACC4 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 96172bc1212b70941a21c3cf088599c0, type: 2}

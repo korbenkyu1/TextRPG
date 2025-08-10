@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
-  m_Name: PheromoneCandy
+  m_Name: PhermoneCandy
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
+  maxHealth: 200
+  health: 100
+  attack: 5
+  defense: 5
   critChance: 0
   dodgeChance: 0
   foodName: "\uD398\uB974\uBAAC\uCE94\uB514"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 4898344699736865550, guid: e0a0c99b1ef709d4dab736f9c17149c9, type: 3}
+  image: {fileID: -8508606882082106166, guid: c9044ec8166db1b46a174a9ecc8d4e42, type: 3}
+  description: "\uCD5C\uB300\uCCB4\uB825 + 200, \uCCB4\uB825 + 100, \uACF5\uACA9\uB825
+    + 5, \uBC29\uC5B4\uB825 + 5"

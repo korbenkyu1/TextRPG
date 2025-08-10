@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SuspiciousNotebook
   m_EditorClassIdentifier: 
   itemName: "\uC218\uC0C1\uD55C \uB178\uD2B8"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8139118268853818479, guid: 7311e8fe34be9124a8a55578f3b22911, type: 3}
+  image: {fileID: -8139118268853818479, guid: dd1e435fe9b713f4bb1eb34db7c9c500, type: 3}
+  description: "\uC1E0\uB77D +3lv,  \uC815\uC9C0 +3lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

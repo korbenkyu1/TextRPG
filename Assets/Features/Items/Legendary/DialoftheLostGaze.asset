@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DialoftheLostGaze
   m_EditorClassIdentifier: 
   itemName: "\uC720\uC2E4\uB41C \uC2DC\uC120\uC758 \uB2E4\uC774\uC5BC"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 4025523456242830708, guid: 07d55e3691be31a44b94fb3daa0395aa, type: 3}
+  image: {fileID: 4025523456242830708, guid: c445c936cffe7784f945703f749de270, type: 3}
+  description: "\uC1E0\uB77D +3lv, \uACB0\uACC4 +2lv, \uBD84\uB178 +2lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

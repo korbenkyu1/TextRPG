@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: RadiationTestVial
   m_EditorClassIdentifier: 
-  itemName: "\uBCC0\uC774 \uC870\uC9C1 \uC0D8\uD50C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uBC29\uC0AC\uC120 \uC2E4\uD5D8 \uC0D8\uD50C\uBCD1"
+  icon: {fileID: -3480165540609732748, guid: 7a05d7c088f3b0f4bae7a3a1e0df9fe0, type: 3}
+  image: {fileID: -3480165540609732748, guid: 997002f2e511ee548a9b2a7c89131c53, type: 3}
+  description: "\uC1E0\uB77D +1lv, \uC815\uC9C0 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WoundOintment
   m_EditorClassIdentifier: 
   itemName: "\uC0C1\uCC98\uC57D"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 5875784141368752530, guid: 8b3444dd9e16ee546951a8b3cd97648b, type: 3}
+  image: {fileID: 5875784141368752530, guid: b12a7e486d6ce8b4f8d17a53c6f97938, type: 3}
+  description: "\uD65C\uB825 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

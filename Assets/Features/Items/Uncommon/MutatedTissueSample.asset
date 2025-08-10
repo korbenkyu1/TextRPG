@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: MutatedTissueSample
   m_EditorClassIdentifier: 
   itemName: "\uBCC0\uC774 \uC870\uC9C1 \uC0D8\uD50C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -922895797905168792, guid: 8eb0b2555b47c0542b979679e955920d, type: 3}
+  image: {fileID: -922895797905168792, guid: bf3d68119f303084783e61bc4de72103, type: 3}
+  description: "\uCE68\uC2DD +1lv, \uD65C\uB825 -1lv, \uBD84\uB178 +1lv"
   abilityModifiers:
-  - modifier: 1
+  - modifier: -1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

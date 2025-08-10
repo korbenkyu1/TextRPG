@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RapidRegenNano-Gel
   m_EditorClassIdentifier: 
   itemName: "\uAE34\uAE09 \uC7AC\uC0DD \uB098\uB178\uC824"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -671694150850777228, guid: e0e3b3e62be44734388642cf5aba5e66, type: 3}
+  image: {fileID: -671694150850777228, guid: 593c75839fe6008458c3e6f59a869e92, type: 3}
+  description: "\uD65C\uB825 +3lv,"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}

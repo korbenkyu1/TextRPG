@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: NoiseEmitter
   m_EditorClassIdentifier: 
-  itemName: "\uB178\uC774\uC988 \uBC1C\uC0DD\uAE30"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uC804\uD30C \uBC1C\uC0DD\uAE30"
+  icon: {fileID: 7019592416648481070, guid: e2cb2a4c2b4c27c4e8f3a7ed02b764fc, type: 3}
+  image: {fileID: 7019592416648481070, guid: b6435c64fe1b5984b8c97098d52916c7, type: 3}
+  description: "\uC815\uC9C0 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 3755d309b1f3296448893103889750bf, type: 2}

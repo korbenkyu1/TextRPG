@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AbandonedWristwatch
   m_EditorClassIdentifier: 
   itemName: "\uBC84\uB824\uC9C4 \uC190\uBAA9\uC2DC\uACC4"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 429496108030894205, guid: 1e33131eac4571c438f0a7067f042864, type: 3}
+  image: {fileID: 429496108030894205, guid: 8eace6eb09f85b044be776b08a6a095c, type: 3}
+  description: "\uC815\uC9C0 +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: 3755d309b1f3296448893103889750bf, type: 2}

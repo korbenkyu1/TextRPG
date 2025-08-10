@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: CakeSlice
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
+  maxHealth: 50
+  health: -10
   attack: 0
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uCF00\uC774\uD06C\uC870\uAC01"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8268755937924670529, guid: 36d60e2577a1b7b48ae9f2fa1954c48e, type: 3}
+  image: {fileID: -8268755937924670529, guid: 2ee4272aac3472f4a82d96d5ab7e111a, type: 3}
+  description: "\uCD5C\uB300\uCCB4\uB825 + 50, \uCCB4\uB825 - 10"

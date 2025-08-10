@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: RawOyster
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
+  health: -30
   attack: 0
-  defense: 0
+  defense: 5
   critChance: 0
   dodgeChance: 0
   foodName: "\uC0DD\uAD74"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -2817343462200567954, guid: 540559fbb89ee8a4c9a540d76f107ab7, type: 3}
+  image: {fileID: -2817343462200567954, guid: 67aebc8f590c13c40a5a3312602fc046, type: 3}
+  description: "\uCCB4\uB825 - 30, \uBC29\uC5B4\uB825 + 5"

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: StagnantTentacleShard
   m_EditorClassIdentifier: 
   itemName: "\uC815\uC81C\uB41C \uCD09\uC218 \uD30C\uD3B8"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 7969307969322930131, guid: 1f60f1186487f4d40a48af308d9c0957, type: 3}
+  image: {fileID: 7969307969322930131, guid: d85e985074f1a544bafe769c48f63812, type: 3}
+  description: "\uCE68\uC2DD +3lv, \uD65C\uB825 1lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 0a1fac0dbb2544044a2bd5e212358f96, type: 2}

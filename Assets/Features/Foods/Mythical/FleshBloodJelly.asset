@@ -12,13 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: FleshBloodJelly
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
+  maxHealth: 300
+  health: 200
+  attack: 20
   defense: 0
-  critChance: 0
+  critChance: 20
   dodgeChance: 0
   foodName: "\uD608\uC721\uC824\uB9AC"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 4588766718519770260, guid: cd96a6accc5c36241ba51123aa0f90d6, type: 3}
+  image: {fileID: 4588766718519770260, guid: 0959024763e86b74289389e3ed0bf5e9, type: 3}
+  description: "\uCD5C\uB300\uCCB4\uB825 + 300, \uCCB4\uB825 + 200, \uACF5\uACA9\uB825
+    + 20, \uCE58\uBA85\uD0C0\uC728 + 20%"

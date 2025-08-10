@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: TranscendentalCoreProtocol
   m_EditorClassIdentifier: 
   itemName: "\uCD08\uC6D4 \uD575\uC2EC \uD504\uB85C\uD1A0\uCF5C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -3118582524697949337, guid: 8594d602b7e67d64881a49444d080d05, type: 3}
+  image: {fileID: -3118582524697949337, guid: 5a4685a439e8c9e46af32aa427f5f0c8, type: 3}
+  description: "\uBD84\uB178 +4lv,  \uD65C\uB825 +3lv,  \uACB0\uACC4 +3lv"
   abilityModifiers:
   - modifier: 4
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

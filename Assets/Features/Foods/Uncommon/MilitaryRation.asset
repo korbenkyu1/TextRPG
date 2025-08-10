@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: MilitaryRation
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: 50
+  attack: 2
   defense: 0
   critChance: 0
   dodgeChance: 0
-  foodName: "\uAD70\uC6A9 \uBCF4\uAE09\uC2DD\uD488"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  foodName: "\uAD70\uC6A9 \uCC44\uC18C"
+  icon: {fileID: -8552142185665790937, guid: dee64182fbd011140a03cef0318b1611, type: 3}
+  image: {fileID: -8552142185665790937, guid: d66fcf42a97f6a348a3a6d2a958ff978, type: 3}
+  description: "\uCCB4\uB825 + 50, \uACF5\uACA9\uB825 + 2"

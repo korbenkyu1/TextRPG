@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1f1538aa3d31741941c217978604d0, type: 3}
   m_Name: OxidationCatalystFlask
   m_EditorClassIdentifier: 
-  itemName: "\uAC15\uC81C\uB3D9\uAE30 \uC2E0\uACBD\uC81C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  itemName: "\uC0B0\uD654 \uCD09\uC9C4\uC6A9 \uD50C\uB77C\uC2A4\uD06C"
+  icon: {fileID: -1573061652898101179, guid: 6067987394f7755418f19c3c3e036366, type: 3}
+  image: {fileID: -1573061652898101179, guid: cf2505dfcdadc0e4499add40b46c70c2, type: 3}
+  description: "\uC1E0\uB77D +2lv, \uCE68\uC2DD +2lv, \uD65C\uB825 -1lv"
   abilityModifiers:
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 0a1fac0dbb2544044a2bd5e212358f96, type: 2}
   - modifier: 2
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}
-  - modifier: 1
+  - modifier: -1
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
   requiredAbilityA: {fileID: 0}
   requiredAbilityB: {fileID: 0}

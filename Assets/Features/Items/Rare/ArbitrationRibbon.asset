@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: ArbitrationRibbon
   m_EditorClassIdentifier: 
   itemName: "\uC911\uC7AC \uB9AC\uBCF8"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -210039786507040659, guid: 195c9e1eb52ef6545a768a39cdddf540, type: 3}
+  image: {fileID: -210039786507040659, guid: 80a5d6649f4f2434298eac63967923d7, type: 3}
+  description: "\uC1E0\uB77D+2lv, \uCE68\uC2DD +2lv, \uC815\uC9C0 +3lv, \uD65C\uB825
+    -2lv"
   abilityModifiers:
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 0a1fac0dbb2544044a2bd5e212358f96, type: 2}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RustyKnife
   m_EditorClassIdentifier: 
   itemName: "\uB179\uC2A8 \uCE7C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 1853780736865208437, guid: ff74d0e011b8a524e9b248426946a6ed, type: 3}
+  image: {fileID: 1853780736865208437, guid: fd35dc214b0b1e448843202583445cc6, type: 3}
+  description: "\uC1E0\uB77D +1lv"
   abilityModifiers:
   - modifier: 1
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

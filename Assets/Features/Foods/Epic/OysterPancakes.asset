@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: OysterPancakes
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
+  health: 80
+  attack: 4
   defense: 0
   critChance: 0
   dodgeChance: 0
   foodName: "\uAD74\uC804"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 8655564679129472187, guid: 8e67f9813399cf54d92b9cc58e59fcfa, type: 3}
+  image: {fileID: 8655564679129472187, guid: 438c7ff0b88285d4ea194010b4a369fd, type: 3}
+  description: "\uCCB4\uB825 + 80, \uACF5\uACA9\uB825 + 4"

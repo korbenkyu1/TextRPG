@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: CradleoftheLightlessStar
   m_EditorClassIdentifier: 
   itemName: "\uBE5B \uC783\uC740 \uBCC4\uC758 \uC694\uB78C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 1224385600477377476, guid: 796e840bccccfaf4a8f74ea702cfad56, type: 3}
+  image: {fileID: 1224385600477377476, guid: bca9f36c6c3c872489add6ab452df0ea, type: 3}
+  description: "\uC1E0\uB77D +4lv,  \uC815\uC9C0 +3lv,  \uBD84\uB178 +3lv"
   abilityModifiers:
   - modifier: 4
     abilityData: {fileID: 11400000, guid: a88fe71681cda6c4da6939cdcfa0279d, type: 2}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AbyssalTentacleSample
   m_EditorClassIdentifier: 
   itemName: "\uC2EC\uC5F0\uC758 \uCD09\uC218 \uC0D8\uD50C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -7453921206624554929, guid: b1410af7439628c49b7f2ca40a6c8b2a, type: 3}
+  image: {fileID: -7453921206624554929, guid: d5f7596aefd007b46bedeb47354596b8, type: 3}
+  description: "\uCE68\uC2DD +4lv, \uBD84\uB178 +2lv, \uD65C\uB825 -2lv"
   abilityModifiers:
   - modifier: 2
     abilityData: {fileID: 11400000, guid: 13b7af85323f6cc46a614e8e3c69d341, type: 2}

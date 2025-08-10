@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1b4c77895bfa44b86bea96f301216d, type: 3}
   m_Name: SteamedOyster
   m_EditorClassIdentifier: 
-  maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
-  critChance: 0
-  dodgeChance: 0
+  maxHealth: 30
+  health: 30
+  attack: 3
+  defense: 3
+  critChance: 3
+  dodgeChance: 3
   foodName: "\uAD74\uCC1C"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -8226211210263779013, guid: 53c5ae30aea74074ab9eaddfb8ac4cdf, type: 3}
+  image: {fileID: -8226211210263779013, guid: 878b21001acfc0b4e858bcc4aa8b8842, type: 3}
+  description: "\uCD5C\uB300 \uCCB4\uB825 + 30, \uCCB4\uB825 + 30, \uACF5\uACA9\uB825
+    + 3, \uBC29\uC5B4\uB825 + 3, \uCE58\uBA85\uD0C0\uC728 + 3%, \uD68C\uD53C\uC728
+    + 3%"

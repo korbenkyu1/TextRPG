@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: OiledPickles
   m_EditorClassIdentifier: 
   maxHealth: 0
-  health: 0
-  attack: 0
-  defense: 0
+  health: -20
+  attack: 2
+  defense: 1
   critChance: 0
   dodgeChance: 0
   foodName: "\uAE30\uB984\uC5D0 \uC808\uC778 \uD53C\uD074"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: -1091802914935475304, guid: bd8374047240e064790fbdd9aebbfe4c, type: 3}
+  image: {fileID: -1091802914935475304, guid: e5c989c6843000643839d5b65d75bf27, type: 3}
+  description: "\uCCB4\uB825 - 20, \uACF5\uACA9\uB825 + 2, \uBC29\uC5B4\uB825 + 1"

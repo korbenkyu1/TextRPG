@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SealedPrismDuel
   m_EditorClassIdentifier: 
   itemName: "\uBD09\uC778\uB41C \u2018\uD504\uB9AC\uC998 \uC96C\uC5BC'"
-  image: {fileID: 0}
-  description: description
-  flavorText: flavor text
+  icon: {fileID: 6498681831477116715, guid: 80687adb02b70e547955821f573bc88a, type: 3}
+  image: {fileID: 6498681831477116715, guid: 39c55f9f801d43243b7a98bfb3183a6e, type: 3}
+  description: "\uD65C\uB825 +3lv, \uACB0\uACC4 +3lv"
   abilityModifiers:
   - modifier: 3
     abilityData: {fileID: 11400000, guid: 4b6a463862497a14193c7717976d0170, type: 2}
