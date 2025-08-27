@@ -12,8 +12,10 @@ public class StageManager : MonoBehaviour
     public Button OptionButtonPrefab;
     public Image DialogBox;
 
+
     public GameObject BeforeCombat;
     public Image EnemyImage;
+    public TMP_Text EnemyText;
     public GameObject CombatStartButton;
     public CoinUI Coin;
     public DialogUI Dialog;
@@ -98,7 +100,9 @@ public class StageManager : MonoBehaviour
     {
         OptionData option = stage.options[i];
 
-        EnemyData enemy = option.enemy;
+        EnemyData enemy = null;
+        if (option.enemy) enemy = Instantiate(option.enemy);
+
         ResultData result = option.result;
 
         // coins
@@ -114,6 +118,7 @@ public class StageManager : MonoBehaviour
             //OptionContainer.SetActive(false);
 
             EnemyImage.sprite = enemy.image;
+            EnemyText.text = enemy.description;
             BeforeCombat.SetActive(true);
         }
         else SceneManager.LoadScene("ResultScene");

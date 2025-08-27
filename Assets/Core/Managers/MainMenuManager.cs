@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -43,9 +45,8 @@ public class MainMenuManager : MonoBehaviour
     }
     public void GameStart()
     {
-        GameManager.Instance.playerData = selectedPlayer;
-        Debug.Log(selectedPlayer);
-        Debug.Log(GameManager.Instance.playerData);
+        GameManager.Instance.playerData = Instantiate(selectedPlayer);
+
         SceneManager.LoadScene("StageScene");
     }
 }

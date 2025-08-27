@@ -191,7 +191,7 @@ public class ResultManager : MonoBehaviour
                     float currentWeightSum = 0f;
                     for (int j = 0; j < 6; j++)
                     {
-                        currentWeightSum += itemWeights[i];
+                        currentWeightSum += itemWeights[j];
                         if (randomValue <= currentWeightSum)
                         {
                             Debug.Log("3");
@@ -206,7 +206,6 @@ public class ResultManager : MonoBehaviour
                     }
                 }
                 Debug.Log("4");
-                Debug.Log(itemRewards);
                 break;
             case RewardType.Food:
                 var foodLists = new List<List<FoodData>> { commonFoods, uncommonFoods, rareFoods, epicFoods, legendaryFoods, mythicFoods };
@@ -219,14 +218,14 @@ public class ResultManager : MonoBehaviour
                     float currentWeightSum = 0f;
                     for (int j = 0; j < 6; j++)
                     {
-                        currentWeightSum += foodWeights[i];
+                        currentWeightSum += foodWeights[j];
                         if (randomValue <= currentWeightSum)
                         {
                             var foodList = foodLists[j];
                             int k = Random.Range(0, foodList.Count);
+                            Debug.Log(foodRewards[i].foodName);
                             foodRewards[i] = foodList[k];
                             RewardImages[i].sprite = foodRewards[i].image;
-                            Debug.Log(foodRewards[i].foodName);
                             foodList.RemoveAt(k);
                             break;
                         }

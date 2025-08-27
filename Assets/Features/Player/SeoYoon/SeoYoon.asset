@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 300
   health: 300
-  attack: 20
+  attack: 25
   defense: 24
   critChance: 10
   dodgeChance: 5

@@ -21,7 +21,7 @@ MonoBehaviour:
     \uC5BB\uB294\uB2E4. \uACBD\uAC10 1\uC2A4\uD0DD\uC744 \uC5BB\uB294\uB2E4."
   maxUse: 35
   remainingUse: 35
-  turnUsed: 0
+  turnUsed: 1
   dodgable: 0
   coolDown: 0
   coolDownCounter: 0

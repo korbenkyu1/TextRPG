@@ -31,7 +31,7 @@ public class Reduction : StatusEffectData
                     count++;
             }
             combatManager.Log("경감으로 인해 적이 받는 데미지 " + string.Concat(Enumerable.Repeat("50% ", count))
-                + string.Concat(Enumerable.Repeat("0 ", combatManager.player.damages.Count - count)) + "감소되었다!");
+                + string.Concat(Enumerable.Repeat("0 ", combatManager.enemy.damages.Count - count)) + "감소되었다!");
             count = 0;
         }
     }

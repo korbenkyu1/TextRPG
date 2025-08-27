@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -35,9 +36,16 @@ public class Unit
 
 public class CombatManager : MonoBehaviour
 {
+    public TMP_Text EnemyDescription;
+    public TMP_Text EnemyName;
+    public HpBarUI EnemyHpBar;
     public Image EnemyImage;
+    public HpBarUI PlayerHpBar;
     public Image PlayerImage;
     public CoinUI Coin;
+    public TMP_Text CombatLog;
+    public GameObject[] PlayerSkills;
+
 
     [SerializeField] StatusEffectData[] statusEffects;
     public int turn = 0;
@@ -60,22 +68,43 @@ public class CombatManager : MonoBehaviour
         enemy = new Unit();
         player.stats = playerData;
         enemy.stats = enemyData;
-        foreach (var statusEffect in statusEffects)
+        for(int i=0; i<statusEffects.Length; i++)
         {
-            statusEffect.isPlayer = true;
-            player.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
-            statusEffect.isPlayer = false;
-            enemy.statusEffects.Add(statusEffect.statusEffectName, statusEffect);
+            var statusEffect1 = Instantiate(statusEffects[i]);
+            var statusEffect2 = Instantiate(statusEffects[i]);
+            statusEffect1.isPlayer = true;
+            player.statusEffects.Add(statusEffect1.statusEffectName, statusEffect1);
+            statusEffect2.isPlayer = false;
+            enemy.statusEffects.Add(statusEffect2.statusEffectName, statusEffect2);
         }
 
+        EnemyDescription.text = enemyData.description;
+        EnemyName.text = enemyData.unitName;
         EnemyImage.sprite = enemyData.image;
         PlayerImage.sprite = playerData.image;
-        Coin.UpdateUI();
 
+        Coin.UpdateUI();
+        CombatLog.text = "";
+        for (int i = 0; i < 5; i++)
+        {
+            var skill = playerData.skills[i];
+            var button = PlayerSkills[i].GetComponentInChildren<Button>();
+            var text = PlayerSkills[i].GetComponentInChildren<TMP_Text>();
+            button.interactable = false;
+
+            if (!skill) continue;
+
+            button.interactable = true;
+            button.GetComponentInChildren<Image>().sprite = skill.icon;
+            if (skill.maxUse > 0) text.text = $"{skill.skillName}\n({skill.remainingUse}/{skill.maxUse})";
+            else text.text = $"{skill.skillName}";
+
+        }
         OnCombatStart();
     }
     public void Log(string msg)
     {
+        CombatLog.text += msg + "\n";
         Debug.Log(msg);
     }
     bool IsCombatOver()
@@ -86,11 +115,13 @@ public class CombatManager : MonoBehaviour
     {
         foreach (var ability in playerData.abilities) ability.OnCombatStart(this);
         foreach (var ability in enemyData.abilities) ability.OnCombatStart(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         StartCoroutine(OnTurnStart());
     }
     IEnumerator OnTurnStart(){
         state = CombatState.TurnStart;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         turn++;
         player.remainingAction = 1;
         enemy.remainingAction = 1;
@@ -100,12 +131,13 @@ public class CombatManager : MonoBehaviour
         enemy.stats = enemyData;
         player.damages.Clear();
         enemy.damages.Clear();
-        Debug.Log($"턴{turn}");
 
         foreach (var ability in playerData.abilities) ability.OnTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnTurnStart(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         player.stats.health = Mathf.Min(player.stats.maxHealth, playerOldHealth);
@@ -115,14 +147,15 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator OnPlayerTurnStart(){
         state = CombatState.PlayerTurnStart;
-        yield return new WaitForSeconds(1f);
-        Debug.Log("플레이어 턴");
+        yield return new WaitForSeconds(.25f);
 
         // 특성 / 상태이상 처리
         foreach (var ability in playerData.abilities) ability.OnPlayerTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnPlayerTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnPlayerTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnPlayerTurnStart(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         float totalWeight = 0f;
@@ -139,7 +172,7 @@ public class CombatManager : MonoBehaviour
                 break;
             }
         }
-        Debug.Log(enemySkill.naration);
+        Log(enemySkill.naration);
 
         
         if (player.remainingAction > 0) OnPlayerTurn();
@@ -153,7 +186,7 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator BeforePlayerAttack(){
         state = CombatState.BeforePlayerAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         playerSkill.coolDownCounter = playerSkill.coolDown;
         playerSkill.OnActivate(this);
         for (int i = 0; i < enemy.damages.Count; i++)
@@ -165,6 +198,8 @@ public class CombatManager : MonoBehaviour
         foreach (var ability in enemyData.abilities) ability.BeforePlayerAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.BeforePlayerAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.BeforePlayerAttack(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
 
@@ -175,21 +210,27 @@ public class CombatManager : MonoBehaviour
     IEnumerator OnPlayerAttack()
     {
         state = CombatState.PlayerAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
+
+        string buffer = "적: ";
         for (int i = 0; i < enemy.damages.Count; i++)
         {
-            Debug.Log($"적: {enemy.damages[i]} 데미지");
+            buffer += " " + enemy.damages[i].ToString();
             enemy.stats.health -= enemy.damages[i];
         }
+        buffer += "데미지";
+        Log(buffer);
         StartCoroutine(AfterPlayerAttack());
     }
     IEnumerator AfterPlayerAttack(){
         state = CombatState.AfterPlayerAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         foreach (var ability in playerData.abilities) ability.AfterPlayerAttack(this);
         foreach (var ability in enemyData.abilities) ability.AfterPlayerAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.AfterPlayerAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.AfterPlayerAttack(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         if (player.remainingAction > 0) OnPlayerTurn(); 
@@ -197,31 +238,39 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator OnPlayerTurnEnd(){
         state = CombatState.PlayerTurnEnd;
-        yield return new WaitForSeconds(1f);
-        for (int i = 0; i < 5; i++) playerData.skills[i].coolDownCounter = Mathf.Max(0, playerData.skills[i].coolDownCounter - 1);
+        yield return new WaitForSeconds(.25f);
+        for (int i = 0; i < 5; i++) {
+            if (playerData.skills[i] == null) continue;
+            playerData.skills[i].coolDownCounter = Mathf.Max(0, playerData.skills[i].coolDownCounter - 1); 
+            // Null Reference;
+        }
 
         foreach (var ability in playerData.abilities) ability.OnPlayerTurnEnd(this);
         foreach (var ability in enemyData.abilities) ability.OnPlayerTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnPlayerTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnPlayerTurnEnd(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnEnemyTurnStart());
     }        
     IEnumerator OnEnemyTurnStart(){
         state = CombatState.EnemyTurnStart;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         foreach (var ability in playerData.abilities) ability.OnEnemyTurnStart(this);
         foreach (var ability in enemyData.abilities) ability.OnEnemyTurnStart(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnEnemyTurnStart(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnEnemyTurnStart(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
         if(enemy.remainingAction > 0) StartCoroutine(OnEnemyTurn()); 
         else StartCoroutine(OnEnemyTurnEnd());
     }
     IEnumerator OnEnemyTurn(){
         state = CombatState.EnemyTurn;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
 
         enemy.remainingAction--;
         if (enemySkill.dodgable && Random.Range(0, 100) <= player.stats.dodgeChance)
@@ -233,12 +282,14 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator BeforeEnemyAttack(){
         state = CombatState.BeforeEnemyAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         enemySkill.OnActivate(this);
         foreach (var ability in playerData.abilities) ability.BeforeEnemyAttack(this);
         foreach (var ability in enemyData.abilities) ability.BeforeEnemyAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.BeforeEnemyAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.BeforeEnemyAttack(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         if (enemy.damages.Count > 0) StartCoroutine(OnEnemyAttack());   
@@ -247,43 +298,53 @@ public class CombatManager : MonoBehaviour
     }
     IEnumerator OnEnemyAttack(){
         state = CombatState.EnemyAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
+        string buffer = "플레이어: ";
         for (int i = 0; i < player.damages.Count; i++)
         {
+            buffer += " " + player.damages[i].ToString();
             player.stats.health -= player.damages[i];
         }
+        buffer += " 데미지";
+        Log(buffer);
 
         StartCoroutine(AfterEnemyAttack());
     }
     IEnumerator AfterEnemyAttack(){
         state = CombatState.AfterEnemyAttack;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         foreach (var ability in playerData.abilities) ability.AfterEnemyAttack(this);
         foreach (var ability in enemyData.abilities) ability.AfterEnemyAttack(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.AfterEnemyAttack(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.AfterEnemyAttack(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
         if (enemy.remainingAction > 0) StartCoroutine(OnEnemyTurn()); 
         else StartCoroutine(OnEnemyTurnEnd()); 
     }
     IEnumerator OnEnemyTurnEnd(){
         state = CombatState.EnemyTurnEnd;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         foreach (var ability in playerData.abilities) ability.OnEnemyTurnEnd(this);
         foreach (var ability in enemyData.abilities) ability.OnEnemyTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnEnemyTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnEnemyTurnEnd(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnTurnEnd());
     }
     IEnumerator OnTurnEnd(){
         state = CombatState.TurnEnd;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.25f);
         foreach (var ability in playerData.abilities) ability.OnTurnEnd(this);
         foreach (var ability in enemyData.abilities) ability.OnTurnEnd(this);
         foreach (var statusEffect in player.statusEffects.Values) statusEffect.OnTurnEnd(this);
         foreach (var statusEffect in enemy.statusEffects.Values) statusEffect.OnTurnEnd(this);
+        EnemyHpBar.UpdateHp(enemy.stats.maxHealth, enemy.stats.health);
+        PlayerHpBar.UpdateHp(player.stats.maxHealth, player.stats.health);
         if (IsCombatOver()) OnCombatEnd();
 
         StartCoroutine(OnTurnStart());
@@ -300,27 +361,30 @@ public class CombatManager : MonoBehaviour
             // lost
         }
     }
-    void Update()
+    public void PlayerSkill(int i)
     {
-        switch(state)
+        if (state != CombatState.PlayerTurn) return;
+        if (!playerData.skills[i]) return;
+        if (playerData.skills[i].remainingUse == 0) return;
+
+        playerSkill = playerData.skills[i];
+        player.remainingAction -= playerSkill.turnUsed;
+
+
+        player.remainingAction -= playerData.skills[i].turnUsed;
+
+        var text = PlayerSkills[i].GetComponentInChildren<TMP_Text>();
+        if (playerSkill.maxUse > 0)
         {
-            case CombatState.PlayerTurn:
-                for (int i = 1; i < 5; i++)
-                {
-                    if (Input.GetKeyDown((KeyCode)((int)KeyCode.Alpha0 + i)) && playerData.skills[i].coolDownCounter == 0)
-                    {
-                        playerSkill = playerData.skills[i-1];
-                        player.remainingAction -= playerSkill.turnUsed;
-                        if (playerSkill.dodgable && Random.Range(1, 101) <= enemy.stats.dodgeChance)
-                        {
-                            if (player.remainingAction > 0) OnPlayerTurn();
-                            else StartCoroutine(OnPlayerTurnEnd()); 
-                        }
-                        else StartCoroutine(BeforePlayerAttack()); 
-                        return;
-                    }
-                }
-                break;
+            playerSkill.remainingUse--;
+            if (playerSkill.maxUse > 0) text.text = $"{playerSkill.skillName}\n({playerSkill.remainingUse}/{playerSkill.maxUse})";
         }
+
+        if (playerSkill.dodgable && Random.Range(1, 101) <= enemy.stats.dodgeChance)
+        {
+            if (player.remainingAction > 0) OnPlayerTurn();
+            else StartCoroutine(OnPlayerTurnEnd());
+        }
+        else StartCoroutine(BeforePlayerAttack());
     }
 }

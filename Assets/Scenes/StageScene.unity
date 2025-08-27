@@ -932,6 +932,7 @@ MonoBehaviour:
   DialogBox: {fileID: 1713076561}
   BeforeCombat: {fileID: 2017550413}
   EnemyImage: {fileID: 969258143}
+  EnemyText: {fileID: 1538701298}
   CombatStartButton: {fileID: 1547970857}
   Coin: {fileID: 2958429160530611044}
   Dialog: {fileID: 7226130246847463147}

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgound: {fileID: 21300000, guid: 7a714949c3a0ec34b8269c61dd9a7e46, type: 3}
   fixedStages:
+  - {fileID: 11400000, guid: 95eb2cb7bb2228d448da236e6aa6cae7, type: 2}
   - {fileID: 11400000, guid: 1ef09359cf414b34e88d72d7b5601010, type: 2}
   - {fileID: 11400000, guid: 0cc3b106ed72c7e42a331730dfd2eb88, type: 2}
-  - {fileID: 11400000, guid: 95eb2cb7bb2228d448da236e6aa6cae7, type: 2}
   - {fileID: 11400000, guid: 303ea615b82ccdc4b8077ffe451dfe88, type: 2}
   - {fileID: 11400000, guid: c70272c48e4f5af4eb0f187fd409cf5e, type: 2}
   - {fileID: 11400000, guid: a3bd4b69a77831a4fa931b5aa964cb40, type: 2}
